@@ -1,8 +1,8 @@
 
 export default function LogoComponent() {
     return(
-        <Logo href="#home">
+        <div href="#home">
             <h1>Majid</h1>
-        </Logo>
+        </div>
     )
 }
