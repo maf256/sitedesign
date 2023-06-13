@@ -1,6 +1,6 @@
 "use client"
 import { useState, useRef, useEffect } from "react"
-import RightNav from "./rightNav"
+import Menu from "./Menu"
 import { StyledBurger } from './BurgerStyled'
 
 export default function Burger({selectedLanguage, setSelectedLanguage}) {
@@ -27,7 +27,7 @@ export default function Burger({selectedLanguage, setSelectedLanguage}) {
                 <div></div>
                 <div></div>
             </StyledBurger>
-            <RightNav selectedLanguage={selectedLanguage} open={open} setSelectedLanguage={setSelectedLanguage}/> 
+            <Menu selectedLanguage={selectedLanguage} open={open} setSelectedLanguage={setSelectedLanguage}/> 
         </div>
     )
 }

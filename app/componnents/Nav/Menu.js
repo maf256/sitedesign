@@ -4,7 +4,7 @@ import { Data } from '../common/Data';
 import Language from '../language/Language';
 
 
-const RightNav = ({ open,selectedLanguage, setSelectedLanguage}) => {
+const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
   return (
     <Navbar open={open}>
       <h1>Webutvikler</h1>
@@ -23,7 +23,7 @@ Created by Codeefly</div>
   )
 }
 
-export default RightNav
+export default Menu
 
 const Navbar = styled.div`
   width: 25%;
