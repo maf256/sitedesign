@@ -1,17 +1,14 @@
-'use client'
 import Image from 'next/image'
-import styled from 'styled-components'
+import './styles.css'
 
-// import styles from './page.module.css'
+import styles from './page.module.css'
 
 export default function Home() {
   return (
     <main>
-      <H1>Hello world</H1>
+
+      <h1>Hello world</h1>
     </main>
   )
 }
 
-const H1 = styled.h1`
-  color: red;
-`
