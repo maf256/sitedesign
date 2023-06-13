@@ -6,23 +6,60 @@ import Language from '../language/Language';
 
 const RightNav = ({ open,selectedLanguage, setSelectedLanguage}) => {
   return (
-    <Ul open={open}>
-    {
-      Data.menu['en'].map((item, inx) =>
-      <li key={inx}><a href={item.href}>{item.name}</a></li>
-      )
-    }
-      <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
-    </Ul>
+    <Navbar open={open}>
+      <h1>Webutvikler</h1>
+      <Ul >
+      {
+        Data.menu['en'].map((item, inx) =>
+        <li key={inx}><a href={item.href}>{item.name}</a></li>
+        )
+      }
+        <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
+      </Ul>
+      <div>© 2023 Tokyo
+Created by Codeefly</div>
+
+    </Navbar>
   )
 }
 
 export default RightNav
 
-const Ul = styled.ul`
-  list-style: none;
+const Navbar = styled.div`
+  width: 25%;
+  height: 100vh;
+  background-color: #0a26407a;
   display: flex;
-  flex-flow: row nowrap;  
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    background-color: #0D2538;
+    position: fixed;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding-top: 3.5rem;
+    transition: transform 0.3s ease-in-out;
+    li {
+      color: #fff;
+      select {
+        color: #FFE9B1;
+      }
+    }
+    a {
+      color: ${({ open }) => open ? '#FFE9B1' : "#112B3C"}; 
+    }
+  }
+
+
+`
+
+const Ul = styled.ul`
+
+  list-style: none;
   li {
     select {
       appearance: none;
@@ -60,25 +97,4 @@ const Ul = styled.ul`
     font-weight: 600;
   }
 
-  @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    background-color: #0D2538;
-    position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 300px;
-    padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
-    li {
-      color: #fff;
-      select {
-        color: #FFE9B1;
-      }
-    }
-    a {
-      color: ${({ open }) => open ? '#FFE9B1' : "#112B3C"}; 
-    }
-  }
 `;

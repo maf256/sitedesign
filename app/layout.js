@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import React from 'react';
 import StyledComponentsRegistry from './lib/registry'
-import { Navbar } from './componnents/Nav/Navbar';
+import Navbar from './componnents/Nav/Navbar';
 
 
 // export default function RootLayout({ children }) {

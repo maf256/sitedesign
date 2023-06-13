@@ -1,27 +1,37 @@
 "use client"
 import React from 'react'
 import styled from 'styled-components'
-import LogoComponent from '../Logo/LogoComponent.js'
 import Burger from './Burger.js'
 
-export const Navbar = ({selectedLanguage, setSelectedLanguage}) => {
+export default function Navbar  ({selectedLanguage, setSelectedLanguage}) {
 
   return (
     <Nav >
-        <LogoComponent />
+        <Logo href="#home"><h1>Webutvikler</h1></Logo>
         <Burger selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} />        
     </Nav>
   )
 }
 
 const Nav = styled.nav `
+  @media (max-width: 768px) {
     width: 100%;
     height: 70px;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    padding: 0 5% 0 5%;
-    background-color: #0a26407a;
     position: fixed;
+    background-color: white;
+  }
+`
+const Logo = styled.a`
+    display: none;
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: flex;
+    }
+
 `
