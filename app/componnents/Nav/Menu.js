@@ -7,7 +7,9 @@ import Language from '../language/Language';
 const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
   return (
     <Navbar open={open}>
-      <h1>Webutvikler</h1>
+      <div>
+        <h1>Webutvikler</h1>
+      </div>
       <Ul >
       {
         Data.menu['en'].map((item, inx) =>
@@ -16,8 +18,10 @@ const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
       }
         <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
       </Ul>
-      <div>© 2023 Tokyo
-Created by Codeefly</div>
+      <div>
+        <h5>© 2023 Webutvikler</h5>
+        <h5>Created by Majid</h5>
+      </div>
 
     </Navbar>
   )
@@ -26,75 +30,48 @@ Created by Codeefly</div>
 export default Menu
 
 const Navbar = styled.div`
-  width: 25%;
-  height: 100vh;
-  background-color: #0a26407a;
+  div {
+    padding: 35px 0px;
+    padding-left: 1vw;
+  }
+
+  li {
+    margin: 7px 0px;
+    margin-right: 1vw;
+  }
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-
-  @media (max-width: 768px) {
-    background-color: #0D2538;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding-right: 10%;
+  a {
+    color: black;
+  }
+  @media (min-width: 900px) {
     position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 25%;
+  }
+
+  @media (max-width: 899px) {
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    li {
-      color: #fff;
-      select {
-        color: #FFE9B1;
-      }
-    }
-    a {
-      color: ${({ open }) => open ? '#FFE9B1' : "#112B3C"}; 
-    }
   }
 
 
 `
 
 const Ul = styled.ul`
-
-  list-style: none;
-  li {
-    select {
-      appearance: none;
-      background-color: transparent;
-      border: none;
-      width: 100%;
-      cursor: inherit;
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit;   
-      color: white;
-      outline: none;
-      padding: 2px;
-      :focus {
-        background-color: #8D9EFF;
-        
-      }
-      :hover {
-        background-color: #8D9EFF;
-      }
-      
-    }
-    padding: 0 2vw 0 2vw;
-    border: 1px solid rgba(0,0,0,0);    
-    :hover {
-        background-color: #8D9EFF;
-        border: 1px solid #8D9EFF;
-        border-radius: 14px 14px 14px 14px;
-        transition: background-color 0.7s ease;
-    }
-   }
-   a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-  }
 
 `;

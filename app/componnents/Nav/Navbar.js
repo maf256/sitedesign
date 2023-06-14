@@ -14,7 +14,8 @@ export default function Navbar  ({selectedLanguage, setSelectedLanguage}) {
 }
 
 const Nav = styled.nav `
-  @media (max-width: 768px) {
+
+  @media (max-width: 899px) {
     width: 100%;
     height: 70px;
     display: flex;
@@ -29,7 +30,7 @@ const Logo = styled.a`
     margin-left: 10px;
     color: black;
 
-    @media (max-width: 768px) {
+    @media (max-width: 899px) {
       width: 100%;
       display: flex;
     }
