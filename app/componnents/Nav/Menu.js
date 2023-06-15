@@ -20,7 +20,7 @@ const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
       </Ul>
       <div>
         <h5>© 2023 Webutvikler</h5>
-        <h5>Created by Majid</h5>
+        <h5>Created by <a href='https://www.linkedin.com/in/farsangi/' target="_blank">Majid</a></h5>
       </div>
 
     </Navbar>
@@ -38,6 +38,10 @@ const Navbar = styled.div`
   li {
     margin: 7px 0px;
     margin-right: 1vw;
+  }
+  li:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 0px;
+
   }
 
   display: flex;

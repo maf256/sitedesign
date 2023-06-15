@@ -53,7 +53,9 @@ export const Data = {
         en: [
             {name: 'Home', href: '#home'},
             {name: 'About', href: '#about'},
-            {name: 'Skills', href: '#skills'},
+            {name: 'Service', href: '#skills'},
+            {name: 'Portfolio', href: '#contact'},
+            {name: 'News', href: '#contact'},
             {name: 'Contact', href: '#contact'},
             {name: 'Resume', href: 'https://docs.google.com/document/d/1CnW2JXswDhA3hJBSsXhzZ98TOPY6wbgO/edit?usp=sharing&ouid=109271537866387535039&rtpof=true&sd=true'},
             ],
