@@ -4,7 +4,7 @@ import { H1, Main } from './componnents/pageStyled'
 
 export default function Home() {
   return (
-    <Main>
+    <Main >
 
       <H1>Hello world</H1>
       <H1>Hello world</H1>

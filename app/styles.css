@@ -10,3 +10,16 @@
   li {
     list-style: none;
   }
+
+/* .DefuiltHomepage {
+  background-color: #ededed;
+  min-height: 100vh;
+  @media only screen and (min-width: 900px) {
+    margin-left: 25%;
+    width: 75%;
+  
+  }
+  @media only screen and (max-width: 899px) {
+    width: 100%;
+  }
+} */

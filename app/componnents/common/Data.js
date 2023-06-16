@@ -51,8 +51,8 @@ export const Data = {
     },
     menu: {
         en: [
-            {name: 'Home', href: '#home'},
-            {name: 'About', href: '#about'},
+            {name: 'Home', href: '/'},
+            {name: 'About', href: '/about'},
             {name: 'Service', href: '#skills'},
             {name: 'Portfolio', href: '#contact'},
             {name: 'News', href: '#contact'},

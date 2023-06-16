@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Data } from '../common/Data';
 import Language from '../language/Language';
+import Link from 'next/link'
 
 
 const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
@@ -13,7 +14,7 @@ const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
       <Ul >
       {
         Data.menu['en'].map((item, inx) =>
-        <li key={inx}><a href={item.href}>{item.name}</a></li>
+        <li key={inx}><Link href={item.href}>{item.name}</Link></li>
         )
       }
         <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
