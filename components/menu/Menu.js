@@ -21,7 +21,7 @@ const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
       </Ul>
       <div>
         <h5>© 2023 Webutvikler</h5>
-        <h5>Created by <a href='https://www.linkedin.com/in/farsangi/' target="_blank">Majid</a></h5>
+        <h5>Created by <a href='https://www.linkedin.com/in/farsangi/' target="_blank" rel="noreferrer">Majid</a></h5>
       </div>
 
     </Navbar>
