@@ -5,7 +5,7 @@ import Language from '../language/Language';
 import Link from 'next/link'
 
 
-const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
+const Menu = ({ open, setOpen,selectedLanguage, setSelectedLanguage}) => {
   return (
     <Navbar open={open}>
       <div>
@@ -14,7 +14,7 @@ const Menu = ({ open,selectedLanguage, setSelectedLanguage}) => {
       <Ul >
       {
         Data.menu['en'].map((item, inx) =>
-        <li key={inx}><Link href={item.href}>{item.name}</Link></li>
+        <li key={inx}><Link onClick={()=> setOpen(false)} href={item.href}>{item.name}</Link></li>
         )
       }
         <li><Language setSelectedLanguage={setSelectedLanguage}/></li>

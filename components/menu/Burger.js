@@ -6,6 +6,7 @@ import { StyledBurger } from './BurgerStyled'
 export default function Burger({selectedLanguage, setSelectedLanguage}) {
     const [open, setOpen] = useState(false)
     const navbarRef = useRef(null)
+
     useEffect(()=> {
         if (open){
             const listener = e => {
@@ -27,7 +28,7 @@ export default function Burger({selectedLanguage, setSelectedLanguage}) {
                 <div></div>
                 <div></div>
             </StyledBurger>
-            <Menu selectedLanguage={selectedLanguage} open={open} setSelectedLanguage={setSelectedLanguage}/> 
+            <Menu selectedLanguage={selectedLanguage} open={open} setOpen={setOpen} setSelectedLanguage={setSelectedLanguage}/> 
         </div>
     )
 }
