@@ -16,7 +16,7 @@ export default function Home() {
                 priority={false}
             />
         </div>
-            <h1>Majid Askarifarsangi</h1>
+            <H1>Majid Askarifarsangi</H1>
             <p>I am a web developer</p>
             <p>I build things for the web.</p>
         <div>
@@ -28,7 +28,7 @@ export default function Home() {
 
 
 const Main = styled.main`
-  background-color: #ededed;
+  background-color: ${({theme}) => theme.BC_Home};
   min-height: 100vh;
   @media (min-width: 900px) {
     margin-left: 25%;
@@ -42,5 +42,5 @@ const Main = styled.main`
 
 
 const H1 = styled.h1`
-  color: red;
+  color: ${({theme}) => theme.textColor};
 `

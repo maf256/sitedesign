@@ -51,7 +51,7 @@ const Navbar = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: white;
+  background-color: ${({theme}) => theme.BC_Menu};
   padding-right: 10%;
   a {
     color: black;
