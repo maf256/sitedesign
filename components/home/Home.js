@@ -1,36 +1,27 @@
 import styled from "styled-components"
+import Image from 'next/image'
+import Img from '../common/image/me.png'
+
 
 export default function Home() {
   return (
     <Main >
+        <div>
+            <Image
+                src = {Img}
+                width = {500}
+                height = {500}
+                alt = "Majid Askarifarsangi"
+                placeholder="blur"
+                priority={false}
+            />
+        </div>
+            <h1>Majid Askarifarsangi</h1>
+            <p>I am a web developer</p>
+            <p>I build things for the web.</p>
+        <div>
 
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
-      <H1>Hello world</H1>
+        </div>
     </Main>
   )
 }
