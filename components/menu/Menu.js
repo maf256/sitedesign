@@ -5,11 +5,12 @@ import Language from '../language/Language';
 import Link from 'next/link'
 
 
-const Menu = ({ open, setOpen,selectedLanguage, setSelectedLanguage}) => {
+const Menu = ({changeDarkMode, open, setOpen,selectedLanguage, setSelectedLanguage}) => {
   return (
     <Navbar open={open}>
       <div>
         <h1>Webutvikler</h1>
+        <button onClick={changeDarkMode}>changeDarkMode</button>
       </div>
       <Ul >
       {
