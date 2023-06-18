@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import Image from 'next/image'
 import Img from '../common/image/me.png'
+import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp, Business} from '../common/Svg'
+
 
 
 export default function Home() {
@@ -9,19 +11,25 @@ export default function Home() {
         <div>
             <Image
                 src = {Img}
-                width = {500}
-                height = {500}
+                width = {250}
+                height = {250}
                 alt = "Majid Askarifarsangi"
                 placeholder="blur"
                 priority={false}
                 loading = 'lazy'
             />
         </div>
+        <div>
             <H1>Majid Askarifarsangi</H1>
             <p>I am a web developer</p>
             <p>I build things for the web.</p>
-        <div>
-
+            <SosialConteiner>
+              <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="20px" margin="18px"/></a>
+              <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="20px" margin="18px"/></a>
+              <a target="_blank" rel="noreferrer"  href="tel:+4740882869"> <Phone fontSize="20px" margin="0 15px 0 0"/></a>
+              <a target="_blank" rel="noreferrer"  href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" margin="0 15px 0 0"/></a>
+              <a target="_blank" rel="noreferrer"  href="mailto:info@sitedesign.no"><Email fontSize="20px" margin="0 15px 0 0"/></a>
+            </SosialConteiner>
         </div>
     </Main>
   )
@@ -31,6 +39,9 @@ export default function Home() {
 const Main = styled.main`
   background-color: ${({theme}) => theme.BC_Home};
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (min-width: 900px) {
     margin-left: 25%;
     width: 75%;
@@ -38,10 +49,23 @@ const Main = styled.main`
   }
   @media (max-width: 899px) {
     width: 100%;
+    flex-direction: column;
+
+  }
+  div {
+    margin: 5%;
+  }
+  img {
+    border-radius: 50%;
   }
 `
 
 
 const H1 = styled.h1`
   color: ${({theme}) => theme.textColor};
+`
+
+const SosialConteiner = styled.div`
+  display: flex;
+  align-items: center;
 `
