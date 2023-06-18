@@ -21,7 +21,7 @@ const Nav = styled.nav `
     display: flex;
     align-items: center;
     position: fixed;
-    background-color: white;
+    background-color: ${({theme}) => theme.BC_Menu};
   }
 `
 const Logo = styled.a`
