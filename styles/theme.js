@@ -2,8 +2,8 @@
 
 export default function theme(isDark) {
     return {
-        textColor: isDark ? 'black' : 'white',
-        BC_Menu: isDark ? 'white' : '#848383',
-        BC_Home: isDark ? '#ededed' : '#424141'
+        textColor: isDark ?  'white' : 'black',
+        BC_Menu: isDark ?  '#848383' : 'white',
+        BC_Home: isDark ?  '#424141' : '#ededed'
     }
 }
