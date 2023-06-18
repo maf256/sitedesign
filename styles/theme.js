@@ -1,5 +1,7 @@
 
 
+// false is dark mode
+
 export default function theme(isDark) {
     return {
         textColor: isDark ?  'white' : 'black',
