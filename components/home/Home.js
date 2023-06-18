@@ -14,7 +14,7 @@ export default function Home() {
                 alt = "Majid Askarifarsangi"
                 placeholder="blur"
                 priority={false}
-                loading = 'eager'
+                loading = 'lazy'
             />
         </div>
             <H1>Majid Askarifarsangi</H1>
