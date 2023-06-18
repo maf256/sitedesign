@@ -62,10 +62,17 @@ const Main = styled.main`
   @media (max-width: 899px) {
     width: 100%;
     flex-direction: column;
-
+    padding: 50px;
   }
   div {
     margin: 5%;
+    h1 {
+      margin: 20px 0px;
+      font-size: 45px;
+    }
+    p {
+      margin: 10px 0px;
+    }
   }
   img {
     border-radius: 50%;
