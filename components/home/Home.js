@@ -35,11 +35,11 @@ export default function Home() {
               <p>I am a web developer</p>
               <p>I build things for the web.</p>
               <SosialConteiner>
-                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="20px" margin="18px"/></a>
-                <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="20px" margin="18px"/></a>
-                <a target="_blank" rel="noreferrer"  href="tel:+4740882869"> <Phone fontSize="20px" margin="0 15px 0 0"/></a>
-                <a target="_blank" rel="noreferrer"  href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" margin="0 15px 0 0"/></a>
-                <a target="_blank" rel="noreferrer"  href="mailto:info@sitedesign.no"><Email fontSize="20px" margin="0 15px 0 0"/></a>
+                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="20px" /></a>
+                <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="20px" /></a>
+                <a target="_blank" rel="noreferrer"  href="tel:+4740882869"> <Phone fontSize="20px" /></a>
+                <a target="_blank" rel="noreferrer"  href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" /></a>
+                <a target="_blank" rel="noreferrer"  href="mailto:info@sitedesign.no"><Email fontSize="20px" /></a>
               </SosialConteiner>
           </div>
       </Main>
@@ -84,7 +84,9 @@ const H1 = styled.h1`
   color: ${({theme}) => theme.textColor};
 `
 
-const SosialConteiner = styled.div`
+const SosialConteiner = styled.span`
   display: flex;
   align-items: center;
+  margin: 20px 0px;
+
 `

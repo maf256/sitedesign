@@ -27,8 +27,9 @@ export const Coffee = ({fontSize, color, margin}) => <SvgIcon  fontSize={fontSiz
 
 const SvgIcon = styled.svg`
     font-size: ${({fontSize}) => fontSize ? fontSize : "100px"};
-    color: ${({color}) => color };
+    color: ${({theme}) => theme.Icon_Color };
     margin: ${({margin}) => margin };
+    margin-right: 15px;
     width: 1em;
     height: 1em;
     @media (max-width: 768px) {
