@@ -59,6 +59,10 @@ const Navbar = styled.div`
     padding-left: 1vw;
   }
 
+  h1 {
+    color: ${({ theme }) => theme.Text_Logo};
+  }
+
   li {
     margin: 7px 0px;
     margin-right: 1vw;
@@ -75,7 +79,10 @@ const Navbar = styled.div`
   background-color: ${({ theme }) => theme.BC_Menu};
   padding-right: 10%;
   a {
-    color: black;
+    color: ${({ theme }) => theme.Text_Menu};
+    :hover {
+      color: ${({ theme }) => theme.Text_Menu_Hover};
+    }
   }
   @media (min-width: 900px) {
     position: fixed;
