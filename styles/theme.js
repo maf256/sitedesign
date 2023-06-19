@@ -7,7 +7,7 @@ export default function theme(isDark) {
         Text_Title: isDark ?  '#fff' : '#000',
         BC_Menu: isDark ?  '#848383' : 'white',
         BC_Home: isDark ?  '#424141' : '#ededed',
-        Icon_Color: isDark ? '#000000' : '#34353a',
+        Icon_Color: isDark ? 'white' : '#34353a',
         Text_Paragraph: isDark ? '#bbbbb8' : '#bbbbb8'
     }
 }

@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { Data } from "../common/Data";
 import Language from "../language/Language";
 import Link from "next/link";
-import Darkmode from "./Darkmode";
+import {Darkmode, Lightmode} from '../common/Svg'
+
 
 const Menu = ({
   changeDarkMode,
@@ -15,7 +16,9 @@ const Menu = ({
   return (
     <Navbar open={open}>
       <div>
-        {/* <Darkmode /> */}
+       <Darkmode fontSize="20px" />
+       <Lightmode fontSize="20px" />
+        
         <h1>Webutvikler</h1>
         <button onClick={changeDarkMode}>changeDarkMode</button>
       </div>
