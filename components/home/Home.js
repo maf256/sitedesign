@@ -72,6 +72,9 @@ const Main = styled.main`
     }
     p {
       margin: 10px 0px;
+      color: ${({theme}) => theme.Text_Paragraph};
+      font-size: 20px;
+
     }
   }
   img {
@@ -81,7 +84,7 @@ const Main = styled.main`
 
 
 const H1 = styled.h1`
-  color: ${({theme}) => theme.textColor};
+  color: ${({theme}) => theme.Text_Title};
 `
 
 const SosialConteiner = styled.span`

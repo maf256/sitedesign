@@ -79,5 +79,5 @@ const Navbar = styled.div`
 `
 
 const Ul = styled.ul`
-
-`;
+    list-style-type: none;
+`
