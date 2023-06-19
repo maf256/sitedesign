@@ -22,8 +22,6 @@ export default function Home() {
           <div>
               <Image
                   src = {Img}
-                  width = {250}
-                  height = {250}
                   alt = "Majid Askarifarsangi"
                   placeholder="blur"
                   priority={false}
@@ -79,6 +77,8 @@ const Main = styled.main`
   }
   img {
     border-radius: 50%;
+    width: 250px;
+    height: 250px;
   }
 `
 

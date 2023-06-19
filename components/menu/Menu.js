@@ -1,35 +1,54 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Data } from '../common/Data';
-import Language from '../language/Language';
-import Link from 'next/link'
+import React from "react";
+import styled from "styled-components";
+import { Data } from "../common/Data";
+import Language from "../language/Language";
+import Link from "next/link";
+import Darkmode from "./Darkmode";
 
-
-const Menu = ({changeDarkMode, open, setOpen,selectedLanguage, setSelectedLanguage}) => {
+const Menu = ({
+  changeDarkMode,
+  open,
+  setOpen,
+  selectedLanguage,
+  setSelectedLanguage,
+}) => {
   return (
     <Navbar open={open}>
       <div>
+        {/* <Darkmode /> */}
         <h1>Webutvikler</h1>
         <button onClick={changeDarkMode}>changeDarkMode</button>
       </div>
-      <Ul >
-      {
-        Data.menu['en'].map((item, inx) =>
-        <li key={inx}><Link onClick={()=> setOpen(false)} href={item.href}>{item.name}</Link></li>
-        )
-      }
-        <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
+      <Ul>
+        {Data.menu["en"].map((item, inx) => (
+          <li key={inx}>
+            <Link onClick={() => setOpen(false)} href={item.href}>
+              {item.name}
+            </Link>
+          </li>
+        ))}
+        <li>
+          <Language setSelectedLanguage={setSelectedLanguage} />
+        </li>
       </Ul>
       <div>
         <h5>© 2023 Webutvikler</h5>
-        <h5>Created by <a href='https://www.linkedin.com/in/farsangi/' target="_blank" rel="noreferrer">Majid</a></h5>
+        <h5>
+          Created by{" "}
+          <a
+            href="https://www.linkedin.com/in/farsangi/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Majid
+          </a>
+        </h5>
       </div>
-
     </Navbar>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
 
 const Navbar = styled.div`
   div {
@@ -43,7 +62,6 @@ const Navbar = styled.div`
   }
   li:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 0px;
-
   }
 
   display: flex;
@@ -51,7 +69,7 @@ const Navbar = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: ${({theme}) => theme.BC_Menu};
+  background-color: ${({ theme }) => theme.BC_Menu};
   padding-right: 10%;
   a {
     color: black;
@@ -65,7 +83,7 @@ const Navbar = styled.div`
   }
 
   @media (max-width: 899px) {
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     position: fixed;
     top: 0;
     right: 0;
@@ -74,10 +92,8 @@ const Navbar = styled.div`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
   }
-
-
-`
+`;
 
 const Ul = styled.ul`
-    list-style-type: none;
+  list-style-type: none;
 `
