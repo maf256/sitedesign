@@ -84,7 +84,7 @@ export const Data = {
                 text2: 'I build things for the web.'
             }
     },
-    About: {
+    about: {
         nr: {
             subject: 'Om meg',
             h1: 'Majid Askarifarsangi',

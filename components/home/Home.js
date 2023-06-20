@@ -10,11 +10,11 @@ export default function Home({language}) {
       <Main >
           <Card>
               <Image
-                  src = {Img}
-                  alt = "Majid Askarifarsangi"
-                  placeholder="blur"
-                  priority={false}
-                  loading = 'lazy'
+                src = {Img}
+                alt = "Majid Askarifarsangi"
+                placeholder="blur"
+                priority={false}
+                loading = 'lazy'
               />
 
           </Card>
