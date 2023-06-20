@@ -7,22 +7,16 @@ import theme from '../styles/theme'
 
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
-  const [language, setLanguage] = useState('nr')
+  const [language, setLanguage] = useState(false)
   
 
   const changeLangeuge = () => {
-    if (language=='nr'){
-      setLanguage('en')
-    }else {
-      setLanguage('nr')
-    }
-    console.log('language',language);
+    setLanguage(!language)
   } 
   
 
   const changeDarkMode = () => {
     setIsDark(!isDark)
-    console.log('isDark',isDark);
   } 
 
 

@@ -41,7 +41,7 @@ const ToggleDark = ({isDark, changeDarkMode, on, off}) => {
 
   return (
     <ToggleButton on={on} off={off} checked={isDark}>
-      <RadioButtonInput checked={isDark} onClick={changeDarkMode} onChange={() => {console.log('onchange mode')}} />
+      <RadioButtonInput checked={isDark} onClick={changeDarkMode} />
     </ToggleButton>
   );
 };

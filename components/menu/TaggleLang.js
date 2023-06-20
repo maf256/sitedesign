@@ -39,8 +39,8 @@ const TaggleLang = ({language, changeLangeuge, on, off}) => {
 
 
   return (
-    <ToggleButton on={on} off={off} checked={language==='en' ? true : false}>
-      <RadioButtonInput checked={language==='en' ? true : false} onClick={changeLangeuge} onChange={() => {console.log('onchange lang')}} />
+    <ToggleButton on={on} off={off} checked={language}>
+      <RadioButtonInput checked={language} onClick={changeLangeuge} />
     </ToggleButton>
   );
 };

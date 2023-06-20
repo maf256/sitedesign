@@ -15,7 +15,6 @@ const Menu = ({
   language,
   changeLangeuge
 }) => {
-  console.log('language',language);
   return (
     <Navbar open={open}>
       <div>
@@ -24,7 +23,7 @@ const Menu = ({
         <h1>Webutvikler</h1>
       </div>
       <Ul>
-        {Data.menu[language].map((item, inx) => (
+        {Data.menu[language ? 'en' : 'nr'].map((item, inx) => (
           <li key={inx}>
             <Link onClick={() => setOpen(false)} href={item.href}>
               {item.name}
