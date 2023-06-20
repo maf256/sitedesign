@@ -4,6 +4,7 @@ import { Data } from "../common/Data";
 import Language from "../language/Language";
 import Link from "next/link";
 import {Darkmode, Lightmode} from '../common/Svg'
+import ToggleDark from './ToggleDark'
 
 
 const Menu = ({
@@ -18,7 +19,7 @@ const Menu = ({
       <div>
        <Darkmode fontSize="20px" />
        <Lightmode fontSize="20px" />
-        
+        <ToggleDark />
         <h1>Webutvikler</h1>
         <button onClick={changeDarkMode}>changeDarkMode</button>
       </div>
