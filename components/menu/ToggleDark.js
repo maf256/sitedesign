@@ -16,7 +16,6 @@ const ToggleButton = styled.label`
   border-radius: 15px;
   position: relative;
   transition: background-color 0.3s ease;
-  margin: 0 10px;
   ${RadioButtonInput}:checked + & {
     background-color: #2196f3;
   }

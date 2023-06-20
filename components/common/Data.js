@@ -90,7 +90,7 @@ export const Data = {
         nr: {
             subject: 'Om meg',
             h1: 'Majid Askarifarsangi',
-            h2: 'webutvikler',
+            h2: 'Webutvikler',
             txt1: 'Hi, my name is Adriano Smith and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.',
             txt2: 'One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to produce sites with a unique, outstanding, contemporary look-and-feel. With extensive knowledge of web mechanics, I’m able to optimize complex integrations to require little-to-no maintenance while running on their own for years.',
             info: [
