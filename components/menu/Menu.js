@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Data } from "../common/Data";
 import Language from "../language/Language";
 import Link from "next/link";
-import {Darkmode, Lightmode} from '../common/Svg'
 import ToggleDark from './ToggleDark'
 
 
@@ -18,12 +17,9 @@ const Menu = ({
   return (
     <Navbar open={open}>
       <div>
-       <Darkmode fontSize="20px" />
-       <Lightmode fontSize="20px" />
         <ToggleDark isDark={isDark} changeDarkMode={changeDarkMode} on='on' off='off' />
         <ToggleDark on='EN' off='NR' />
         <h1>Webutvikler</h1>
-        <button onClick={changeDarkMode}>changeDarkMode</button>
       </div>
       <Ul>
         {Data.menu["en"].map((item, inx) => (
