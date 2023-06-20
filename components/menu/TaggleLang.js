@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import styled from 'styled-components';
 
 // Styled radio button input
@@ -36,14 +35,14 @@ const ToggleButton = styled.label`
 `;
 
 // ToggleRadio component
-const ToggleDark = ({isDark, changeDarkMode, on, off}) => {
+const TaggleLang = ({language, changeLangeuge, on, off}) => {
 
 
   return (
-    <ToggleButton on={on} off={off} checked={isDark}>
-      <RadioButtonInput checked={isDark} onClick={changeDarkMode} onChange={() => {console.log('onchange mode')}} />
+    <ToggleButton on={on} off={off} checked={language==='en' ? true : false}>
+      <RadioButtonInput checked={language==='en' ? true : false} onClick={changeLangeuge} onChange={() => {console.log('onchange lang')}} />
     </ToggleButton>
   );
 };
 
-export default ToggleDark;
+export default TaggleLang;

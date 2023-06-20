@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }) {
   
 
   const changeLangeuge = () => {
-    if (language='nr'){
-      setLanguage('wn')
+    if (language=='nr'){
+      setLanguage('en')
     }else {
       setLanguage('nr')
     }

@@ -4,6 +4,7 @@ import { Data } from "../common/Data";
 import Language from "../language/Language";
 import Link from "next/link";
 import ToggleDark from './ToggleDark'
+import TaggleLang from './TaggleLang'
 
 
 const Menu = ({
@@ -19,7 +20,7 @@ const Menu = ({
     <Navbar open={open}>
       <div>
         <ToggleDark isDark={isDark} changeDarkMode={changeDarkMode} on='on' off='off' />
-        <ToggleDark language={language} changeLangeuge={changeLangeuge} on='en' off='nr' />
+        <TaggleLang language={language} changeLangeuge={changeLangeuge} on='en' off='nr' />
         <h1>Webutvikler</h1>
       </div>
       <Ul>
