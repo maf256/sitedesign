@@ -70,3 +70,5 @@ export const InfoContainer = styled.div`
     }
 
 `
+export const Ul = styled.ul`
+`

@@ -1,4 +1,4 @@
-import { AboutPage, DetailContainer, NameContainer, InfoContainer } from "./pageStyled"
+import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/me.png'
@@ -24,10 +24,14 @@ export default function About({language}){
             <p>{Data.about[language ? 'en' : 'nr'].txt2}</p>
         </DetailContainer>
         <InfoContainer>
-            <div>
-                <h5></h5>
-            </div>
-            <div></div>
+            <Ul>
+                {Data.about[language ? 'en' : 'nr'].info.map((item, inx) => (
+                <li key={inx}>
+                    <span >{item.name}</span>
+                    <span >{item.data}</span>
+                </li>
+                ))}
+            </Ul>
 
         </InfoContainer>
         

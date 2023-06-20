@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Data } from "../common/Data";
-import Language from "../language/Language";
 import Link from "next/link";
 import ToggleDark from './ToggleDark'
 import TaggleLang from './TaggleLang'
@@ -30,9 +29,6 @@ const Menu = ({
             </Link>
           </li>
         ))}
-        <li>
-          {/* <Language setSelectedLanguage={setSelectedLanguage} /> */}
-        </li>
       </Ul>
       <div>
         <h5>© 2023 Webutvikler</h5>
@@ -104,5 +100,4 @@ const Navbar = styled.div`
 `;
 
 const Ul = styled.ul`
-  list-style-type: none;
 `
