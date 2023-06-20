@@ -103,7 +103,7 @@ const animateBorder = keyframes`
 `;
 
 const Card = styled.div`
-  position: relative;
+  /* position: relative;
   width: 260px;
   height: 260px;
   color: #fff;
@@ -129,5 +129,5 @@ const Card = styled.div`
     border-left: 5px solid rgba(255, 255, 113, 0.5);
     border-radius: 50%;
     animation: ${animateBorder} 3s linear infinite;
-  }
+  } */
 `;
