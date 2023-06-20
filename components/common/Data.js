@@ -70,16 +70,18 @@ export const Data = {
             
         ]
     },
-    header: {
+    home: {
         nr: {
-                subject: 'Hei, Jeg er Majid og jeg er en webutvikler.',
-                name: "Jeg tar gjerne en digitalt prat eller møtes over en kaffekopp.",
-                detail: 'Jeg bygger ting for nettet.'
+                name: 'Majid Askarifarsangi',
+                subject: 'Jeg er en software ingeniør og webutvikler.',
+                text1: "Jeg tar gjerne en digitalt prat eller møtes over en kaffekopp.",
+                text2: 'Jeg bygger ting for nettet.'
             },
         en: {
-                subject: "I'm Majid and I'm a web developer.",
-                name: "I like to have a digital chat or meet over a cup of coffee.",
-                detail: 'I build things for the web.'
+                name: 'Majid Askarifarsangi',
+                subject: "I am a software engineer and web developer.",
+                text1: "I like to have a digital chat or meet over a cup of coffee.",
+                text2: 'I build things for the web.'
             }
     },
     About: {

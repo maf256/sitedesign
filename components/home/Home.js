@@ -2,20 +2,13 @@ import styled, { keyframes } from 'styled-components';
 import Image from 'next/image'
 import Img from '../common/image/me.png'
 import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp, Business} from '../common/Svg'
-import Head from 'next/head';
+import { Data } from '../common/Data';
 
 
-export default function Home() {
+export default function Home({language}) {
+  console.log('Data.home',Data.home);
   return (
     <>
-      <Head>
-        <title>Webutvikler</title>
-        <meta
-          name="description"
-          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
-          key="desc"
-        />
-      </Head>
       <Main >
           <Card>
               <Image
@@ -28,9 +21,10 @@ export default function Home() {
 
           </Card>
           <div>
-              <H1>Majid Askarifarsangi</H1>
-              <p>I am a web developer</p>
-              <p>I build things for the web.</p>
+              <H1>{Data.home[language ? 'en' : 'nr'].name}</H1>
+              <h2>{Data.home[language ? 'en' : 'nr'].subject}</h2>
+              {/* <h2>{Data.home[language ? 'en' : 'nr'].text1}</h2> */}
+              <h2>{Data.home[language ? 'en' : 'nr'].text2}</h2>
               <SosialConteiner>
                 <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="20px" /></a>
                 <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="20px" /></a>
@@ -67,10 +61,10 @@ const Main = styled.main`
       margin: 20px 0px;
       font-size: 45px;
     }
-    p {
+    h2 {
       margin: 10px 0px;
       color: ${({theme}) => theme.Text_Paragraph};
-      font-size: 20px;
+      font-size: 18px;
 
     }
   }
