@@ -4,9 +4,7 @@ import Img from '../common/image/me.png'
 import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp, Business} from '../common/Svg'
 import { Data } from '../common/Data';
 
-
 export default function Home({language}) {
-  console.log('Data.home',Data.home);
   return (
     <>
       <Main >

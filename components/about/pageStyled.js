@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const AboutPage = styled.div`
-
+    padding: 100px 0px;
 
     background-color: #ededed;
     min-height: 100vh;
