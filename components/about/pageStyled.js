@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 
 export const AboutPage = styled.div`
-    padding: 100px 10%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 
@@ -11,6 +10,8 @@ export const AboutPage = styled.div`
     @media (min-width: 900px) {
         margin-left: 25%;
         width: 75%;
+        padding: 100px 10%;
+
         img {
             width: 600px;
             height: auto;    
@@ -18,6 +19,8 @@ export const AboutPage = styled.div`
     }
     @media (max-width: 899px) {
         width: 100%;
+        padding: 100px 10px;
+
     }
 `
 
