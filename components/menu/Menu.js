@@ -8,6 +8,7 @@ import ToggleDark from './ToggleDark'
 
 
 const Menu = ({
+  isDark,
   changeDarkMode,
   open,
   setOpen,
@@ -19,7 +20,8 @@ const Menu = ({
       <div>
        <Darkmode fontSize="20px" />
        <Lightmode fontSize="20px" />
-        <ToggleDark />
+        <ToggleDark isDark={isDark} changeDarkMode={changeDarkMode} on='on' off='off' />
+        <ToggleDark on='EN' off='NR' />
         <h1>Webutvikler</h1>
         <button onClick={changeDarkMode}>changeDarkMode</button>
       </div>

@@ -23,7 +23,7 @@ const ToggleButton = styled.label`
   }
 
   &:after {
-    content: '';
+    content: '${({checked, on, off}) => (checked ? on : off)}';
     position: absolute;
     width: 24px;
     height: 24px;
@@ -36,17 +36,17 @@ const ToggleButton = styled.label`
 `;
 
 // ToggleRadio component
-const ToggleDark = () => {
-  const [checked, setChecked] = useState(false);
+const ToggleDark = ({isDark, changeDarkMode, on, off}) => {
+//   const [checked, setChecked] = useState(false);
 
-  const handleToggle = () => {
-      setChecked(!checked);
-      console.log('checked',checked);
-  };
+//   const handleToggle = () => {
+//       setChecked(!checked);
+//       console.log('checked',checked);
+//   };
 
   return (
-    <ToggleButton checked={checked}>
-      <RadioButtonInput checked={checked} onClick={handleToggle} />
+    <ToggleButton on={on} off={off} checked={isDark}>
+      <RadioButtonInput checked={isDark} onClick={changeDarkMode} />
     </ToggleButton>
   );
 };
