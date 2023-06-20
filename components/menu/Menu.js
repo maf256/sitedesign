@@ -11,18 +11,19 @@ const Menu = ({
   changeDarkMode,
   open,
   setOpen,
-  selectedLanguage,
-  setSelectedLanguage,
+  language,
+  changeLangeuge
 }) => {
+  console.log('language',language);
   return (
     <Navbar open={open}>
       <div>
         <ToggleDark isDark={isDark} changeDarkMode={changeDarkMode} on='on' off='off' />
-        <ToggleDark on='EN' off='NR' />
+        <ToggleDark language={language} changeLangeuge={changeLangeuge} on='en' off='nr' />
         <h1>Webutvikler</h1>
       </div>
       <Ul>
-        {Data.menu["en"].map((item, inx) => (
+        {Data.menu[language].map((item, inx) => (
           <li key={inx}>
             <Link onClick={() => setOpen(false)} href={item.href}>
               {item.name}
@@ -30,7 +31,7 @@ const Menu = ({
           </li>
         ))}
         <li>
-          <Language setSelectedLanguage={setSelectedLanguage} />
+          {/* <Language setSelectedLanguage={setSelectedLanguage} /> */}
         </li>
       </Ul>
       <div>

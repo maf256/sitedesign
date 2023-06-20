@@ -3,12 +3,12 @@ import React from 'react'
 import styled from 'styled-components'
 import Burger from './Burger.js'
 
-export default function Navbar  ({isDark, changeDarkMode, selectedLanguage, setSelectedLanguage}) {
+export default function Navbar  ({ isDark, changeDarkMode, language, changeLangeuge }) {
 
   return (
     <Nav >
         <Logo href="#home"><h1>Webutvikler</h1></Logo>
-        <Burger isDark={isDark} changeDarkMode={changeDarkMode}  selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} />        
+        <Burger isDark={isDark} changeDarkMode={changeDarkMode}  language={language} changeLangeuge={changeLangeuge} />        
     </Nav>
   )
 }

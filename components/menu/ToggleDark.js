@@ -37,12 +37,7 @@ const ToggleButton = styled.label`
 
 // ToggleRadio component
 const ToggleDark = ({isDark, changeDarkMode, on, off}) => {
-//   const [checked, setChecked] = useState(false);
 
-//   const handleToggle = () => {
-//       setChecked(!checked);
-//       console.log('checked',checked);
-//   };
 
   return (
     <ToggleButton on={on} off={off} checked={isDark}>

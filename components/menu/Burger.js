@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react"
 import Menu from "./Menu"
 import { StyledBurger } from './BurgerStyled'
 
-export default function Burger({isDark, changeDarkMode, selectedLanguage, setSelectedLanguage}) {
+export default function Burger({isDark, changeDarkMode, language, changeLangeuge}) {
     const [open, setOpen] = useState(false)
     const navbarRef = useRef(null)
 
@@ -28,7 +28,7 @@ export default function Burger({isDark, changeDarkMode, selectedLanguage, setSel
                 <div></div>
                 <div></div>
             </StyledBurger>
-            <Menu isDark={isDark} changeDarkMode={changeDarkMode}  selectedLanguage={selectedLanguage} open={open} setOpen={setOpen} setSelectedLanguage={setSelectedLanguage}/> 
+            <Menu isDark={isDark} changeDarkMode={changeDarkMode} open={open} setOpen={setOpen} language={language} changeLangeuge={changeLangeuge}/> 
         </div>
     )
 }

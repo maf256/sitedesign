@@ -7,14 +7,14 @@ import theme from '../styles/theme'
 
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
-  const [language, setLanguage] = useState('NR')
+  const [language, setLanguage] = useState('nr')
   
 
   const changeLangeuge = () => {
-    if (language='NR'){
-      setLanguage('EN')
+    if (language='nr'){
+      setLanguage('wn')
     }else {
-      setLanguage('NR')
+      setLanguage('nr')
     }
     console.log('language',language);
   } 
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
 
   return ( 
     <ThemeProvider theme={theme(isDark)}>
-      <Navbar isDark={isDark} changeDarkMode={changeDarkMode}  />
+      <Navbar isDark={isDark} changeDarkMode={changeDarkMode} language={language} changeLangeuge={changeLangeuge} />
       <Component isDark={isDark} {...pageProps} />
     </ThemeProvider>
   )
