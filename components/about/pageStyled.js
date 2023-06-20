@@ -16,11 +16,19 @@ export const AboutPage = styled.div`
             width: 600px;
             height: auto;    
         }
+        p {
+            font-size: 20px;
+        }
     }
     @media (max-width: 899px) {
         width: 100%;
         padding: 100px 10px;
+        img {
+            margin: auto auto;
+            width: 100%;
+            height: auto;
 
+        }
     }
 `
 
@@ -31,8 +39,9 @@ export const DetailContainer = styled.div`
     padding: 30px 5px;
     p {
         color: ${({theme}) => theme.Text_Paragraph};
-        margin: 10px 0;
+        margin: 15px 0;
         line-height: 1.6;
+        font-size: 18px;
 
     }
 
