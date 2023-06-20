@@ -1,7 +1,8 @@
-import { AboutPage, DetailContainer, NameContainer } from "./pageStyled"
+import { AboutPage, DetailContainer, NameContainer, InfoContainer } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/me.png'
+
 
 export default function About({language}){
     return <AboutPage className="DefuiltHomepage">
@@ -22,6 +23,13 @@ export default function About({language}){
             <p>{Data.about[language ? 'en' : 'nr'].txt1}</p>
             <p>{Data.about[language ? 'en' : 'nr'].txt2}</p>
         </DetailContainer>
+        <InfoContainer>
+            <div>
+                <h5></h5>
+            </div>
+            <div></div>
+
+        </InfoContainer>
         
         <h1>About</h1>
         <h1>About</h1>
