@@ -135,6 +135,26 @@ export const Data = {
             detail: "My great passion for coding led me to start programming when I was in high school. I have also worked as an IT consultant, web developer within hardware and software support. I have an Associate's degree in Computer Science and a Bachelor's degree in Computer Engineering. I have acquired solid knowledge in modern frontend development and some backend development and methods. My primary technical expertise lies in 4 years within JavaScript, HTML5/CSS3 and 3 years within React and Styled components. I have some experience with PostgreSQL, Node.js, Express.js and build tools like Webpack. I also have experience setting up websites with WordPress and managing AWS servers and cPanel for multiple clients. I am on my way to learning Norwegian. I am studying B1 level in voksen opplærimg in Sandvika and have almost passed it. I have worked for 2 months as a consultant in Techpros and after that I work as a front-end developer in the Perpendo AS company. I learn and adapt to new technologies, domains and environments quickly. I am a person who is professionally strong, curious and hungry to learn more. I learn to find the best answers to problems. I seek and give feedback, and learn from both success and failure to always see a problem from multiple perspectives. I am proactive and results-oriented with a high degree of independence. I work well in teams and am motivated by creating results together"          
 
         }
+    },
+    contact : {
+        nr: {
+            subject: 'Kontakt',
+            h1: 'Ta Kontakt',
+            h2: 'La oss sende oss e-post',
+            buttonName: 'Sende melding',
+            name: 'Navnet ditt',
+            email: 'Din epost',
+            message: 'Din beskjed'
+        },
+        en: {
+            subject: 'Contact',
+            h1: 'Get in Touch',
+            h2: `Let's send us email`,
+            buttonName: 'Send Message',
+            name: 'Your name',
+            email: 'Your email',
+            message: 'Your message'
+        }
     }
     
 }
