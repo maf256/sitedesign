@@ -1,11 +1,16 @@
 "use client"
-import { Button } from '@mui/material';
 import styled from 'styled-components';
 
 export const AboutPage = styled.div`
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     min-height: 100vh;
     background-color: ${({theme}) => theme.BC_Home};
+    img {
+        margin: 30px 0px;
+    }
+    h1,h2{
+        margin: 30px 0px;
+    }
     @media (min-width: 900px) {
         margin-left: 25%;
         width: 75%;
@@ -13,7 +18,7 @@ export const AboutPage = styled.div`
 
         img {
             width: 600px;
-            height: auto;    
+            height: auto;  
         }
         p {
             font-size: 20px;
@@ -47,9 +52,6 @@ export const DetailContainer = styled.div`
 `
 export const NameContainer = styled.div`
     padding: 30px 0px;
-    h1,h2{
-        padding: 5px 0;
-    }
     h2{
         color: ${({theme}) => theme.Text_Paragraph};
     }
@@ -98,4 +100,10 @@ export const Skills = styled.div`
 `
 
 export const Knowledge = styled.div`
+`
+
+export const Span = styled.span`
+    color: ${({theme}) => theme.Text_Paragraph};
+    background-color: gray;
+    padding: 7px;
 `

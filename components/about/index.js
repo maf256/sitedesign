@@ -1,4 +1,4 @@
-import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV } from "./pageStyled"
+import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/me.png'
@@ -6,7 +6,7 @@ import Img from '../common/image/me.png'
 
 export default function About({language}){
     return <AboutPage className="DefuiltHomepage">
-        <sman>{Data.about[language ? 'en' : 'nr'].subject}</sman>
+        <Span>{Data.about[language ? 'en' : 'nr'].subject}</Span>
         <h1>{Data.about[language ? 'en' : 'nr'].subject}</h1>
         <Image
             src = {Img}
@@ -33,9 +33,8 @@ export default function About({language}){
                 ))}
             </Ul>
         </InfoContainer>
-        <ButtonCV href="https://docs.google.com/document/d/1CnW2JXswDhA3hJBSsXhzZ98TOPY6wbgO/edit?usp=sharing&ouid=109271537866387535039&rtpof=true&sd=true">Download CV</ButtonCV>
-
-
+        <ButtonCV href="https://docs.google.com/document/d/1CnW2JXswDhA3hJBSsXhzZ98TOPY6wbgO/edit?usp=sharing&ouid=109271537866387535039&rtpof=true&sd=true"             target="_blank"
+            rel="noreferrer">{Data.about[language ? 'en' : 'nr'].buttonName}</ButtonCV>
         <Skills>
             Skillsssss
         </Skills>
