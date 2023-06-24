@@ -144,7 +144,10 @@ export const Data = {
             buttonName: 'Sende melding',
             name: 'Navnet ditt',
             email: 'Din epost',
-            message: 'Din beskjed'
+            message: 'Din beskjed',
+            sent: 'Din melding har blitt sendt.',
+            err: 'Meldingen din ble ikke sendt'
+
         },
         en: {
             subject: 'Contact',
@@ -153,7 +156,9 @@ export const Data = {
             buttonName: 'Send Message',
             name: 'Your name',
             email: 'Your email',
-            message: 'Your message'
+            message: 'Your message',
+            sent: 'Your message has been sent.',
+            err: 'Your message was not sent'
         }
     }
     

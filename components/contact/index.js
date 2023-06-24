@@ -13,7 +13,7 @@ export default function Contact ({language}) {
     if (message) {
       const timer = setTimeout(() => {
         setMessage('');
-      }, 5000);
+      }, 4000);
 
       return () => {
         clearTimeout(timer);
@@ -30,11 +30,10 @@ export default function Contact ({language}) {
             form.current.email.value = '';
             form.current.message.value = '';            
             console.log(result.text);
-            setMessage('This message send');
+            setMessage(Data.contact[language ? 'en' : 'nr'].sent);
         }, (error) => {
             console.log(error.text);
-            setMessage('Message not send');
-
+            setMessage(Data.contact[language ? 'en' : 'nr'].err);
         });
     };  
 
@@ -55,7 +54,7 @@ export default function Contact ({language}) {
                 <input type="email" name="email" placeholder={Data.contact[language ? 'en' : 'nr'].email} required/>      
                 <textarea name="message" placeholder={Data.contact[language ? 'en' : 'nr'].message} rows="10" cols="50"/>    
                 <input type="submit" value="Send Message" />
-                {message && <p>{message}</p>}
+                {message && <Message err={message == 'Your message was not sent' || message== 'Meldingen din ble ikke sendt'}>{message}</Message>}
             </form>
         </FormContainer>
     </ContactContainer>
@@ -129,4 +128,9 @@ const FormContainer = styled.div`
             max-width: 100vw;
         }
     }
+`
+const Message = styled.p`
+    color: ${({err}) => err ? 'red' : 'green'};
+    font-size: 15px;
+    margin-top: 10px;
 `
