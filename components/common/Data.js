@@ -12,7 +12,7 @@ export const Data = {
             },
             {
                 title: "Education approved in Norway",
-                detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004"                
+                detail: "Master in Business strategic 2013- 2015 , Bachelor in Computer engineering 2011 - 2013 , Associate in Computer Science 2001 - 2004"                
             },
             {
                 title: "Language",
@@ -36,7 +36,7 @@ export const Data = {
         
             {
                 title: "Utdanning godkjent i Norge",
-                detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004",
+                detail: "Master in Business strategic 2013- 2015 , Bachelor in Computer engineering 2011 - 2013 , Associate in Computer Science 2001 - 2004",
     
             },
             {
@@ -64,7 +64,7 @@ export const Data = {
             {name: 'Hjem', href: '/'},
             {name: 'Om meg', href: '/about'},
             {name: 'Ferdigheter', href: '/service'},
-            {name: 'Portf....', href: '/Portfolio'},
+            {name: 'Portefølje', href: '/Portfolio'},
             {name: 'Nyheter', href: '/news'},
             {name: 'Kontakt', href: '/contact'},
             {name: 'Ansette meg', href: '/hire'},
