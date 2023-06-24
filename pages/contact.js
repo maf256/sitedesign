@@ -20,5 +20,6 @@ export default function about ({language}){
             <meta  name="robots" content=" index , follow "/>
         </Head>
         <Contact language={language}/>
+        
     </>
 }
