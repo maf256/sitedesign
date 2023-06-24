@@ -43,51 +43,6 @@ export default function About({language}){
 
         </Knowledge>
 
-
-        
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
-        <h1>About</h1>
     </AboutPage>
 }
 

@@ -40,8 +40,8 @@ export default function Contact ({language}) {
 
   return (
     <ContactContainer>
-        <spam>{Data.about[language ? 'en' : 'nr'].subject}</spam>
-        <h1>{Data.about[language ? 'en' : 'nr'].subject}</h1>
+        <spam>{Data.contact[language ? 'en' : 'nr'].subject}</spam>
+        <h1>{Data.contact[language ? 'en' : 'nr'].h1}</h1>
         <FormContainer>
             <Iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.1878318604277!2d10.50676427741654!3d59.89583186554648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641136be2073181%3A0x2754650120eec23f!2sOsloWeb%20Webdesign%20%26%20Seo!5e0!3m2!1sen!2sno!4v1687637397889!5m2!1sen!2sno"
@@ -50,15 +50,12 @@ export default function Contact ({language}) {
 
             </Iframe>
             <form ref={form} onSubmit={onSubmit}>
-                <div>
-                    <p>Let's send us email</p>
-                </div>
-                <input type="text" name="name"  placeholder='Your Name' required />
-                <input type="email" name="email" placeholder='Your Email' required/>      
-                <textarea name="message" placeholder='Your Massage' rows="10" cols="50"/>    
+                <p>{Data.contact[language ? 'en' : 'nr'].h2}</p>
+                <input type="text" name="name"  placeholder={Data.contact[language ? 'en' : 'nr'].name} required />
+                <input type="email" name="email" placeholder={Data.contact[language ? 'en' : 'nr'].email} required/>      
+                <textarea name="message" placeholder={Data.contact[language ? 'en' : 'nr'].message} rows="10" cols="50"/>    
                 <input type="submit" value="Send Message" />
                 {message && <p>{message}</p>}
-
             </form>
         </FormContainer>
     </ContactContainer>
