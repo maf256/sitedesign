@@ -25,14 +25,13 @@ export default function Contact ({language}) {
         <h1>{Data.about[language ? 'en' : 'nr'].subject}</h1>
         <FormContainer>
             <Iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.1959043736642!2d10.507293577416489!3d59.89569786555727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464113654543333b%3A0x24251c7233e68c67!2sHamangskogen%2071%2C%201338%20Sandvika!5e0!3m2!1sen!2sno!4v1687634768808!5m2!1sen!2sno"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.1878318604277!2d10.50676427741654!3d59.89583186554648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641136be2073181%3A0x2754650120eec23f!2sOsloWeb%20Webdesign%20%26%20Seo!5e0!3m2!1sen!2sno!4v1687637397889!5m2!1sen!2sno"
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
 
             </Iframe>
             <form ref={form} onSubmit={onSubmit}>
                 <div>
-                    <h1>Contact Us</h1>
                     <p>Let's send us email</p>
                 </div>
                 <input type="text" name="name"  placeholder='Your Name' required />
@@ -50,6 +49,8 @@ const Iframe = styled.iframe`
     width: 100%;
     height: 350px;
     /* width="600" height="450" style="border:0;" allowfullscreen=""  */
+    background-color: black;
+    margin-bottom: 50px;;
 
 `
 
@@ -59,6 +60,8 @@ const ContactContainer = styled.div`
     background-color: ${({theme}) => theme.BC_Home};
     h1,h2{
         margin: 30px 0px;
+        color: ${({theme}) => theme.Text_Title};
+
     }
     @media (min-width: 900px) {
         margin-left: 25%;
@@ -81,77 +84,34 @@ const FormContainer = styled.div`
         display: flex;
         flex-direction: column;
 
+        input[type=text], input[type=email], textarea {
+            height: 50px;
+
+            font-size: 16px;
+            color: #eee;
+            font-weight: 600;
+            background-color: #303245;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 0px;
+        }
+        textarea {
+            height:120px;
+        }
+
+        input[type=submit] {
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            background-color: #08d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            margin: 0 4px;
+            max-width: 100vw;
+        }
     }
 `
-
-  /* margin-bottom: 100px;
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    background-color: #0A2640;
-    width: 600px;
-    max-width: 100vw;
-    height: 600px;
-    border-radius: 5px;
-    h1 {
-      font-size: 36px;
-      color: white;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-align: center;
-      text-transform: uppercase;
-  }
-  p {
-    font-size: 26px;
-    color: white;
-    font-weight: 600;
-    text-align: center;
-  }
-
-    input[type=text], input[type=email], textarea {
-      width: 400px;
-      height: 50px;
-      max-width: 100vw;
-
-      font-size: 16px;
-      color: #eee;
-      font-weight: 600;
-      background-color: #303245;
-      border: none;
-      border-radius: 12px;
-      padding: 10px;
-      margin: 0 4px;
-    }
-    textarea {
-      height:120px;
-    }
-
-    input[type=submit] {
-      width: 400px;
-      height: 50px;
-      font-size: 16px;
-      background-color: #08d;
-      color: white;
-      border: none;
-      border-radius: 12px;
-      padding: 10px;
-      text-align: center;
-      margin: 0 4px;
-      max-width: 100vw;
-    }
-  
-  }
-  @media (max-width: 600px) {
-    width: 100%;    
-  } */
- 
