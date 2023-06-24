@@ -1,4 +1,4 @@
-import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul } from "./pageStyled"
+import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/me.png'
@@ -32,8 +32,19 @@ export default function About({language}){
                 </li>
                 ))}
             </Ul>
-
         </InfoContainer>
+        <ButtonCV href="https://docs.google.com/document/d/1CnW2JXswDhA3hJBSsXhzZ98TOPY6wbgO/edit?usp=sharing&ouid=109271537866387535039&rtpof=true&sd=true">Download CV</ButtonCV>
+
+
+        <Skills>
+            Skillsssss
+        </Skills>
+    
+        <Knowledge>
+
+        </Knowledge>
+
+
         
         <h1>About</h1>
         <h1>About</h1>
