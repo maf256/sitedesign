@@ -125,12 +125,11 @@ const FormContainer = styled.div`
             border-radius: 5px;
             padding: 10px;
             text-align: center;
-            max-width: 100vw;
         }
     }
 `
 const Message = styled.p`
     color: ${({err}) => err ? 'red' : 'green'};
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 10px;
 `
