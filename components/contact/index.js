@@ -1,21 +1,40 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import { Data } from '../common/Data';
 
 export default function Contact ({language}) {
+
   const form = useRef();
   
+  const [message, setMessage] = useState('');
+  
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => {
+        setMessage('');
+      }, 5000);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [message]);
+
+
   function onSubmit(e){
       e.preventDefault();
       emailjs.sendForm('service_p5nloe9', 'template_4f1qfpu', form.current, 'A6zWxwdubwFpZ1fy0')
         .then((result) => {
-          form.current.name.value = '';
-          form.current.email.value = '';
-          form.current.message.value = '';            
+            form.current.name.value = '';
+            form.current.email.value = '';
+            form.current.message.value = '';            
             console.log(result.text);
+            setMessage('This message send');
         }, (error) => {
             console.log(error.text);
+            setMessage('Message not send');
+
         });
     };  
 
@@ -38,6 +57,8 @@ export default function Contact ({language}) {
                 <input type="email" name="email" placeholder='Your Email' required/>      
                 <textarea name="message" placeholder='Your Massage' rows="10" cols="50"/>    
                 <input type="submit" value="Send Message" />
+                {message && <p>{message}</p>}
+
             </form>
         </FormContainer>
     </ContactContainer>
@@ -88,10 +109,9 @@ const FormContainer = styled.div`
             height: 50px;
 
             font-size: 16px;
-            color: #eee;
+            color: ${({theme}) => theme.Text_Title};
             font-weight: 600;
-            background-color: #303245;
-            border: none;
+            background-color: ${({theme}) => theme.BC_Home};
             border-radius: 5px;
             padding: 10px;
             margin: 15px 0px;
@@ -104,13 +124,11 @@ const FormContainer = styled.div`
             width: 200px;
             height: 50px;
             font-size: 16px;
-            background-color: #08d;
-            color: white;
-            border: none;
+            background-color: ${({theme}) => theme.BC_Home};
+            color: ${({theme}) => theme.Text_Title};
             border-radius: 5px;
             padding: 10px;
             text-align: center;
-            margin: 0 4px;
             max-width: 100vw;
         }
     }
