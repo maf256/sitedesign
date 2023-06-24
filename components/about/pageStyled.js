@@ -3,9 +3,6 @@ import styled from 'styled-components';
 
 export const AboutPage = styled.div`
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-
-    background-color: #ededed;
     min-height: 100vh;
     @media (min-width: 900px) {
         margin-left: 25%;
@@ -37,6 +34,8 @@ export const DetailContainer = styled.div`
     border-top: solid 1px ${({theme}) => theme.Text_Paragraph};
     border-bottom: solid 1px ${({theme}) => theme.Text_Paragraph};
     padding: 30px 5px;
+    background-color: ${({theme}) => theme.BC_Home};
+
     p {
         color: ${({theme}) => theme.Text_Paragraph};
         margin: 15px 0;
