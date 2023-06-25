@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import Image from 'next/image'
-import Img from '../common/image/me.png'
+import Img from '../common/image/me.jpg'
 import { Phone, Email, Linkedin, Github, Whatsapp } from '../common/Svg'
 import { Data } from '../common/Data';
 
@@ -28,7 +28,7 @@ export default function Home({language}) {
                 <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="25px" /></a>
                 <a target="_blank" rel="noreferrer"  href="tel:+4740882869"> <Phone fontSize="25px" /></a>
                 <a target="_blank" rel="noreferrer"  href="https://wa.me/+4740882869"><Whatsapp fontSize="25px" /></a>
-                <a target="_blank" rel="noreferrer"  href="mailto:info@sitedesign.no"><Email fontSize="25px" /></a>
+                <a target="_blank" rel="noreferrer"  href="mailto:majid@sitedesign.no"><Email fontSize="25px" /></a>
               </SosialConteiner>
           </div>
       </Main>
