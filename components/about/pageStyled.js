@@ -17,7 +17,7 @@ export const AboutPage = styled.div`
         padding: 100px 10%;
 
         img {
-            width: 600px;
+            width: 100%;
             height: auto;  
         }
         p {
@@ -31,7 +31,6 @@ export const AboutPage = styled.div`
             margin: auto auto;
             width: 100%;
             height: auto;
-
         }
     }
 `
