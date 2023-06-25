@@ -44,14 +44,12 @@ const SvgTaggle = styled.svg`
     color: ${({theme}) => theme.Icon_Color };
     margin: ${({margin}) => margin };
     margin-right: 15px;
-    width: 1em;
-    height: 1em;
+    width: 40px;
+    height: 40px;
     background-color: ${({theme}) => theme.Icon_bkColor };
-    padding: 2%;
+    padding: 6px;
     border-radius: 7px;
-    @media (max-width: 768px) {
-        font-size: 22px;
-    }
+
 `
 
 
