@@ -33,8 +33,10 @@ export default function About({language}){
                 ))}
             </Ul>
         </InfoContainer>
-        <ButtonCV href="https://docs.google.com/document/d/1CnW2JXswDhA3hJBSsXhzZ98TOPY6wbgO/edit?usp=sharing&ouid=109271537866387535039&rtpof=true&sd=true"             target="_blank"
-            rel="noreferrer">{Data.about[language ? 'en' : 'nr'].buttonName}</ButtonCV>
+        <ButtonCV href="https://drive.google.com/file/d/1RtC5U3ETIRiphO3xkXUMxDDE-AQ_bg95/view?usp=sharing" 
+            target="_blank"
+            rel="noreferrer">{Data.about[language ? 'en' : 'nr'].buttonName}
+        </ButtonCV>
         <Skills>
             Skillsssss
         </Skills>
