@@ -27,8 +27,8 @@ export default function About({language}){
             <Ul>
                 {Data.about[language ? 'en' : 'nr'].info.map((item, inx) => (
                 <li key={inx}>
-                    <span >{item.name}</span>
-                    <span >{item.data}</span>
+                    <h5 >{item.name}: </h5>
+                    <p >{item.data}</p>
                 </li>
                 ))}
             </Ul>

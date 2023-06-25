@@ -72,6 +72,26 @@ export const InfoContainer = styled.div`
 
 `
 export const Ul = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    h5, p {
+
+    }
+    h5 {
+        display:inline-block; 
+
+        color: ${({theme}) => theme.Text_Title};
+        font-size: 15px;
+        width: 130px;
+    }
+    p {
+        font-size: 15px;
+        display: inline;
+
+    }
+    li {
+        width: 350px;
+    }
 `
 
 export const ButtonCV = styled.a`
