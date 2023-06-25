@@ -40,10 +40,7 @@ const Menu = ({
         </h5>
       </Copyright>
       <TaggleDiv>
-        {isDark ? <Darksvg fontSize="20px" onClick={changeDarkMode}/> : <Lightsvg fontSize="20px" onClick={changeDarkMode}/> }
-           
-          
-        <ToggleDark isDark={isDark} changeDarkMode={changeDarkMode} on='on' off='off' />
+        {isDark ? <Darksvg fontSize="20px" changeDarkMode={changeDarkMode}/> : <Lightsvg fontSize="20px" changeDarkMode={changeDarkMode}/> }
         <TaggleLang language={language} changeLangeuge={changeLangeuge} on='en' off='nr' />
       </TaggleDiv>
     </Navbar>
