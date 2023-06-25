@@ -5,6 +5,7 @@ import Burger from './Burger.js'
 import { Data } from '../common/Data.js'
 import Link from 'next/link'
 import { Darksvg, Lightsvg } from '../common/Svg'
+import {TaggleSpan} from './Menu.js'
 
 
 export default function Navbar  ({ isDark, changeDarkMode, language, changeLangeuge }) {
@@ -13,7 +14,10 @@ export default function Navbar  ({ isDark, changeDarkMode, language, changeLange
     <Nav >
       <Iconbar>
         <h1><Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link></h1>
-        {isDark ? <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode}/> : <Darksvg fontSize="40px" changeDarkMode={changeDarkMode}/> }
+        <span>
+          { isDark ? <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode}/> : <Darksvg fontSize="40px" changeDarkMode={changeDarkMode}/> }
+          { language ? <TaggleSpan onClick={changeLangeuge}>Nr</TaggleSpan> : <TaggleSpan onClick={changeLangeuge}>En</TaggleSpan>}
+        </span>
       </Iconbar>
       <Burger isDark={isDark} changeDarkMode={changeDarkMode}  language={language} changeLangeuge={changeLangeuge} />        
     </Nav>
@@ -46,5 +50,8 @@ const Iconbar = styled.div`
     }
     h1 {
       margin-left: 20px;
+    }
+    span {
+      display: flex;
     }
 `

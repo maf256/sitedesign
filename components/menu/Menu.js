@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Data } from "../common/Data";
 import Link from "next/link";
-import ToggleDark from './ToggleDark'
-import TaggleLang from './TaggleLang'
 import { Darksvg, Lightsvg } from '../common/Svg'
 
 const Menu = ({
@@ -40,8 +38,8 @@ const Menu = ({
         </h5>
       </Copyright>
       <TaggleDiv>
-       {isDark ? <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode}/> : <Darksvg fontSize="40px" changeDarkMode={changeDarkMode}/> }
-        <TaggleLang language={language} changeLangeuge={changeLangeuge} on='en' off='nr' />
+        { isDark ? <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode}/> : <Darksvg fontSize="40px" changeDarkMode={changeDarkMode}/> }
+        { language ? <TaggleSpan onClick={changeLangeuge}>Nr</TaggleSpan> : <TaggleSpan onClick={changeLangeuge}>En</TaggleSpan>}
       </TaggleDiv>
     </Navbar>
   );
@@ -106,4 +104,18 @@ const Ul = styled.ul`
 `
 const Copyright = styled.div`
   margin: 20px 0px;
+`
+export const TaggleSpan = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20;
+  color: ${({theme}) => theme.Icon_Color };
+  margin: ${({margin}) => margin };
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: ${({theme}) => theme.Icon_bkColor };
+  padding: 6px;
+  border-radius: 7px;
 `
