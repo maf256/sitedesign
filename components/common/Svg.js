@@ -45,10 +45,6 @@ const SvgIcon = styled.svg`
     width: 1em;
     height: 1em;
     cursor: pointer;
-
-    @media (max-width: 768px) {
-        font-size: 22px;
-    }
 `
 
 const SvgTaggle = styled.svg`
@@ -62,7 +58,6 @@ const SvgTaggle = styled.svg`
     padding: 6px;
     border-radius: 7px;
     cursor: pointer;
-
 `
 
 
