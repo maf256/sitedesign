@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import Image from 'next/image'
 import Img from '../common/image/me.png'
-import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp, Business} from '../common/Svg'
+import { Phone, Email, Linkedin, Github, Whatsapp } from '../common/Svg'
 import { Data } from '../common/Data';
 
 export default function Home({language}) {

@@ -5,6 +5,7 @@ import Burger from './Burger.js'
 import { Data } from '../common/Data.js'
 import Link from 'next/link'
 
+
 export default function Navbar  ({ isDark, changeDarkMode, language, changeLangeuge }) {
 
   return (

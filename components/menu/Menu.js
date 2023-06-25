@@ -4,7 +4,7 @@ import { Data } from "../common/Data";
 import Link from "next/link";
 import ToggleDark from './ToggleDark'
 import TaggleLang from './TaggleLang'
-
+import { Darksvg, Lightsvg } from '../common/Svg'
 
 const Menu = ({
   isDark,
@@ -40,6 +40,9 @@ const Menu = ({
         </h5>
       </Copyright>
       <TaggleDiv>
+        {isDark ? <Darksvg fontSize="20px" onClick={changeDarkMode}/> : <Lightsvg fontSize="20px" onClick={changeDarkMode}/> }
+           
+          
         <ToggleDark isDark={isDark} changeDarkMode={changeDarkMode} on='on' off='off' />
         <TaggleLang language={language} changeLangeuge={changeLangeuge} on='en' off='nr' />
       </TaggleDiv>
