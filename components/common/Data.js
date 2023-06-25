@@ -58,7 +58,7 @@ export const Data = {
             // {name: 'News', href: '/news'},
             {name: 'Contact', href: '/contact'},
             // {name: 'Hire me', href: '/hire'},
-            {name: 'Resume', href: 'https://docs.google.com/document/d/1CnW2JXswDhA3hJBSsXhzZ98TOPY6wbgO/edit?usp=sharing&ouid=109271537866387535039&rtpof=true&sd=true'},
+            {name: 'Resume', href: 'https://drive.google.com/file/d/1RtC5U3ETIRiphO3xkXUMxDDE-AQ_bg95/view?usp=sharing'},
             ],
         nr: [
             {name: 'Hjem', href: '/'},
@@ -68,7 +68,7 @@ export const Data = {
             // {name: 'Nyheter', href: '/news'},
             {name: 'Kontakt', href: '/contact'},
             // {name: 'Ansette meg', href: '/hire'},
-            {name: 'CV-en', href: 'https://docs.google.com/document/d/1CnW2JXswDhA3hJBSsXhzZ98TOPY6wbgO/edit?usp=sharing&ouid=109271537866387535039&rtpof=true&sd=true'},
+            {name: 'CV-en', href: 'https://drive.google.com/file/d/1RtC5U3ETIRiphO3xkXUMxDDE-AQ_bg95/view?usp=sharing'},
             
         ]
     },
@@ -91,8 +91,8 @@ export const Data = {
             subject: 'Om meg',
             h1: 'Majid Askarifarsangi',
             h2: 'Webutvikler',
-            txt1: 'Hi, my name is Adriano Smith and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.',
-            txt2: 'One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to produce sites with a unique, outstanding, contemporary look-and-feel. With extensive knowledge of web mechanics, I’m able to optimize complex integrations to require little-to-no maintenance while running on their own for years.',
+            txt1: 'Hei, Jeg er Majid og min store lidenskap for koding gjorde at jeg begynte å programmere da jeg gikk på videregående. Jeg har jobbet som webutvikler, IT-konsulent, innen hardware og software support også. Jeg har en Associate i computer science og bachelorgrad i computer engineering. Jeg har opparbeidet meg solid kunnskap innen moderne frontend- utvikling og litt backend utvikling og metoder.',
+            txt2: 'Min primære tekniske kompetanse befinner meg 4 år innenfor JavaScript, HTML5/CSS3 og 3 år innenfor React og Styled component. jeg har litt erfaring om PostgreSQL, Node.js, Express.js og byggeverktøy som Webpack. Jeg har også erfaring med å sette opp nettsider med Wordpress og administrere AWS-server og Cpanel for flere kunder.',
             info: [
                 {name:'Fødselsdag', data: '30.03.1983'},
                 {name:'Alder', data: '40'},
@@ -114,8 +114,8 @@ export const Data = {
             subject: 'About me',
             h1: 'Majid Askarifarsangi',
             h2: 'Web Developer',
-            txt1: 'Hi, my name is Adriano Smith and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.',
-            txt2: 'One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to produce sites with a unique, outstanding, contemporary look-and-feel. With extensive knowledge of web mechanics, I’m able to optimize complex integrations to require little-to-no maintenance while running on their own for years.',
+            txt1: `Hi, I'm Majid and my great passion for coding made me start programming when I was in high school. I have worked as a web developer, IT consultant, in hardware and software support as well. I have an Associate's degree in computer science and a bachelor's degree in computer engineering. I have gained solid knowledge in modern frontend development and some backend development and methods.`,
+            txt2: 'My primary technical expertise is 4 years within JavaScript, HTML5/CSS3 and 3 years within React and Styled components. I have some experience with PostgreSQL, Node.js, Express.js and building tools such as Webpack. I also have experience setting up websites with Wordpress and managing AWS server and Cpanel for several clients.',
             info: [
                 {name:'Birthday', data: '30.03.1983'},
                 {name:'Age', data: '40'},
