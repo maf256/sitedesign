@@ -100,7 +100,7 @@ export const ButtonCV = styled.a`
     align-items: center;
     padding: 7px 14px;
     margin: 30px 0;
-
+    cursor: pointer;
     border-radius: 6px;
     box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
     color: ${({theme}) => theme.Text_Logo};
@@ -109,7 +109,7 @@ export const ButtonCV = styled.a`
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    &:focus {
+    &:hover {
         box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
         outline: 0;
     }
