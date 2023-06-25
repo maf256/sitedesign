@@ -95,7 +95,7 @@ const Navbar = styled.div`
 `;
 
 const TaggleDiv = styled.div`
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: space-evenly;
 `
