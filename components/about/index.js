@@ -1,7 +1,7 @@
 import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
-import Img from '../common/image/me.png'
+import Img from '../common/image/about.jpg'
 
 
 export default function About({language}){
