@@ -10,7 +10,8 @@ export default function theme(isDark) {
         Text_Menu_Hover: isDark ?  '#fff' : '#000',
         BC_Menu: isDark ?  '#494b50' : 'white',
         BC_Home: isDark ?  '#34353a' : '#f8f8f8',
-        Icon_Color: isDark ? 'white' : '#34353a',
+        Icon_Color: isDark ? 'white' : 'white',
+        Icon_bkColor: isDark ? '#34353a' : '#494b50',
         Text_Paragraph: isDark ? '#bbbbb8' : '#bbbbb8'
     }
 }
