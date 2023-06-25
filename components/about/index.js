@@ -13,7 +13,7 @@ export default function About({language}){
             alt = "Majid Askarifarsangi"
             placeholder="blur"
             priority={false}
-            loading = 'lazy'
+            // loading = 'lazy'
         />
         <NameContainer>
             <h1>{Data.home[language ? 'en' : 'nr'].name}</h1>

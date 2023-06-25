@@ -14,7 +14,7 @@ export default function Home({language}) {
                 alt = "Majid Askarifarsangi"
                 placeholder="blur"
                 priority={false}
-                loading = 'lazy'
+                // loading = 'lazy'
               />
 
           </Card>
