@@ -109,7 +109,7 @@ export const TaggleSpan = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20;
+  font-size: 17px;
   color: ${({theme}) => theme.Icon_Color };
   margin: ${({margin}) => margin };
   margin-right: 15px;
@@ -118,4 +118,5 @@ export const TaggleSpan = styled.div`
   background-color: ${({theme}) => theme.Icon_bkColor };
   padding: 6px;
   border-radius: 7px;
+  cursor: pointer;
 `
