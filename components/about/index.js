@@ -42,7 +42,7 @@ export default function About({language}){
             Skillsssss
         </Skills>
 
-            <h1>Knowledge</h1>
+            <h1>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h1>
         <Knowledge>
             <UlKnowledge>
             <h4>Frontend</h4>

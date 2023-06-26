@@ -10,6 +10,8 @@ export const AboutPage = styled.div`
     }
     h1,h2{
         margin: 30px 0px;
+        color: ${({theme}) => theme.Text_Logo};
+
     }
     @media (min-width: 900px) {
         margin-left: 25%;
@@ -146,7 +148,7 @@ export const UlKnowledge = styled.ul`
     } */
     h4 {
         display:inline-block; 
-        color: ${({theme}) => theme.Text_Title};
+        color: ${({theme}) => theme.Text_Logo};
         margin-bottom: 20px;
         font-size: 25px;
 
@@ -158,7 +160,8 @@ export const UlKnowledge = styled.ul`
     }
     li {
         display: flex; 
-        align-items: center;;
+        align-items: center;
+        margin-bottom: 6px;
         /* width: 100px; */
     }
 

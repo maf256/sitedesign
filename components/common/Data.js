@@ -115,7 +115,8 @@ export const Data = {
                 {date: '2013 - 2015', name: 'Master in Business strategic - PNU University of IRAN'}
             ],
             knowledge: {
-                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'react-query', 'Axios', 'Bootstrap', 'Material UI'],
+                knowledge: 'Kunnskap',
+                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
                 backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack']
             }
         },
@@ -145,7 +146,8 @@ export const Data = {
                 {date: '2013 - 2015', name: 'Master in Business strategic - PNU University of IRAN'}
             ],
             knowledge: {
-                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'react-query', 'Axios', 'Bootstrap', 'Material UI'],
+                knowledge: 'Knowledge',
+                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
                 backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack']
             }
         }
