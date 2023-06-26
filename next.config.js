@@ -3,7 +3,8 @@ const nextConfig = {
   babel: {
     plugins: [['styled-components', { ssr: true }]],
   },
-  reactStrictMode: true
+  reactStrictMode: true,
+  output: 'standalone'
 }
 
 module.exports = nextConfig
