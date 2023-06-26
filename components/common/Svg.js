@@ -22,7 +22,7 @@ export const Location = ({fontSize, color, margin}) => <SvgIcon fontSize={fontSi
 export const Whatsapp = ({fontSize, color, margin}) => <SvgIcon fontSize={fontSize} color={color} margin={margin} role="img" aria-label="webutvikler" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><desc></desc><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path></SvgIcon>
 
 export const Business = ({fontSize, color, margin}) => <SvgIcon fontSize={fontSize} color={color} margin={margin} role="img" aria-label="webutvikler" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15 17h2v-3h1v-2l-1-5H2l-1 5v2h1v6h9v-6h4v3zm-6 1H4v-4h5v4zM2 4h15v2H2z"></path><path d="M20 18v-3h-2v3h-3v2h3v3h2v-3h3v-2z"></path></SvgIcon>
-export const Play = ({fontSize, color, margin}) => <SvgIcon fontSize={fontSize} color={color} margin={margin} role="img" aria-label="webutvikler" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 104.3v303.4c0 6.4 6.5 10.4 11.7 7.2l240.5-151.7c5.1-3.2 5.1-11.1 0-14.3L139.7 97.2c-5.2-3.3-11.7.7-11.7 7.1z"></path></SvgIcon>
+export const Play = ({fontSize, color, margin}) => <SvgPlay fontSize={fontSize} color={color} margin={margin} role="img" aria-label="webutvikler" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 104.3v303.4c0 6.4 6.5 10.4 11.7 7.2l240.5-151.7c5.1-3.2 5.1-11.1 0-14.3L139.7 97.2c-5.2-3.3-11.7.7-11.7 7.1z"></path></SvgPlay>
 
 export const Coffee = ({fontSize, color, margin}) => <SvgIcon  fontSize={fontSize} color={color} margin={margin} role="img" aria-label="webutvikler" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M144 32S94.11 69.4 96 96c1.604 22.57 44.375 25.665 48 48 1.91 11.772-16 32-16 32s48-25.373 48-48-42.8-25.978-48-48c-3.875-16.414 16-48 16-48zm80 0s-49.89 37.4-48 64c1.604 22.57 44.375 25.665 48 48 1.91 11.772-16 32-16 32s48-25.373 48-48-42.8-25.978-48-48c-3.875-16.414 16-48 16-48zm80 0s-49.89 37.4-48 64c1.604 22.57 44.375 25.665 48 48 1.91 11.772-16 32-16 32s48-25.373 48-48-42.8-25.978-48-48c-3.875-16.414 16-48 16-48zM73.293 201c1.43 63.948 18.943 179.432 74.707 238h152c55.764-58.568 73.278-174.052 74.707-238H73.293zm319.598.445c-.186 9.152-.652 19.252-1.472 30.057C419.312 235.162 441 259.142 441 288c0 31.374-25.626 57-57 57-4.387 0-8.656-.517-12.764-1.465-2.912 9.62-6.176 19.165-9.84 28.51C368.602 373.97 376.176 375 384 375c48.155 0 87-38.845 87-87 0-45.153-34.153-82.12-78.11-86.555zM42.763 457c1.507 5.193 3.854 11.2 6.955 16.37 2.637 4.394 5.69 8.207 8.428 10.58C60.882 486.32 63 487 64 487h320c1 0 3.118-.678 5.855-3.05 2.738-2.373 5.79-6.186 8.428-10.58 3.1-5.17 5.448-11.177 6.955-16.37H42.762z"></path></SvgIcon>
 export const Darksvg = ({fontSize, color,margin, changeDarkMode}) => <SvgTaggle onClick={changeDarkMode}  fontSize={fontSize} color={color} margin={margin} role="img" aria-label="webutvikler" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></SvgTaggle>
@@ -54,4 +54,12 @@ const SvgTaggle = styled.svg`
     cursor: pointer;
 `
 
+const SvgPlay = styled.svg`
+    font-size: ${({fontSize}) => fontSize ? fontSize : "100px"};
+    color: ${({theme}) => theme.Text_Logo };
+    margin: ${({margin}) => margin };
+    margin-right: 10px;
+    width: 1em;
+    height: 1em;
+`
 

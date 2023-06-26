@@ -4,7 +4,7 @@ import Img from '../common/image/me.jpg'
 import { Phone, Email, Linkedin, Github, Whatsapp } from '../common/Svg'
 import { Data } from '../common/Data';
 
-export default function Home({language}) {
+export default function Home({language, theme}) {
   return (
     <>
       <Main >
@@ -24,7 +24,7 @@ export default function Home({language}) {
               {/* <h2>{Data.home[language ? 'en' : 'nr'].text1}</h2> */}
               <h2>{Data.home[language ? 'en' : 'nr'].text2}</h2>
               <SosialConteiner>
-                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="25px" /></a>
+                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="25px"/></a>
                 <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="25px" /></a>
                 <a target="_blank" rel="noreferrer"  href="tel:+4740882869"> <Phone fontSize="25px" /></a>
                 <a target="_blank" rel="noreferrer"  href="https://wa.me/+4740882869"><Whatsapp fontSize="25px" /></a>
@@ -58,6 +58,7 @@ const Main = styled.main`
     h1 {
       margin: 20px 0px;
       font-size: 45px;
+      color: ${({theme}) => theme.Text_Logo};
     }
     h2 {
       margin: 10px 0px;

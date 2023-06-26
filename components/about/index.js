@@ -2,6 +2,7 @@ import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, K
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/about.jpg'
+import { Play } from "../common/Svg"
 
 
 export default function About({language}){
@@ -47,6 +48,7 @@ export default function About({language}){
             <h4>Frontend</h4>
                 {Data.about[language ? 'en' : 'nr'].knowledge.frontend.map((item, inx) => (
                 <li key={inx}>
+                    <span><Play fontSize="15px"  /></span>
                     <h5 >{item}</h5>
                 </li>
                 ))}
@@ -55,6 +57,7 @@ export default function About({language}){
                 <h4>Backend</h4>
                 {Data.about[language ? 'en' : 'nr'].knowledge.backend.map((item, inx) => (
                 <li key={inx}>
+                    <span><Play fontSize="15px"  /></span>
                     <h5 >{item}</h5>
                 </li>
                 ))}

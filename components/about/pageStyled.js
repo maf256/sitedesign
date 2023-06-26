@@ -157,7 +157,8 @@ export const UlKnowledge = styled.ul`
         font-size: 15px;
     }
     li {
-        display: inline; 
+        display: flex; 
+        align-items: center;;
         /* width: 100px; */
     }
 
