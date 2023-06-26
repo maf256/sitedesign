@@ -40,7 +40,7 @@ export default function About({language}){
         <Skills>
             Skillsssss
         </Skills>
-    
+
             <h1>Knowledge</h1>
         <Knowledge>
             <UlKnowledge>
