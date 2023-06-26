@@ -42,7 +42,7 @@ export default function About({language}){
         </Skills>
     
         <Knowledge>
-
+            Knowledge
         </Knowledge>
 
     </AboutPage>
