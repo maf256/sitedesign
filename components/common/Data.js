@@ -1,3 +1,6 @@
+import { Javascript } from "@mui/icons-material";
+import { Component } from "react";
+
 export const Data = {
     skills: {
         subject: {en:'Skills', nr:'Ferdigheter'},
@@ -110,9 +113,11 @@ export const Data = {
                 {date: '2001 - 2004', name: 'Associate in Computer Science'},
                 {data: '2011 - 2013', name: 'Bachelor in Computer engineering - AZAD University of IRAN'},
                 {date: '2013 - 2015', name: 'Master in Business strategic - PNU University of IRAN'}
-            ]
-
-
+            ],
+            knowledge: {
+                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'react-query', 'Axios', 'Bootstrap', 'Material UI'],
+                backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack']
+            }
         },
         en: {
             subject: 'About me',
@@ -138,8 +143,11 @@ export const Data = {
                 {date: '2001 - 2004', name: 'AZAD University of IRAN'},
                 {data: '2011 - 2013', name: 'Bachelor in Computer engineering - AZAD University of IRAN'},
                 {date: '2013 - 2015', name: 'Master in Business strategic - PNU University of IRAN'}
-            ]
-
+            ],
+            knowledge: {
+                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'react-query', 'Axios', 'Bootstrap', 'Material UI'],
+                backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack']
+            }
         }
     },
     contact : {

@@ -1,4 +1,4 @@
-import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span } from "./pageStyled"
+import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/about.jpg'
@@ -41,8 +41,24 @@ export default function About({language}){
             Skillsssss
         </Skills>
     
+            <h1>Knowledge</h1>
         <Knowledge>
-            Knowledge
+            <UlKnowledge>
+            <h4>Frontend</h4>
+                {Data.about[language ? 'en' : 'nr'].knowledge.frontend.map((item, inx) => (
+                <li key={inx}>
+                    <h5 >{item}</h5>
+                </li>
+                ))}
+            </UlKnowledge>
+            <UlKnowledge>
+                <h4>Backend</h4>
+                {Data.about[language ? 'en' : 'nr'].knowledge.backend.map((item, inx) => (
+                <li key={inx}>
+                    <h5 >{item}</h5>
+                </li>
+                ))}
+            </UlKnowledge>
         </Knowledge>
 
     </AboutPage>

@@ -73,9 +73,7 @@ export const InfoContainer = styled.div`
 export const Ul = styled.ul`
     display: flex;
     flex-wrap: wrap;
-    h5, p {
 
-    }
     h5 {
         display:inline-block; 
 
@@ -118,11 +116,53 @@ export const ButtonCV = styled.a`
 export const Skills = styled.div`
 `
 
-export const Knowledge = styled.div`
-`
+
 
 export const Span = styled.span`
     color: ${({theme}) => theme.Text_Paragraph};
     background-color: gray;
     padding: 7px;
+`
+
+export const Knowledge = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    @media (max-width: 699px) {
+        /* flex-direction: column; */
+        /* justify-content: center; */
+    }
+`
+
+export const UlKnowledge = styled.ul`
+    min-width: 220px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    /* justify-content: space-between; */
+    /* h4 {
+        display:inline-block; 
+    } */
+    h4 {
+        display:inline-block; 
+        color: ${({theme}) => theme.Text_Title};
+        margin-bottom: 20px;
+        font-size: 25px;
+
+    }
+    h5{
+        display:inline-block; 
+        color: ${({theme}) => theme.Text_Title};
+        font-size: 15px;
+    }
+    li {
+        display: inline; 
+        /* width: 100px; */
+    }
+
+
+
+
+
 `
