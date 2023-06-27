@@ -129,11 +129,7 @@ export const Span = styled.span`
 export const Knowledge = styled.div`
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    @media (max-width: 699px) {
-        /* flex-direction: column; */
-        /* justify-content: center; */
-    }
+
 `
 
 export const UlKnowledge = styled.ul`
@@ -142,10 +138,6 @@ export const UlKnowledge = styled.ul`
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-    /* justify-content: space-between; */
-    /* h4 {
-        display:inline-block; 
-    } */
     h4 {
         display:inline-block; 
         color: ${({theme}) => theme.Text_Logo};
@@ -162,7 +154,6 @@ export const UlKnowledge = styled.ul`
         display: flex; 
         align-items: center;
         margin-bottom: 6px;
-        /* width: 100px; */
     }
 
 

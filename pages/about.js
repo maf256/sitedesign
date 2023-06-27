@@ -14,7 +14,7 @@ export default function about ({language}){
             key="desc"
             />
             <meta 
-                name="keywords" content="HTML,CSS,XML,JavaScript,react,web development, responsive design, front-end development, back-end development,"
+                name="keywords" content="webutvikler, HTML ,CSS ,XML ,JavaScript ,react ,web development, responsive design, front-end development, back-end development,"
             />
             <meta name="author" content="Majid Askarifarsangi"/>
             <meta  name="robots" content=" index , follow "/>
