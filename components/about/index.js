@@ -1,4 +1,4 @@
-import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge } from "./pageStyled"
+import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge,Education,UlKnowledgeDiv } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/about.jpg'
@@ -41,28 +41,33 @@ export default function About({language}){
         <Skills>
 
         </Skills>
-
+        <UlKnowledgeDiv>
             <h1>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h1>
-        <Knowledge>
-            <UlKnowledge>
-            <h4>Frontend</h4>
-                {Data.about[language ? 'en' : 'nr'].knowledge.frontend.map((item, inx) => (
-                <li key={inx}>
-                    <span><Play fontSize="15px"  /></span>
-                    <h5 >{item}</h5>
-                </li>
-                ))}
-            </UlKnowledge>
-            <UlKnowledge>
-                <h4>Backend</h4>
-                {Data.about[language ? 'en' : 'nr'].knowledge.backend.map((item, inx) => (
-                <li key={inx}>
-                    <span><Play fontSize="15px"  /></span>
-                    <h5 >{item}</h5>
-                </li>
-                ))}
-            </UlKnowledge>
-        </Knowledge>
+            <Knowledge>
+                <UlKnowledge>
+                <h4>Frontend</h4>
+                    {Data.about[language ? 'en' : 'nr'].knowledge.frontend.map((item, inx) => (
+                    <li key={inx}>
+                        <span><Play fontSize="15px"  /></span>
+                        <h5 >{item}</h5>
+                    </li>
+                    ))}
+                </UlKnowledge>
+                <UlKnowledge>
+                    <h4>Backend</h4>
+                    {Data.about[language ? 'en' : 'nr'].knowledge.backend.map((item, inx) => (
+                    <li key={inx}>
+                        <span><Play fontSize="15px"  /></span>
+                        <h5 >{item}</h5>
+                    </li>
+                    ))}
+                </UlKnowledge>
+            </Knowledge>
+        </UlKnowledgeDiv>
+
+        <Education>
+
+        </Education>
 
     </AboutPage>
 }

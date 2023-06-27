@@ -132,6 +132,11 @@ export const Knowledge = styled.div`
 
 `
 
+export const UlKnowledgeDiv = styled.ul`
+    width: 100%;
+    background-color: ${({theme}) => theme.BC_Home2};
+
+`
 export const UlKnowledge = styled.ul`
     min-width: 220px;
     width: 40%;
@@ -155,9 +160,10 @@ export const UlKnowledge = styled.ul`
         align-items: center;
         margin-bottom: 6px;
     }
+`
 
 
-
+export const Education = styled.div`
 
 
 `
