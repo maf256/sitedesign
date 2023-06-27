@@ -167,3 +167,8 @@ export const Education = styled.div`
 
 
 `
+
+export const UlEducation = styled.ul`
+
+
+`

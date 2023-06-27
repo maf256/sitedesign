@@ -110,15 +110,16 @@ export const Data = {
             ],
             buttonName: 'Last ned CV',
             education: [
-                {date: '2001 - 2004', name: 'Associate in Computer Science'},
-                {data: '2011 - 2013', name: 'Bachelor in Computer engineering - AZAD University of IRAN'},
-                {date: '2013 - 2015', name: 'Master in Business strategic - PNU University of IRAN'}
-            ],
+                {date: '2001 - 2004', name: 'Associate in Computer Science', uni: 'AZAD University of IRAN'},
+                {date: '2011 - 2013', name: 'Bachelor in Computer engineering', uni: 'AZAD University of IRAN'},
+                {date: '2013 - 2015', name: 'Master in Business strategic', uni: 'PNU University of IRAN'}            ],
+            educationTitlle: 'Utdanning',
             knowledge: {
                 knowledge: 'Kunnskap',
-                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
+                frontend: ['HTML','CSS','JavaScript', 'React','Next.js', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
                 backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack']
             }
+            
         },
         en: {
             subject: 'About me',
@@ -141,13 +142,14 @@ export const Data = {
             buttonName: 'Download CV',
 
             education: [
-                {date: '2001 - 2004', name: 'AZAD University of IRAN'},
-                {data: '2011 - 2013', name: 'Bachelor in Computer engineering - AZAD University of IRAN'},
-                {date: '2013 - 2015', name: 'Master in Business strategic - PNU University of IRAN'}
+                {date: '2001 - 2004', name: 'Associate in Computer Science', uni: 'AZAD University of IRAN'},
+                {date: '2011 - 2013', name: 'Bachelor in Computer engineering', uni: 'AZAD University of IRAN'},
+                {date: '2013 - 2015', name: 'Master in Business strategic', uni: 'PNU University of IRAN'}
             ],
+            educationTitlle: 'Education',
             knowledge: {
                 knowledge: 'Knowledge',
-                frontend: ['HTML','CSS','JavaScript', 'React', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
+                frontend: ['HTML','CSS','JavaScript', 'React.js','Next.js', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
                 backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack']
             }
         }
