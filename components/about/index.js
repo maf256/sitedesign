@@ -39,7 +39,7 @@ export default function About({language}){
             rel="noreferrer">{Data.about[language ? 'en' : 'nr'].buttonName}
         </ButtonCV>
         <Skills>
-            Skillsssss
+
         </Skills>
 
             <h1>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h1>
