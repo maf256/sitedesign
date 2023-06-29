@@ -182,7 +182,7 @@ export const Education = styled.div`
 `
 
 export const UlEducation = styled.ul`
-    border-left: 2px solid ${({theme}) => theme.BC_Home2};
+    border-left: 3px solid ${({theme}) => theme.BC_Home2};
     padding-left: 5px;
     display: flex;
     color: ${({theme}) => theme.Text_Logo};
