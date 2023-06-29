@@ -98,14 +98,15 @@ export const ButtonCV = styled.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7px 14px;
-    margin: 30px 0;
+    padding: 14px;
+    margin: 50px 0;
     cursor: pointer;
     border-radius: 6px;
     box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
-    color: ${({theme}) => theme.Text_Logo};
-    background: ${({theme}) => theme.Text_Title};;
-
+    color: ${({theme}) => theme.Text_Title};
+    background-color: ${({theme}) => theme.Text_Logo};
+    font-size: 17px;
+    font-weight: 600;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -134,7 +135,7 @@ export const Knowledge = styled.div`
 
 export const UlKnowledgeDiv = styled.ul`
     width: 100%;
-    background-color: ${({theme}) => theme.BC_Home2};
+    /* background-color: ${({theme}) => theme.BC_Home2}; */
     h1 {
         padding-top: 15px;
     }
@@ -170,6 +171,8 @@ export const EducationContainer = styled.div`
 
 `
 export const Education = styled.div`
+    background-color: ${({theme}) => theme.BC_Home};
+
     /* h1{
         margin: 30px 0px;
         color: ${({theme}) => theme.Text_Logo};

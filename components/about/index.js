@@ -41,6 +41,27 @@ export default function About({language}){
         <Skills>
 
         </Skills>
+
+        <EducationContainer>
+            <Education>
+                <h1>{Data.about[language ? 'en' : 'nr'].educationTitlle}</h1>
+                <UlEducation>
+                    {Data.about[language ? 'en' : 'nr'].education.map(({date, name, uni}, inx) => (
+                    <li key={inx}>
+                        <span></span>
+                        {/* <span><Play fontSize="15px"  /></span> */}
+                        <h5>{date}</h5>
+                        <div>
+                            <h3>{name}</h3>
+                            <h4>{uni}</h4>
+                        </div>
+                    </li>
+                    ))}
+                </UlEducation>
+
+            </Education>
+
+        </EducationContainer>
         <UlKnowledgeDiv>
             <h1>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h1>
             <Knowledge>
@@ -65,26 +86,6 @@ export default function About({language}){
             </Knowledge>
         </UlKnowledgeDiv>
 
-        <EducationContainer>
-            <Education>
-                <h1>{Data.about[language ? 'en' : 'nr'].educationTitlle}</h1>
-                <UlEducation>
-                    {Data.about[language ? 'en' : 'nr'].education.map(({date, name, uni}, inx) => (
-                    <li key={inx}>
-                        <span></span>
-                        {/* <span><Play fontSize="15px"  /></span> */}
-                        <h5>{date}</h5>
-                        <div>
-                            <h3>{name}</h3>
-                            <h4>{uni}</h4>
-                        </div>
-                    </li>
-                    ))}
-                </UlEducation>
-
-            </Education>
-
-        </EducationContainer>
 
     </AboutPage>
 }
