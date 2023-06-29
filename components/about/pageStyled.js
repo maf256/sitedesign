@@ -171,27 +171,22 @@ export const EducationContainer = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
 `
 export const Education = styled.div`
-
+    min-width: 320px;
+    width: 40%;
     background-color: ${({theme}) => theme.BC_Home};
     h1 {
         display: inline-flex;
     }
-
 `
 
 export const UlEducation = styled.ul`
-    min-width: 320px;
-    width: 40%;
     border-left: 1px solid ${({theme}) => theme.BC_Home2};
-;
     padding-left: 5px;
     display: flex;
     color: ${({theme}) => theme.Text_Logo};
     flex-direction: column;
-
     h5 {
         width: 95px;
         height: 50px;
@@ -225,15 +220,12 @@ export const UlEducation = styled.ul`
             height: 15px;
             border: 1px solid ${({theme}) => theme.BC_Home2};
             background-color: ${({theme}) => theme.BC_Home};
-
             /* box-shadow: 0 0 1px black; */
             border-radius: 50%;
             position: relative;
             background-color: white;
             left: -13px;
         }
-
     }
-
 
 `
