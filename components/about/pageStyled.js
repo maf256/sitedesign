@@ -176,16 +176,32 @@ export const Education = styled.div`
 `
 
 export const UlEducation = styled.ul`
-    min-width: 350px;
+    min-width: 400px;
     width: 40%;
     border-left: 1px solid black;
     /* box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5); */
-    padding-left: 10px;
+    padding-left: 5px;
     display: flex;
+    color: ${({theme}) => theme.Text_Logo};
     flex-direction: column;
-    h5 {
-        display: inline-block;
         /* background-color: red; */
+
+    h5 {
+        width: 100px;
+        height: 50px;
+        background-color: ${({theme}) => theme.BC_Home2};
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        font-weight: 200;
+        align-items: center;
+    }
+    h4 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    h3 {
+        font-size: 15px;
     }
     div {
         margin-left: 10px;
@@ -194,22 +210,21 @@ export const UlEducation = styled.ul`
     }
     li {
         margin: 15px 0px;
-        /* wid/th: 450px; */
         display: inline-flex;   
-        /* background-color: red; */
         align-items: center;
-        /* justify-content: space-between; */
 
         span{
             display: inline-block;
             width: 15px;
             height: 15px;
             border: 1px solid black;
+            background-color: ${({theme}) => theme.BC_Home};
+
             /* box-shadow: 0 0 1px black; */
             border-radius: 50%;
             position: relative;
             background-color: white;
-            left: -18px;
+            left: -13px;
         }
 
     }

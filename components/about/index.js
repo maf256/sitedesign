@@ -75,8 +75,8 @@ export default function About({language}){
                         {/* <span><Play fontSize="15px"  /></span> */}
                         <h5>{date}</h5>
                         <div>
-                            <h5>{name}</h5>
-                            <h5>{uni}</h5>
+                            <h3>{name}</h3>
+                            <h4>{uni}</h4>
                         </div>
                     </li>
                     ))}
