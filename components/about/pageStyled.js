@@ -182,7 +182,7 @@ export const Education = styled.div`
 `
 
 export const UlEducation = styled.ul`
-    border-left: 1px solid ${({theme}) => theme.BC_Home2};
+    border-left: 2px solid ${({theme}) => theme.BC_Home2};
     padding-left: 5px;
     display: flex;
     color: ${({theme}) => theme.Text_Logo};
@@ -198,11 +198,11 @@ export const UlEducation = styled.ul`
         align-items: center;
     }
     h4 {
-        font-size: 11px;
+        font-size: 13px;
         font-weight: 300;
     }
     h3 {
-        font-size: 11px;
+        font-size: 13px;
     }
     div {
         margin-left: 10px;
