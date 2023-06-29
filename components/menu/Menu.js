@@ -14,7 +14,9 @@ const Menu = ({
 }) => {
   return (
     <Navbar open={open}>
-      <div><h2>{Data.about[language ? 'en' : 'nr'].h2}</h2></div>
+      {/* <div><h2>{Data.about[language ? 'en' : 'nr'].h2}</h2></div> */}
+      <h1><Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link></h1>
+
       <Ul>
         {Data.menu[language ? 'en' : 'nr'].map((item, inx) => (
           <li key={inx}>
