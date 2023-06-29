@@ -49,7 +49,6 @@ export default function About({language}){
                     {Data.about[language ? 'en' : 'nr'].education.map(({date, name, uni}, inx) => (
                     <li key={inx}>
                         <span></span>
-                        {/* <span><Play fontSize="15px"  /></span> */}
                         <h5>{date}</h5>
                         <div>
                             <h3>{name}</h3>
@@ -58,10 +57,29 @@ export default function About({language}){
                     </li>
                     ))}
                 </UlEducation>
-
             </Education>
 
+
+
+            <Education>
+                <h1>{Data.about[language ? 'en' : 'nr'].experienceTitlle}</h1>
+                <UlEducation>
+                    {Data.about[language ? 'en' : 'nr'].experience.map(({date, name, uni}, inx) => (
+                    <li key={inx}>
+                        <span></span>
+                        <h5>{date}</h5>
+                        <div>
+                            <h3>{name}</h3>
+                            <h4>{uni}</h4>
+                        </div>
+                    </li>
+                    ))}
+                </UlEducation>
+            </Education>
         </EducationContainer>
+
+
+
         <UlKnowledgeDiv>
             <h1>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h1>
             <Knowledge>

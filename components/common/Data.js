@@ -121,6 +121,8 @@ export const Data = {
             ],
 
             educationTitlle: 'Utdanning',
+            experienceTitlle: 'Erfaring',
+
             knowledge: {
                 knowledge: 'Kunnskap',
                 frontend: ['HTML','CSS','JavaScript', 'React','Next.js', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
@@ -160,6 +162,7 @@ export const Data = {
             ],
 
             educationTitlle: 'Education',
+            experienceTitlle: 'Experience',
             knowledge: {
                 knowledge: 'Knowledge',
                 frontend: ['HTML','CSS','JavaScript', 'React.js','Next.js', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],

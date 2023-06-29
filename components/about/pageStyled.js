@@ -169,11 +169,11 @@ export const UlKnowledge = styled.ul`
 
 export const EducationContainer = styled.div`
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 
 `
 export const Education = styled.div`
-    display: flex;
-    flex-wrap: wrap;
 
     background-color: ${({theme}) => theme.BC_Home};
     h1 {
@@ -183,7 +183,7 @@ export const Education = styled.div`
 `
 
 export const UlEducation = styled.ul`
-    min-width: 400px;
+    min-width: 320px;
     width: 40%;
     border-left: 1px solid ${({theme}) => theme.BC_Home2};
 ;
@@ -193,7 +193,7 @@ export const UlEducation = styled.ul`
     flex-direction: column;
 
     h5 {
-        width: 100px;
+        width: 95px;
         height: 50px;
         background-color: ${({theme}) => theme.BC_Home2};
         border-radius: 10px;
@@ -203,14 +203,14 @@ export const UlEducation = styled.ul`
         align-items: center;
     }
     h4 {
-        font-size: 15px;
+        font-size: 11px;
         font-weight: 300;
     }
     h3 {
-        font-size: 15px;
+        font-size: 11px;
     }
     div {
-        margin-left: 20px;
+        margin-left: 10px;
         display: inline-flex;
         flex-direction: column;
     }
