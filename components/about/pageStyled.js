@@ -135,6 +135,9 @@ export const Knowledge = styled.div`
 export const UlKnowledgeDiv = styled.ul`
     width: 100%;
     background-color: ${({theme}) => theme.BC_Home2};
+    h1 {
+        padding-top: 15px;
+    }
 
 `
 export const UlKnowledge = styled.ul`
@@ -179,12 +182,10 @@ export const UlEducation = styled.ul`
     min-width: 400px;
     width: 40%;
     border-left: 1px solid black;
-    /* box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5); */
     padding-left: 5px;
     display: flex;
     color: ${({theme}) => theme.Text_Logo};
     flex-direction: column;
-        /* background-color: red; */
 
     h5 {
         width: 100px;
@@ -204,7 +205,7 @@ export const UlEducation = styled.ul`
         font-size: 15px;
     }
     div {
-        margin-left: 10px;
+        margin-left: 20px;
         display: inline-flex;
         flex-direction: column;
     }
