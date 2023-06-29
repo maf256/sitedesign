@@ -1,4 +1,4 @@
-import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge,Education,UlKnowledgeDiv, UlEducation } from "./pageStyled"
+import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge,EducationContainer ,Education,UlKnowledgeDiv, UlEducation } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/about.jpg'
@@ -65,20 +65,26 @@ export default function About({language}){
             </Knowledge>
         </UlKnowledgeDiv>
 
-        <Education>
-            <h4>{Data.about[language ? 'en' : 'nr'].educationTitlle}</h4>
-            <UlEducation>
-                {Data.about[language ? 'en' : 'nr'].education.map(({date, name, uni}, inx) => (
-                <li key={inx}>
-                    {/* <span><Play fontSize="15px"  /></span> */}
-                    <h5>{date}</h5>
-                    <h5>{name}</h5>
-                    <h5>{uni}</h5>
-                </li>
-                ))}
-            </UlEducation>
+        <EducationContainer>
+            <Education>
+                <h1>{Data.about[language ? 'en' : 'nr'].educationTitlle}</h1>
+                <UlEducation>
+                    {Data.about[language ? 'en' : 'nr'].education.map(({date, name, uni}, inx) => (
+                    <li key={inx}>
+                        <span></span>
+                        {/* <span><Play fontSize="15px"  /></span> */}
+                        <h5>{date}</h5>
+                        <div>
+                            <h5>{name}</h5>
+                            <h5>{uni}</h5>
+                        </div>
+                    </li>
+                    ))}
+                </UlEducation>
 
-        </Education>
+            </Education>
+
+        </EducationContainer>
 
     </AboutPage>
 }

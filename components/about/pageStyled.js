@@ -163,12 +163,66 @@ export const UlKnowledge = styled.ul`
 `
 
 
+export const EducationContainer = styled.div`
+
+`
 export const Education = styled.div`
+    /* h1{
+        margin: 30px 0px;
+        color: ${({theme}) => theme.Text_Logo};
+    } */
 
 
 `
 
 export const UlEducation = styled.ul`
+    min-width: 350px;
+    width: 40%;
+    border-left: 1px solid black;
+    /* box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5); */
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    h5 {
+        display: inline-block;
+        /* background-color: red; */
+    }
+    div {
+        margin-left: 10px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    li {
+        margin: 15px 0px;
+        /* wid/th: 450px; */
+        display: inline-flex;   
+        /* background-color: red; */
+        align-items: center;
+        /* justify-content: space-between; */
 
+        span{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid black;
+            /* box-shadow: 0 0 1px black; */
+            border-radius: 50%;
+            position: relative;
+            background-color: white;
+            left: -18px;
+        }
+
+    }
+    /* li {
+        display: inline-flex;
+        align-items: center;
+        background-color: red;
+        justify-content: flex-start;
+        div {
+            display: inline-block;
+            display: flex;  
+            flex-direction: column;
+        } */
+    /* } */
 
 `
