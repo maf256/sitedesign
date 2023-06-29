@@ -168,10 +168,17 @@ export const UlKnowledge = styled.ul`
 
 
 export const EducationContainer = styled.div`
+    width: 100%;
 
 `
 export const Education = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+
     background-color: ${({theme}) => theme.BC_Home};
+    h1 {
+        display: inline-flex;
+    }
 
 `
 

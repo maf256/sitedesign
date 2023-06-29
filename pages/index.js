@@ -8,7 +8,7 @@ export default function Homepage ({language}){
         <   title>Webutvikler</title>
             <meta
             name="description"
-            content="web utvikler - Webdesign sandvika - webdesign oslo - webutvikler - react - motion designer - Responsive- Responsiveness - wordpress - woocommerce - Responsive web design - Responsive page - Responsive webdesign - webdesign, Webshop, Programming, Wordpress, SEO, Digital marketing, Graphic design.
+            content="web utvikler - Webdesign sandvika - webdesign oslo - webutvikler - react - Fullstack webutvikling - Responsive- Responsiveness - wordpress - woocommerce - Responsive web design - Responsive page - Responsive webdesign - webdesign, Webshop, Programming, Wordpress, SEO, Digital marketing, Graphic design.
                 webdesign webdesign design webdesign development -  webshop site web -  it consulting - programming wordpress graphic design sandvika oslo Norway bærum digitalm arketing - nettside nettside design nettside utvikling -  nettshop -  it konsulent - utvikling grafisk design digital markedsføring social marketing sosial markeds føring facebook Instagram - linkedin - SEO - CRO"
             key="desc"
             />

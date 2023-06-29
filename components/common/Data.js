@@ -153,6 +153,12 @@ export const Data = {
                 {date: '2011 - 2013', name: 'Bachelor in Computer engineering', uni: 'AZAD University of IRAN'},
                 {date: '2013 - 2015', name: 'Master in Business strategic', uni: 'PNU University of IRAN'}
             ],
+            experience: [
+                {date: '2021', name: 'Konsulenthus Oslo', uni: 'Fullstack Web development'},
+                {date: '2022', name: 'TechPros Oslo', uni: 'Fullstack Web development'},
+                {date: '2023', name: 'Osloweb Sandvika', uni: 'Fullstack Web development'}            
+            ],
+
             educationTitlle: 'Education',
             knowledge: {
                 knowledge: 'Knowledge',
