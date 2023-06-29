@@ -203,6 +203,7 @@ export const UlEducation = styled.ul`
     }
     h3 {
         font-size: 13px;
+        margin-bottom: 7px;
     }
     div {
         margin-left: 10px;
