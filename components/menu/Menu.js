@@ -31,7 +31,7 @@ const Menu = ({
         <h5>
           Created by{" "}
           <a
-            href="https://www.linkedin.com/in/farsangi/"
+            href="https://www.linkedin.com/in/farsangi/" 
             target="_blank"
             rel="noreferrer"
           >
