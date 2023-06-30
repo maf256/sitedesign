@@ -13,7 +13,7 @@ export default function Hire ({language}) {
                 checkout({
                     lineItems:[
                         {
-                            price: 'price_1NOkUOD8oJlEjzDyeM1aH6It',
+                            price: 'price_1NOnAUD8oJlEjzDyGkzsxPF6',
                             quantity: 1 
                         }
                     ]
