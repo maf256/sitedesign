@@ -18,7 +18,7 @@ export default function Hire ({language}) {
                         }
                     ]
                 })
-            })}>Buy</button>
+            })}>Buy Items</button>
         </ContactContainer>
 
     )
