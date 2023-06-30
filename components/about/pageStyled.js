@@ -110,9 +110,15 @@ export const ButtonCV = styled.a`
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    &:hover {
+    /* &:hover {
         box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
         outline: 0;
+    } */
+    :hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    :focus {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     }
 `
 

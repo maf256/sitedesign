@@ -125,6 +125,11 @@ const FormContainer = styled.div`
             border-radius: 5px;
             padding: 10px;
             text-align: center;
+            :hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;            }
+            :focus {
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            }
         }
     }
 `
