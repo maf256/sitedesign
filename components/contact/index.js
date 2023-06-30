@@ -24,7 +24,7 @@ export default function Contact ({language}) {
 
   function onSubmit(e){
       e.preventDefault();
-      emailjs.sendForm('service_p5nloe9', 'template_4f1qfpu', form.current, 'A6zWxwdubwFpZ1fy0')
+      emailjs.sendForm('service_znsyjev', 'template_4f1qfpu', form.current, 'A6zWxwdubwFpZ1fy0')
         .then((result) => {
             form.current.name.value = '';
             form.current.email.value = '';
