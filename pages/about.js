@@ -8,14 +8,15 @@ export default function about ({language}){
         <Head>
         <   title>Webutvikler</title>
             <meta
-            name="description"
-            content="web utvikler - Webdesign sandvika - webdesign oslo - webutvikler - react - Fullstack webutvikling - Responsive- Responsiveness - wordpress - woocommerce - Responsive web design - Responsive page - Responsive webdesign - webdesign, Webshop, Programming, Wordpress, SEO, Digital marketing, Graphic design.
-                webdesign webdesign design webdesign development -  webshop site web -  it consulting - programming wordpress graphic design sandvika oslo Norway bærum digitalm arketing - nettside nettside design nettside utvikling -  nettshop -  it konsulent - utvikling grafisk design digital markedsføring social marketing sosial markeds føring facebook Instagram - linkedin - SEO - CRO"
-           key="desc"
+                name="description"
+                content="Jeg er software ingeniør og jeg har jobbet som webutvikler og frontend utvikler og full stack utvikler.
+                    Nå er jeg Tilgjengelig for hva som helst prosjekt.
+                    Min primære tekniske kompetanse befinner meg 4 år innenfor JavaScript, HTML5/CSS3 og 3 år innenfor React og Styled component. jeg har litt erfaring om PostgreSQL, Node.js, Express.js."
+                key="desc"
             />
             <meta 
-                name="keywords" content="webutvikler, HTML ,CSS ,XML ,JavaScript ,react ,web development, responsive design, front-end development, back-end development,"
-            />
+                name="keywords" content="Webutvikler,Webutvikling,CSS,JavaScript,react,web development, responsive design, front-end development, back-end development"
+                />
             <meta name="author" content="Majid Askarifarsangi"/>
             <meta  name="robots" content=" index , follow "/>
         </Head>
