@@ -8,6 +8,7 @@ const GoogleCalendarScheduling = ({language}) => {
         url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0gcKmY01opz5BqfU2mLkHVN2UtcqyqfMQlH13JAEdUsluHCSD_eg-H3wtUYosT4y5VF8-IBO8d?gv=true',
         color: '#039BE5',
         label: Data.booking[language ? 'en' : 'nr'].textlabel,
+        // label: 'Book an appointment',
         target: document.getElementById('calendar-scheduling-button'),
       });
     };
@@ -21,7 +22,7 @@ const GoogleCalendarScheduling = ({language}) => {
     } else {
       loadCalendar();
     }
-  }, []);
+  }, [language]);
 
   return (
     <div id="calendar-scheduling-button">
