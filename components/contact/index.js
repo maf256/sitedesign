@@ -77,7 +77,7 @@ const ContactContainer = styled.div`
     background-color: ${({theme}) => theme.BC_Home};
     h1,h2{
         margin: 30px 0px;
-        color: ${({theme}) => theme.Text_Title};
+        color: ${({theme}) => theme.Text_Logo};
 
     }
     @media (min-width: 900px) {
