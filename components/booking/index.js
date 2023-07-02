@@ -11,6 +11,7 @@ export default function Booking ({language}) {
         <h1>{Data.booking[language ? 'en' : 'nr'].h1}</h1>
         <h3>{Data.booking[language ? 'en' : 'nr'].h2}</h3>
         <h3>{Data.booking[language ? 'en' : 'nr'].h3}</h3>
+        <Line />
         {/* <GoogleCalendarScheduling language={language} /> */}
         <Iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ08q78jfdTSAvdjzrYsZzvFRPIxbVtTln79uu3M9ITm3VITP81IoKX-YurFrpjs3PoE-IG9z8je?gv=true"
@@ -30,7 +31,8 @@ const ContactContainer = styled.div`
     background-color: ${({theme}) => theme.BC_Home};
     h1,h3{
         margin: 30px 0px;
-        color: ${({theme}) => theme.Text_Logo};
+        color: ${({theme}) => theme.Text_Paragraph};
+        word-spacing: 1px;
 
     }
     @media (min-width: 900px) {
@@ -47,20 +49,10 @@ const ContactContainer = styled.div`
     }
 `
 
-const Iframe = styled.iframe`
-    /* h1,h2,h3,h4,h5 {
-    } */
-    /* .SoBqBf,.rplqOe {
-        color: red;
-        background-color: ${({theme}) => theme.BC_Home2};
-        
-    } */
-
+const Line = styled.div`
+    width: 100%;
+    border-top: 3px solid ${({theme}) => theme.Text_Logo}; 
 `
+const Iframe = styled.iframe`
 
-
-const Message = styled.p`
-    color: ${({err}) => err ? 'red' : 'green'};
-    font-size: 18px;
-    margin-top: 10px;
 `
