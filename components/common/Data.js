@@ -200,8 +200,9 @@ export const Data = {
         nr: {
             subject: 'Bestilling',
             textlabel: 'bestill time nå',
-            h1: 'Bestiling time hos meg',
-            h2: 'La oss sende oss e-post',
+            h1: 'Trenger du en nettside, nettbutikk, konsulent, netløsning eller webutvikler?',
+            h2: 'Bestill et møte med meg.',
+            h2: 'Første møte er gratis.',
             buttonName: 'Sende melding',
             name: 'Navnet ditt',
             email: 'Din epost',
@@ -213,8 +214,9 @@ export const Data = {
         en: {
             subject: 'Contact',
             textlabel: 'Book an appointmentnå',
-            h1: 'Get in Touch',
-            h2: `Let's send us email`,
+            h1: 'Do you need a website, online store, consultant, web solution or web developer?',
+            h2: `Book a meeting with me.`,
+            h2: `The first meeting is free.`,
             buttonName: 'Send Message',
             name: 'Your name',
             email: 'Your email',
