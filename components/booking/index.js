@@ -1,7 +1,6 @@
 // import React, { useRef, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Data } from '../common/Data';
-import GoogleCalendarScheduling from './GoogleCalendarScheduling';
 
 export default function Booking ({language}) {
 
@@ -10,13 +9,13 @@ export default function Booking ({language}) {
         <spam>{Data.booking[language ? 'en' : 'nr'].subject}</spam>
         <h1>{Data.booking[language ? 'en' : 'nr'].h1}</h1>
         {/* <GoogleCalendarScheduling language={language} /> */}
-        <iframe
-        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ08q78jfdTSAvdjzrYsZzvFRPIxbVtTln79uu3M9ITm3VITP81IoKX-YurFrpjs3PoE-IG9z8je?gv=true"
-        style={{ border: '0' }}
-        width="100%"
-        height="600"
-        frameBorder="0"
-      ></iframe>
+        <Iframe
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ08q78jfdTSAvdjzrYsZzvFRPIxbVtTln79uu3M9ITm3VITP81IoKX-YurFrpjs3PoE-IG9z8je?gv=true"
+            style={{ border: '0' }}
+            width="100%"
+            height="600"
+            frameBorder="0"
+      ></Iframe>
     </ContactContainer>
     
   );
@@ -43,6 +42,17 @@ const ContactContainer = styled.div`
         width: 100%;
         padding: 100px 10px;
     }
+`
+
+const Iframe = styled.iframe`
+    /* h1,h2,h3,h4,h5 {
+    } */
+    /* .SoBqBf,.rplqOe {
+        color: red;
+        background-color: ${({theme}) => theme.BC_Home2};
+        
+    } */
+
 `
 
 
