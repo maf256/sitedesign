@@ -212,7 +212,7 @@ export const Data = {
 
         },
         en: {
-            subject: 'Contact',
+            subject: 'Booking',
             textlabel: 'Book an appointmentnå',
             h1: 'Do you need a website, online store, web solution, consultant or web developer?',
             h2: `Book a meeting with me.`,
