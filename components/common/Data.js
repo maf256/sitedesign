@@ -60,6 +60,7 @@ export const Data = {
             // {name: 'Portfolio', href: '/Portfolio'},
             // {name: 'News', href: '/news'},
             {name: 'Contact', href: '/contact'},
+            {name: 'Booking', href: '/booking'},
             // {name: 'Hire me', href: '/hire'},
             {name: 'Resume', href: 'https://drive.google.com/file/d/1RtC5U3ETIRiphO3xkXUMxDDE-AQ_bg95/view?usp=sharing'},
             ],
@@ -70,7 +71,7 @@ export const Data = {
             // {name: 'Portefølje', href: '/Portfolio'},
             // {name: 'Nyheter', href: '/news'},
             {name: 'Kontakt', href: '/contact'},
-            // {name: 'Ansette meg', href: '/hire'},
+            {name: 'Bestilling', href: '/booking'},
             {name: 'CV-en', href: 'https://drive.google.com/file/d/1RtC5U3ETIRiphO3xkXUMxDDE-AQ_bg95/view?usp=sharing'},
             
         ]
@@ -193,7 +194,34 @@ export const Data = {
             message: 'Your message',
             sent: 'Your message has been sent.',
             err: 'Your message was not sent'
-        }
+        },
+    },
+    booking : {
+        nr: {
+            subject: 'Bestilling',
+            textlabel: 'bestill time nå',
+            h1: 'Bestiling time hos meg',
+            h2: 'La oss sende oss e-post',
+            buttonName: 'Sende melding',
+            name: 'Navnet ditt',
+            email: 'Din epost',
+            message: 'Din beskjed',
+            sent: 'Din melding har blitt sendt.',
+            err: 'Meldingen din ble ikke sendt'
+
+        },
+        en: {
+            subject: 'Contact',
+            textlabel: 'Book an appointmentnå',
+            h1: 'Get in Touch',
+            h2: `Let's send us email`,
+            buttonName: 'Send Message',
+            name: 'Your name',
+            email: 'Your email',
+            message: 'Your message',
+            sent: 'Your message has been sent.',
+            err: 'Your message was not sent'
+        },
     }
     
 }
