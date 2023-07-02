@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { checkout } from '../checkout/checkout';
-import GoogleCalendarScheduling from '../booking/GoogleCalendarScheduling'
-
 
 
 export default function Hire ({language}) {
@@ -9,7 +7,6 @@ export default function Hire ({language}) {
 
     return (
         <ContactContainer>
-
 
             <button onClick={(()=> {
                 checkout({
@@ -22,8 +19,6 @@ export default function Hire ({language}) {
                 })
             })}>Buy Items</button>
 
-
-            <GoogleCalendarScheduling />
         </ContactContainer>
 
     )
