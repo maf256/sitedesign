@@ -18,6 +18,8 @@ export default function hire ({language}){
             />
             <meta name="author" content="Majid Askarifarsangi"/>
             <meta  name="robots" content=" index , follow "/>
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
+
         </Head>
         <Hire language={language}/>
         
