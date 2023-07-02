@@ -9,7 +9,14 @@ export default function Booking ({language}) {
     <ContactContainer>
         <spam>{Data.booking[language ? 'en' : 'nr'].subject}</spam>
         <h1>{Data.booking[language ? 'en' : 'nr'].h1}</h1>
-        <GoogleCalendarScheduling language={language} />
+        {/* <GoogleCalendarScheduling language={language} /> */}
+        <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ08q78jfdTSAvdjzrYsZzvFRPIxbVtTln79uu3M9ITm3VITP81IoKX-YurFrpjs3PoE-IG9z8je?gv=true"
+        style={{ border: '0' }}
+        width="100%"
+        height="600"
+        frameBorder="0"
+      ></iframe>
     </ContactContainer>
     
   );
