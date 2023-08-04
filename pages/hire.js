@@ -6,7 +6,7 @@ export default function hire ({language}){
 
     return <>
         <Head>
-        <   title>Webutvikler</title>
+        <   title>Webutvikler og webutvikling og webdesign & web utvikler i oslo</title>
             <meta
             name="description"
             content="web utvikler - Webdesign sandvika - webdesign oslo - webutvikler - react - Fullstack webutviklingr - Responsive- Responsiveness - wordpress - woocommerce - Responsive web design - Responsive page - Responsive webdesign - webdesign, Webshop, Programming, Wordpress, SEO, Digital marketing, Graphic design.

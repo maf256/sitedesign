@@ -5,7 +5,7 @@ export default function Homepage ({language}){
 
     return <>
         <Head>
-        <   title>Webutvikler</title>
+        <   title>Webutvikler og webutvikling og webdesign & web utvikler i oslo</title>
             <meta
             name="description"
             content="Jeg er software ingeniør og jeg har jobbet som webutvikler og frontend utvikler og full stack utvikler.
