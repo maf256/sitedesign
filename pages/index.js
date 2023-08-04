@@ -8,9 +8,7 @@ export default function Homepage ({language}){
         <   title>Webutvikler og webutvikling og webdesign & web utvikler i oslo</title>
             <meta
             name="description"
-            content="Jeg er software ingeniør og jeg har jobbet som webutvikler og frontend utvikler og full stack utvikler.
-            Nå er jeg Tilgjengelig for hva som helst prosjekt.
-            Min primære tekniske kompetanse befinner meg 4 år innenfor JavaScript, HTML5/CSS3 og 3 år innenfor React og Styled component. jeg har litt erfaring om PostgreSQL, Node.js, Express.js."
+            content="Jeg er software ingeniør og jeg har jobbet som webutvikler og frontend utvikler og full stack utvikler."
             key="desc"
             />
             <meta 
