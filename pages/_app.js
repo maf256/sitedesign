@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
 
 
   return ( 
-    <ThemeProvider theme={theme(isDark)}>
+    <ThemeProvider lang= {language ? "en" : 'no'} theme={theme(isDark)}>
       <Navbar isDark={isDark} changeDarkMode={changeDarkMode} language={language} changeLangeuge={changeLangeuge} />
       <Component isDark={isDark} language={language} {...pageProps} />
     </ThemeProvider>
