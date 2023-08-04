@@ -19,10 +19,11 @@ export default class MyDocument extends Document {
       return {
         ...initialProps,
         styles: (
-          <>
+          // {language ? "en" : 'no'}
+          <html lang= 'no'>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </>
+          </html>
         ),
       }
     } finally {
