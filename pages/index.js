@@ -1,5 +1,6 @@
 import Home from "../components/home/Home";
 import Head from 'next/head';
+import Icon from './favicon.ico'
 
 export default function Homepage ({language}){
 
@@ -16,6 +17,7 @@ export default function Homepage ({language}){
             />
             <meta name="author" content="Majid Askarifarsangi"/>
             <meta  name="robots" content=" index , follow "/>
+            <link rel="icon" href={Icon} sizes="any" />
         </Head>
         <Home language={language}/>
     </>
