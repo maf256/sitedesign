@@ -20,9 +20,9 @@ export default function Home({language, theme}) {
           </Card>
           <div>
               <H1>{Data.home[language ? 'en' : 'nr'].name}</H1>
-              <h2>{Data.home[language ? 'en' : 'nr'].subject}</h2>
-              {/* <h2>{Data.home[language ? 'en' : 'nr'].text1}</h2> */}
-              <h2>{Data.home[language ? 'en' : 'nr'].text2}</h2>
+              <h3>{Data.home[language ? 'en' : 'nr'].subject}</h3>
+              {/* <h3>{Data.home[language ? 'en' : 'nr'].text1}</h3> */}
+              <h3>{Data.home[language ? 'en' : 'nr'].text2}</h3>
               <SosialConteiner>
                 <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="25px"/></a>
                 <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="25px" /></a>
@@ -55,12 +55,12 @@ const Main = styled.main`
   }
   div {
     margin: 5%;
-    h1 {
+    h2 {
       margin: 20px 0px;
       font-size: 45px;
       color: ${({theme}) => theme.Text_Logo};
     }
-    h2 {
+    h3 {
       margin: 10px 0px;
       color: ${({theme}) => theme.Text_Paragraph};
       font-size: 18px;
@@ -75,7 +75,7 @@ const Main = styled.main`
 `
 
 
-const H1 = styled.h1`
+const H1 = styled.h2`
   color: ${({theme}) => theme.Text_Title};
 `
 
