@@ -13,7 +13,7 @@ export default function Navbar  ({ isDark, changeDarkMode, language, changeLange
   return (
     <Nav >
       <Iconbar>
-        <h1><Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link></h1>
+        <h2><Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link></h2>
         <span>
           { isDark ? <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode}/> : <Darksvg fontSize="40px" changeDarkMode={changeDarkMode}/> }
           { language ? <TaggleSpan onClick={changeLangeuge}>Nr</TaggleSpan> : <TaggleSpan onClick={changeLangeuge}>En</TaggleSpan>}
@@ -48,7 +48,7 @@ const Iconbar = styled.div`
       align-items: center;
       justify-content: space-between
     }
-    h1 {
+    h2 {
       margin-left: 20px;
     }
     span {
