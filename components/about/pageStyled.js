@@ -8,7 +8,7 @@ export const AboutPage = styled.div`
     img {
         margin: 30px 0px;
     }
-    h1,h2{
+    h2,h3{
         margin: 30px 0px;
         color: ${({theme}) => theme.Text_Logo};
 
@@ -53,7 +53,7 @@ export const DetailContainer = styled.div`
 `
 export const NameContainer = styled.div`
     padding: 30px 0px;
-    h2{
+    h3{
         color: ${({theme}) => theme.Text_Paragraph};
     }
 
@@ -142,7 +142,7 @@ export const Knowledge = styled.div`
 export const UlKnowledgeDiv = styled.ul`
     width: 100%;
     /* background-color: ${({theme}) => theme.BC_Home2}; */
-    h1 {
+    h2 {
         padding-top: 15px;
     }
 
@@ -182,7 +182,7 @@ export const Education = styled.div`
     min-width: 320px;
     width: 40%;
     background-color: ${({theme}) => theme.BC_Home};
-    h1 {
+    h2 {
         display: inline-flex;
     }
 `

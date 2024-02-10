@@ -12,10 +12,11 @@ const Menu = ({
   language,
   changeLangeuge
 }) => {
+  console.log("open=",open)
   return (
     <Navbar open={open}>
       {/* <div><h2>{Data.about[language ? 'en' : 'nr'].h2}</h2></div> */}
-      <h1><Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link></h1>
+      {open ? '' : <h1><Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link></h1>}
 
       <Ul>
         {Data.menu[language ? 'en' : 'nr'].map((item, inx) => (

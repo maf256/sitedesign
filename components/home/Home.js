@@ -96,31 +96,5 @@ const animateBorder = keyframes`
 `;
 
 const Card = styled.div`
-  /* position: relative;
-  width: 260px;
-  height: 260px;
-  color: #fff;
-  background: transparent;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1em;
-  border-radius: 50%;
-  overflow: hidden;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-top: 5px solid rgba(255, 49, 49, 0.5);
-    border-right: 5px solid rgba(0, 255, 255, 0.5);
-    border-bottom: 5px solid rgba(57, 255, 20, 0.5);
-    border-left: 5px solid rgba(255, 255, 113, 0.5);
-    border-radius: 50%;
-    animation: ${animateBorder} 3s linear infinite;
-  } */
+
 `;

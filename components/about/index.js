@@ -8,7 +8,7 @@ import { Play } from "../common/Svg"
 export default function About({language}){
     return <AboutPage className="DefuiltHomepage">
         <Span>{Data.about[language ? 'en' : 'nr'].subject}</Span>
-        <h1>{Data.about[language ? 'en' : 'nr'].subject}</h1>
+        <h2>{Data.about[language ? 'en' : 'nr'].subject}</h2>
         <Image
             src = {Img}
             alt = "Majid Askarifarsangi"
@@ -17,8 +17,8 @@ export default function About({language}){
             // loading = 'lazy'
         />
         <NameContainer>
-            <h1>{Data.home[language ? 'en' : 'nr'].name}</h1>
-            <h2>{Data.about[language ? 'en' : 'nr'].h2}</h2>
+            <h2>{Data.home[language ? 'en' : 'nr'].name}</h2>
+            <h3>{Data.about[language ? 'en' : 'nr'].h2}</h3>
         </NameContainer>
         <DetailContainer>
             <p>{Data.about[language ? 'en' : 'nr'].txt1}</p>
@@ -44,7 +44,7 @@ export default function About({language}){
 
         <EducationContainer>
             <Education>
-                <h1>{Data.about[language ? 'en' : 'nr'].educationTitlle}</h1>
+                <h2>{Data.about[language ? 'en' : 'nr'].educationTitlle}</h2>
                 <UlEducation>
                     {Data.about[language ? 'en' : 'nr'].education.map(({date, name, uni}, inx) => (
                     <li key={inx}>
@@ -62,7 +62,7 @@ export default function About({language}){
 
 
             <Education>
-                <h1>{Data.about[language ? 'en' : 'nr'].experienceTitlle}</h1>
+                <h2>{Data.about[language ? 'en' : 'nr'].experienceTitlle}</h2>
                 <UlEducation>
                     {Data.about[language ? 'en' : 'nr'].experience.map(({date, name, uni}, inx) => (
                     <li key={inx}>
@@ -81,7 +81,7 @@ export default function About({language}){
 
 
         <UlKnowledgeDiv>
-            <h1>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h1>
+            <h2>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h2>
             <Knowledge>
                 <UlKnowledge>
                 <h4>Frontend</h4>
