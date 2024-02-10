@@ -19,12 +19,13 @@ export default function Homepage ({language}){
             />
             <meta name="author" content="Majid Askarifarsangi"/>
             <meta  name="robots" content=" index , follow "/>
-            <link rel="icon" type="image/png" sizes="16x16" href='../components/common/image/favicon.png'/>
+            <link rel="icon" type="image/png" sizes="16x16" href='.\public\favicon.png'/>
             <link rel="canonical" href="https://sitedesign.no" />
 
             <meta property="og:title" content="Webutvikler webutvikling webdesign & web utvikler i oslo" />
             <meta property="og:description" content="Webutvikler webutvikling webdesign & web utvikler i oslo" />
             <meta property="og:image" content='../components/common/image/me.jpg' />
+            <link rel="icon" type="image/x-icon" href=".\public\favicon.png" />
 
             <meta property="og:url" content="https://sitedesign.no" />
             {/* Optional tags */}
