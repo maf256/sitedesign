@@ -1,6 +1,6 @@
 import Home from "../components/home/Home";
 import Head from 'next/head';
-import Icon from './favicon.png'
+// import Icon from './favicon.png'
 import Img from '../components/common/image/me.jpg'
 
 
