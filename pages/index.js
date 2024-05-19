@@ -1,7 +1,7 @@
 import Home from "../components/home/Home";
 import Head from 'next/head';
-// import Icon from '../components/common/image/favicon.png'
-// import Img from '../components/common/image/me.jpg'
+import Icon from '../components/common/image/favicon.png'
+import Img from '../components/common/image/me.jpg'
 
 
 export default function Homepage ({language}){
@@ -19,13 +19,13 @@ export default function Homepage ({language}){
             />
             <meta name="author" content="Majid Askarifarsangi"/>
             <meta  name="robots" content=" index , follow "/>
-            <link rel="icon" type="image/png" sizes="16x16" href='.\public\favicon.png'/>
+            <link rel="icon" type="image/png" sizes="16x16" href={Icon}/>
             <link rel="canonical" href="https://sitedesign.no" />
 
             <meta property="og:title" content="Webutvikler webutvikling webdesign & web utvikler i oslo" />
             <meta property="og:description" content="Webutvikler webutvikling webdesign & web utvikler i oslo" />
-            <meta property="og:image" content='../components/common/image/me.jpg' />
-            <link rel="icon" type="image/x-icon" href=".\public\favicon.png" />
+            <meta property="og:image" content={Img} />
+            <link rel="icon" type="image/x-icon" href={Icon} />
 
             <meta property="og:url" content="https://sitedesign.no" />
             {/* Optional tags */}
