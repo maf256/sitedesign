@@ -5,6 +5,17 @@ import Img from '../components/common/image/me.jpg'
 
 
 export default function Homepage ({language}){
+    const structuredData = {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Majid Askarifarsangi",
+        "image": "../components/common/image/me.jpg",
+        "url": "https://sitedesign.no",
+        "sameAs": [
+          "https://www.facebook.com/majid.farsangi",
+          "https://www.linkedin.com/in/farsangi/"
+        ]
+      };
 
     return <>
         <Head>
@@ -34,6 +45,12 @@ export default function Homepage ({language}){
 
             {/* LinkedIn link */}
             <meta property="og:see_also" content="https://www.linkedin.com/in/farsangi/" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+             />
         </Head>
         <Home language={language}/>
     </>
