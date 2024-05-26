@@ -11,7 +11,7 @@ export default function Home({language, theme}) {
           <Card>
               <Image
                 src = {Img}
-                alt = "Majid Askarifarsangi"
+                alt = "webutvikler"
                 placeholder="blur"
                 priority={false}
                 // loading = 'lazy'
