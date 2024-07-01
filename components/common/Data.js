@@ -62,7 +62,7 @@ export const Data = {
             {name: 'Contact', href: '/contact'},
             {name: 'Booking', href: '/booking'},
             // {name: 'Hire me', href: '/hire'},
-            {name: 'Resume', href: 'https://drive.google.com/file/d/1AUXQs1DgOlSjh2PBzUaiYqGaeFiZHkDd/view'},
+            {name: 'Resume', href: 'https://drive.google.com/file/d/1JMUbbIcJgYW_NxvP_dXmqeju_PkVw3jP/view'},
             {name: 'Education', href: 'https://drive.google.com/file/d/1ik8Ajr50lamXsje0qRqjnsmJIjM2e9Xd/view'},
             ],
         nr: [
@@ -73,7 +73,7 @@ export const Data = {
             // {name: 'Nyheter', href: '/news'},
             {name: 'Kontakt', href: '/contact'},
             {name: 'Bestilling', href: '/booking'},
-            {name: 'CV-en', href: 'https://drive.google.com/file/d/1AUXQs1DgOlSjh2PBzUaiYqGaeFiZHkDd/view'},
+            {name: 'CV-en', href: 'https://drive.google.com/file/d/1JMUbbIcJgYW_NxvP_dXmqeju_PkVw3jP/view'},
             {name: 'Utdanning', href: 'https://drive.google.com/file/d/1ik8Ajr50lamXsje0qRqjnsmJIjM2e9Xd/view'},
 
             
@@ -102,7 +102,7 @@ export const Data = {
             txt2: 'Min primære tekniske kompetanse befinner meg 4 år innenfor JavaScript, HTML5/CSS3 og 3 år innenfor React og Styled component. jeg har litt erfaring om PostgreSQL, Node.js, Express.js og byggeverktøy som Webpack. Jeg har også erfaring med å sette opp nettsider med Wordpress og administrere AWS-server og Cpanel for flere kunder.',
             info: [
                 {name:'Fødselsdag', data: '30.03.1983'},
-                {name:'Alder', data: '40'},
+                {name:'Alder', data: '41'},
                 {name:'Adresse', data: '1338 Sandvika Norway'},
                 {name:'E-post', data: 'majid@sitedesign.no'},
                 {name:'Telefonnummer', data: '+47 40189111'},
@@ -142,7 +142,7 @@ export const Data = {
             txt2: 'My primary technical expertise is 4 years within JavaScript, HTML5/CSS3 and 3 years within React and Styled components. I have some experience with PostgreSQL, Node.js, Express.js and building tools such as Webpack. I also have experience setting up websites with Wordpress and managing AWS server and Cpanel for several clients.',
             info: [
                 {name:'Birthday', data: '30.03.1983'},
-                {name:'Age', data: '40'},
+                {name:'Age', data: '41'},
                 {name:'Address', data: '1338 Sandvika Norway'},
                 {name:'Email', data: 'majid@sitedesign.no'},
                 {name:'Phone', data: '+47 40189111'},
@@ -230,4 +230,3 @@ export const Data = {
     }
     
 }
-
