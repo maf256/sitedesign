@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import Image from 'next/image'
-import Img from '../common/image/me.jpg'
+import Img from '../common/image/me.png'
+// import Img from "~/public/me.png"
 import { Phone, Email, Linkedin, Github, Whatsapp } from '../common/Svg'
 import { Data } from '../common/Data';
 
@@ -66,11 +67,6 @@ const Main = styled.main`
       font-size: 18px;
 
     }
-  }
-  img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
   }
 `
 
