@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import Image from 'next/image'
 import Img from '../common/image/me.png'
-// import Img from "~/public/me.png"
 import { Phone, Email, Linkedin, Github, Whatsapp } from '../common/Svg'
 import { Data } from '../common/Data';
 
@@ -15,14 +14,11 @@ export default function Home({language, theme}) {
                 alt = "webutvikler"
                 placeholder="blur"
                 priority={false}
-                // loading = 'lazy'
               />
-
           </Card>
           <div>
               <H1>{Data.home[language ? 'en' : 'nr'].name}</H1>
               <h3>{Data.home[language ? 'en' : 'nr'].subject}</h3>
-              {/* <h3>{Data.home[language ? 'en' : 'nr'].text1}</h3> */}
               <h3>{Data.home[language ? 'en' : 'nr'].text2}</h3>
               <SosialConteiner>
                 <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="25px"/></a>
@@ -65,7 +61,6 @@ const Main = styled.main`
       margin: 10px 0px;
       color: ${({theme}) => theme.Text_Paragraph};
       font-size: 18px;
-
     }
   }
 `
@@ -80,17 +75,17 @@ const SosialConteiner = styled.span`
   align-items: center;
   margin: 20px 0px;
 `
-
-
-const animateBorder = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-`;
-
 const Card = styled.div`
-
+  img {
+    width: 500px;
+    height: auto;
+    @media (max-width: 1300px) {
+      width: 350px;
+      height: auto;
+    }
+    @media (max-width: 899px) {
+      width: 500px;
+      height: auto;
+    }
+  }
 `;
