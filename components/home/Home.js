@@ -21,11 +21,11 @@ export default function Home({language, theme}) {
               <h3>{Data.home[language ? 'en' : 'nr'].subject}</h3>
               <h3>{Data.home[language ? 'en' : 'nr'].text2}</h3>
               <SosialConteiner>
-                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="25px"/></a>
-                <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="25px" /></a>
-                <a target="_blank" rel="noreferrer"  href="tel:+4740189111"> <Phone fontSize="25px" /></a>
-                <a target="_blank" rel="noreferrer"  href="https://wa.me/+4740189111"><Whatsapp fontSize="25px" /></a>
-                <a target="_blank" rel="noreferrer"  href="mailto:majid@sitedesign.no"><Email fontSize="25px" /></a>
+                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="35px"/></a>
+                <a target="_blank" rel="noreferrer" href='https://github.com/maf256'><Github fontSize="35px" /></a>
+                <a target="_blank" rel="noreferrer"  href="tel:+4740189111"> <Phone fontSize="35px" color="red" /></a>
+                <a target="_blank" rel="noreferrer"  href="https://wa.me/+4740189111"><Whatsapp fontSize="35px" /></a>
+                <a target="_blank" rel="noreferrer"  href="mailto:majid@sitedesign.no"><Email fontSize="45px" /></a>
               </SosialConteiner>
           </div>
       </Main>
@@ -71,9 +71,10 @@ const H1 = styled.h2`
 `
 
 const SosialConteiner = styled.span`
+  width: 300px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  margin: 20px 0px;
 `
 const Card = styled.div`
   img {

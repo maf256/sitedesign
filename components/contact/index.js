@@ -29,10 +29,8 @@ export default function Contact ({language}) {
             form.current.name.value = '';
             form.current.email.value = '';
             form.current.message.value = '';            
-            console.log(result.text);
             setMessage(Data.contact[language ? 'en' : 'nr'].sent);
         }, (error) => {
-            console.log(error.text);
             setMessage(Data.contact[language ? 'en' : 'nr'].err);
         });
     };  
