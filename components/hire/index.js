@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { checkout } from '../checkout/checkout';
 import Image from 'next/image'
-import Img from '../common/image/me.jpg'
+import Img from '../common/image/me.png'
 
 
 export default function Hire ({language}) {

@@ -1,7 +1,7 @@
 import Home from "../components/home/Home";
 import Head from 'next/head';
 // import Icon from './favicon.png'
-import Img from '../components/common/image/me.jpg'
+import Img from '../components/common/image/me.png'
 
 
 export default function Homepage ({language}){
@@ -9,7 +9,7 @@ export default function Homepage ({language}){
         "@context": "http://schema.org",
         "@type": "Person",
         "name": "Majid Askarifarsangi",
-        "image": "../components/common/image/me.jpg",
+        "image": "../components/common/image/me.png",
         "url": "https://sitedesign.no",
         "sameAs": [
           "https://www.facebook.com/majid.farsangi",
