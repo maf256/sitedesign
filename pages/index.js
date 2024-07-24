@@ -16,6 +16,13 @@ export default function Homepage ({language}){
           "https://www.linkedin.com/in/farsangi/"
         ]
       };
+    // const defaultMeta = {
+    //     title: 'Your Default Title',
+    //     description: 'Your default description.',
+    //     url: 'https://yourwebsite.com',
+    //     image: 'https://yourwebsite.com/default-image.jpg',
+    //     type: 'website',
+    //   };
 
     return <>
         <Head>
@@ -55,6 +62,13 @@ export default function Homepage ({language}){
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff"></meta>
             {/* _____________________ */}
+                    {/* Open Graph meta tags */}
+            {/* <meta property="og:title" content={data.title} />
+            <meta property="og:description" content={data.description} />
+            <meta property="og:image" content={data.image} />
+            <meta property="og:url" content={`https://yourwebsite.com/${data.slug}`} />
+            <meta property="og:type" content="website" /> */}
+
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

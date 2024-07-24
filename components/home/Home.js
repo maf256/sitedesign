@@ -89,5 +89,9 @@ const Card = styled.div`
       width: 500px;
       height: auto;
     }
+          @media (max-width: 500px) {
+      width: 400px;
+      height: auto;
+    }
   }
 `;
