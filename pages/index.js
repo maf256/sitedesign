@@ -1,7 +1,7 @@
 import Home from "../components/home/Home";
 import Head from 'next/head';
 // import Icon from './favicon.png'
-import Img from '../components/common/image/me.png'
+import Img from '../components/common/image/me.jpg'
 
 
 export default function Homepage ({language}){
