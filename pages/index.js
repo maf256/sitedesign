@@ -5,6 +5,7 @@ import Img from '../components/common/image/me.jpg'
 
 
 export default function Homepage ({language}){
+
     const structuredData = {
         "@context": "http://schema.org",
         "@type": "Person",
@@ -16,20 +17,25 @@ export default function Homepage ({language}){
           "https://www.linkedin.com/in/farsangi/"
         ]
       };
-    // const defaultMeta = {
-    //     title: 'Your Default Title',
-    //     description: 'Your default description.',
-    //     url: 'https://yourwebsite.com',
-    //     image: 'https://yourwebsite.com/default-image.jpg',
-    //     type: 'website',
-    //   };
+
+      
+
+
+
+    const defaultMeta = {
+        title: 'Your Default Title',
+        description: "Jeg er en dedikert og lidenskapelig software ingeniør med omfattende erfaring innen webutvikling. Gjennom årene har jeg jobbet som webutvikler, frontend utvikler og full stack utvikler, noe som har gitt meg en solid forståelse av alle aspekter ved webdesign og utvikling. Mitt arbeid som webutvikler har inkludert alt fra å designe brukervennlige grensesnitt til å bygge komplekse backend-systemer, noe som gjør at jeg kan levere helhetlige løsninger som oppfyller kundens behov. Webdesign er en kunstform som jeg setter stor pris på. Jeg elsker å kombinere estetikk med funksjonalitet for å skape nettsteder som ikke bare ser bra ut, men som også gir en sømløs brukeropplevelse. Som webutvikler er jeg alltid opptatt av å holde meg oppdatert med de nyeste trendene og teknologiene innen webdesign, slik at jeg kan tilby de mest moderne og effektive løsningene til mine kunder. Gjennom min karriere har jeg hatt gleden av å jobbe på en rekke spennende prosjekter. Fra små bedriftsnettsteder til store e-handelsplattformer, har jeg alltid strukket meg etter å levere høy kvalitet. Jeg tror på kraften av godt webdesign, og hvordan det kan bidra til en virksomhets suksess. Enten det handler om å forbedre brukeropplevelsen, øke konverteringsraten, eller bare å gjøre et nettsted visuelt tiltalende, er mitt mål alltid å skape noe som gir verdi. Som full stack utvikler, bringer jeg en helhetlig tilnærming til hvert prosjekt. Jeg har erfaring med en rekke teknologier og verktøy, og jeg er komfortabel med både frontend og backend utvikling. Dette gjør at jeg kan ta eierskap over hele utviklingsprosessen, fra konsept og design, til implementering og vedlikehold. Kort sagt, med min bakgrunn som webutvikler og min lidenskap for webdesign, er jeg godt rustet til å hjelpe bedrifter med å realisere sine digitale mål. Jeg ser frem til nye utfordringer og muligheter til å skape innovative og effektive løsninger.",
+        url: 'https://yourwebsite.com',
+        image: 'https://yourwebsite.com/default-image.jpg',
+        type: 'website',
+      };
 
     return <>
         <Head>
         <   title>Webutvikler webutvikling webdesign & web utvikler i oslo</title>
             <meta
             name="description"
-            content="Jeg er software ingeniør og jeg har jobbet som webutvikler og frontend utvikler og full stack utvikler."
+            content= {defaultMeta.description}
             key="desc"
             />
             <meta 
