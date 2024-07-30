@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           // {language ? "en" : 'no'}
-          <html lang= "nb">
+          <html lang= "no">
             {initialProps.styles}
             {sheet.getStyleElement()}
           </html>

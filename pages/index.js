@@ -40,13 +40,11 @@ export default function Homepage ({language}){
                 />
                 <meta name="author" content="Majid Askarifarsangi"/>
                 <meta name="robots" content="index, follow"/>
-                {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/> */}
                 <link rel="canonical" href="https://sitedesign.no" />
 
                 <meta property="og:title" content={defaultMeta.title} />
                 <meta property="og:description" content={defaultMeta.description} />
                 <meta property="og:image" content={Img} />
-                {/* <link rel="icon" type="image/x-icon" href="/favicon.png" /> */}
 
                 <meta property="og:url" content="https://sitedesign.no" />
                 <meta property="og:site_name" content="sitedesign" />
