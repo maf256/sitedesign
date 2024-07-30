@@ -17,7 +17,7 @@ export default function Home({language, theme}) {
               />
           </Card>
           <div>
-              <H1>{Data.home[language ? 'en' : 'nr'].name}</H1>
+              <H2>{Data.home[language ? 'en' : 'nr'].name}</H2>
               <h3>{Data.home[language ? 'en' : 'nr'].subject}</h3>
               <h3>{Data.home[language ? 'en' : 'nr'].text2}</h3>
               <SosialConteiner>
@@ -66,7 +66,7 @@ const Main = styled.main`
 `
 
 
-const H1 = styled.h2`
+const H2 = styled.h2`
   color: ${({theme}) => theme.Text_Title};
 `
 
