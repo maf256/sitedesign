@@ -176,7 +176,7 @@ export const Data = {
             knowledge: {
                 knowledge: 'Knowledge',
                 frontend: ['HTML','CSS','JavaScript', 'React.js','Next.js', 'Styled-components', 'React-query', 'Axios', 'Bootstrap', 'Material UI'],
-                backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack']
+                backend: ['Node.js', 'Express.js', 'SQL Server', 'PostgreSQL','Webpack', "Kotlin"]
             }
         }
     },
