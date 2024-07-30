@@ -23,6 +23,9 @@ export default function About({language}){
         <DetailContainer>
             <p>{Data.about[language ? 'en' : 'nr'].txt1}</p>
             <p>{Data.about[language ? 'en' : 'nr'].txt2}</p>
+            <p>{Data.about[language ? 'en' : 'nr'].txt3}</p>
+            <p>{Data.about[language ? 'en' : 'nr'].txt4}</p>
+            <p>{Data.about[language ? 'en' : 'nr'].txt5}</p>
         </DetailContainer>
         <InfoContainer>
             <Ul>
