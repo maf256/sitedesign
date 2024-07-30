@@ -36,7 +36,7 @@ export default function Homepage ({language}){
                 />
                 <meta 
                     name="keywords" 
-                    content="Webutvikler, Webdesign, Webutvikling, CSS, JavaScript, React, Web development, Responsive design, Front-end development, Back-end development"
+                    content="Webutvikler, Webdesign, Webutvikling, JavaScript, React, Web development, Responsive design, Frontend development, Backend development"
                 />
                 <meta name="author" content="Majid Askarifarsangi"/>
                 <meta name="robots" content="index, follow"/>
