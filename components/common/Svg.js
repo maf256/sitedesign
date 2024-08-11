@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ariaLabel = "Webutvikler webutvikling webdesign & web utvikler i oslo";
+const ariaLabel = "Webutvikler";
 
 export const Phone = ({fontSize, margin}) => <SvgIcon fontSize={fontSize} margin={margin} role="img" aria-label={ariaLabel} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17 12C19.7614 12 22 9.76142 22 7C22 4.23858 19.7614 2 17 2C14.2386 2 12 4.23858 12 7C12 7.79984 12.1878 8.55582 12.5217 9.22624C12.6105 9.4044 12.64 9.60803 12.5886 9.80031L12.2908 10.9133C12.1615 11.3965 12.6035 11.8385 13.0867 11.7092L14.1997 11.4114C14.392 11.36 14.5956 11.3895 14.7738 11.4783C15.4442 11.8122 16.2002 12 17 12Z" strokeWidth="1.5"/>
