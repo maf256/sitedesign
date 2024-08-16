@@ -30,7 +30,7 @@ export default function About({language}){
                 ))}
             </Ul>
         </InfoContainer>
-        <ButtonCV href="https://drive.google.com/file/d/1RtC5U3ETIRiphO3xkXUMxDDE-AQ_bg95/view?usp=sharing" 
+        <ButtonCV href="https://drive.google.com/file/d/1LH8DtEQhVBq8GLEC6nQfbg8ed0gfE1a6/view" 
             target="_blank"
             rel="noreferrer">{Data.about[language ? 'en' : 'nr'].buttonName}
         </ButtonCV>

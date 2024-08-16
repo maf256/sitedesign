@@ -107,11 +107,6 @@ export const ButtonCV = styled.a`
     }
 `
 
-// export const Skills = styled.div`
-// `
-
-
-
 export const Span = styled.span`
     color: ${({theme}) => theme.Text_Paragraph};
     background-color: gray;
