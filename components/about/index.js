@@ -1,4 +1,4 @@
-import { AboutPage, DetailContainer, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge,EducationContainer ,Education,UlKnowledgeDiv, UlEducation } from "./pageStyled"
+import { AboutPage, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge,EducationContainer ,Education,UlKnowledgeDiv, UlEducation } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/about.jpg'
