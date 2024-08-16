@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Image from 'next/image'
 import Img from '../common/image/me.png'
 import { Phone, Email, Linkedin, Github, Whatsapp } from '../common/Svg'
@@ -71,7 +71,6 @@ const Main = styled.main`
     }
   }
 `
-
 
 const H2 = styled.h2`
   color: ${({theme}) => theme.Text_Title};
