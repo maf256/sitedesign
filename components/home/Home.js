@@ -28,30 +28,37 @@ export default function Home({language, theme}) {
                 <a target="_blank" rel="noreferrer"  href="mailto:majid@sitedesign.no"><Email fontSize="45px" /></a>
               </SosialConteiner>
           </div>
+
+            <DetailContainer>
+                <p>{Data.about[language ? 'en' : 'nr'].txt1}</p>
+                <p>{Data.about[language ? 'en' : 'nr'].txt2}</p>
+                <p>{Data.about[language ? 'en' : 'nr'].txt3}</p>
+                <p>{Data.about[language ? 'en' : 'nr'].txt4}</p>
+                <p>{Data.about[language ? 'en' : 'nr'].txt5}</p>
+            </DetailContainer>
       </Main>
     </>
   )
 }
 
-
 const Main = styled.main`
   background-color: ${({theme}) => theme.BC_Home};
   min-height: 100vh;
   display: flex;
+  width: 100%;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   @media (min-width: 900px) {
     margin-left: 25%;
     width: 75%;
-
   }
   @media (max-width: 899px) {
     width: 100%;
     flex-direction: column;
-    padding: 50px;
+    padding: 30px;
   }
   div {
-    margin: 5%;
     h2 {
       margin: 20px 0px;
       font-size: 45px;
@@ -71,7 +78,7 @@ const H2 = styled.h2`
 `
 
 const SosialConteiner = styled.span`
-  margin-top: 20px;
+  margin: 20px;
   width: 300px;
   display: flex;
   justify-content: space-around;
@@ -79,7 +86,7 @@ const SosialConteiner = styled.span`
 `
 const Card = styled.div`
   img {
-    width: 500px;
+    width: 550px;
     height: auto;
     @media (max-width: 1300px) {
       width: 350px;
@@ -95,3 +102,13 @@ const Card = styled.div`
     }
   }
 `;
+
+export const DetailContainer = styled.div`
+    border-top: solid 1px ${({theme}) => theme.Text_Paragraph};
+    border-bottom: solid 1px ${({theme}) => theme.Text_Paragraph};
+    p {
+        color: ${({theme}) => theme.Text_Paragraph};
+        line-height: 1.6;
+        font-size: 18px;
+    }
+`

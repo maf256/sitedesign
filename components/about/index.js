@@ -16,17 +16,10 @@ export default function About({language}){
             priority={false}
             // loading = 'lazy'
         />
-        <NameContainer>
-            <h2>{Data.home[language ? 'en' : 'nr'].name}</h2>
-            <h3>{Data.about[language ? 'en' : 'nr'].h2}</h3>
-        </NameContainer>
-        <DetailContainer>
-            <p>{Data.about[language ? 'en' : 'nr'].txt1}</p>
-            <p>{Data.about[language ? 'en' : 'nr'].txt2}</p>
-            <p>{Data.about[language ? 'en' : 'nr'].txt3}</p>
-            <p>{Data.about[language ? 'en' : 'nr'].txt4}</p>
-            <p>{Data.about[language ? 'en' : 'nr'].txt5}</p>
-        </DetailContainer>
+                  <NameContainer>
+                <h2>{Data.home[language ? 'en' : 'nr'].name}</h2>
+                <h3>{Data.about[language ? 'en' : 'nr'].h2}</h3>
+            </NameContainer>
         <InfoContainer>
             <Ul>
                 {Data.about[language ? 'en' : 'nr'].info.map((item, inx) => (

@@ -36,21 +36,6 @@ export const AboutPage = styled.div`
         }
     }
 `
-
-
-export const DetailContainer = styled.div`
-    border-top: solid 1px ${({theme}) => theme.Text_Paragraph};
-    border-bottom: solid 1px ${({theme}) => theme.Text_Paragraph};
-    padding: 30px 5px;
-    p {
-        color: ${({theme}) => theme.Text_Paragraph};
-        margin: 15px 0;
-        line-height: 1.6;
-        font-size: 18px;
-
-    }
-
-`
 export const NameContainer = styled.div`
     padding: 30px 0px;
     h3{
