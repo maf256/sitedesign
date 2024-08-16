@@ -1,7 +1,7 @@
 import Home from "../components/home/Home";
 import Head from 'next/head';
-import Icon from '../public/favicon.ico'
-import Img from '../public/apple-touch-icon.png'
+import Icon from '../components/common/image/favicon.png'
+import Img from '../components/common/image/me.jpg'
 
 
 export default function Homepage ({language}){

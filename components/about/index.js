@@ -1,4 +1,4 @@
-import { AboutPage, NameContainer, InfoContainer, Ul, Skills, Knowledge, ButtonCV, Span, UlKnowledge,EducationContainer ,Education,UlKnowledgeDiv, UlEducation } from "./pageStyled"
+import { AboutPage, NameContainer, InfoContainer, Ul, Knowledge, ButtonCV, Span, UlKnowledge,EducationContainer ,Education,UlKnowledgeDiv, UlEducation } from "./pageStyled"
 import { Data } from "../common/Data"
 import Image from 'next/image'
 import Img from '../common/image/about.jpg'
@@ -16,10 +16,10 @@ export default function About({language}){
             priority={false}
             // loading = 'lazy'
         />
-                  <NameContainer>
-                <h2>{Data.home[language ? 'en' : 'nr'].name}</h2>
-                <h3>{Data.about[language ? 'en' : 'nr'].h2}</h3>
-            </NameContainer>
+        <NameContainer>
+            <h2>{Data.home[language ? 'en' : 'nr'].name}</h2>
+            <h3>{Data.about[language ? 'en' : 'nr'].h2}</h3>
+        </NameContainer>
         <InfoContainer>
             <Ul>
                 {Data.about[language ? 'en' : 'nr'].info.map((item, inx) => (
@@ -34,9 +34,9 @@ export default function About({language}){
             target="_blank"
             rel="noreferrer">{Data.about[language ? 'en' : 'nr'].buttonName}
         </ButtonCV>
-        <Skills>
+        {/* <Skills>
 
-        </Skills>
+        </Skills> */}
 
         <EducationContainer>
             <Education>

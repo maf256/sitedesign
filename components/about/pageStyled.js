@@ -107,8 +107,8 @@ export const ButtonCV = styled.a`
     }
 `
 
-export const Skills = styled.div`
-`
+// export const Skills = styled.div`
+// `
 
 
 
