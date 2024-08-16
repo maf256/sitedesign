@@ -62,7 +62,7 @@ export const Data = {
             {name: 'Contact', href: '/contact'},
             {name: 'Booking', href: '/booking'},
             // {name: 'Hire me', href: '/hire'},
-            {name: 'Resume', href: 'https://drive.google.com/file/d/1JMUbbIcJgYW_NxvP_dXmqeju_PkVw3jP/view'},
+            {name: 'Resume', href: 'https://drive.google.com/file/d/1LH8DtEQhVBq8GLEC6nQfbg8ed0gfE1a6/view'},
             {name: 'Education', href: 'https://drive.google.com/file/d/1ik8Ajr50lamXsje0qRqjnsmJIjM2e9Xd/view'},
             ],
         nr: [
@@ -73,7 +73,7 @@ export const Data = {
             // {name: 'Nyheter', href: '/news'},
             {name: 'Kontakt', href: '/contact'},
             {name: 'Bestilling', href: '/booking'},
-            {name: 'CV-en', href: 'https://drive.google.com/file/d/1JMUbbIcJgYW_NxvP_dXmqeju_PkVw3jP/view'},
+            {name: 'CV-en', href: 'https://drive.google.com/file/d/1LH8DtEQhVBq8GLEC6nQfbg8ed0gfE1a6/view'},
             {name: 'Utdanning', href: 'https://drive.google.com/file/d/1ik8Ajr50lamXsje0qRqjnsmJIjM2e9Xd/view'},
 
             
