@@ -13,6 +13,6 @@ export default function theme(isDark) {
         BC_Home2: isDark ?  '#494b50' : 'white',
         Icon_Color: isDark ? 'white' : 'black',
         Icon_bkColor: isDark ? '#606680' : '#F0F1F4',
-        Text_Paragraph: isDark ? '#bbbbb8' : '#2E2A2A'
+        Text_Paragraph: isDark ? '#bbbbb8' : '#2E2A2A',
     }
 }
