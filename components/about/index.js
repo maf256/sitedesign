@@ -54,9 +54,6 @@ export default function About({language}){
                     ))}
                 </UlEducation>
             </Education>
-
-
-
             <Education>
                 <h2>{Data.about[language ? 'en' : 'nr'].experienceTitlle}</h2>
                 <UlEducation>
@@ -73,9 +70,6 @@ export default function About({language}){
                 </UlEducation>
             </Education>
         </EducationContainer>
-
-
-
         <UlKnowledgeDiv>
             <h2>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h2>
             <Knowledge>
@@ -99,8 +93,6 @@ export default function About({language}){
                 </UlKnowledge>
             </Knowledge>
         </UlKnowledgeDiv>
-
-
     </AboutPage>
 }
 
