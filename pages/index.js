@@ -8,7 +8,7 @@ export default function Homepage({ language }) {
   return (
     <>
       <Head>
-        <title>Webutvikler webutvikling webdesign & web utvikler i oslo</title>
+        <title>Webutvikler - oslo webdesign - webutvikling</title>
         <meta
           name="description"
           content="Jeg er software ingeniør og har jobbet som webutvikler, frontend utvikler, full stack utvikler, og med webdesign."
@@ -20,7 +20,11 @@ export default function Homepage({ language }) {
         />
         <meta name="author" content="Majid Askarifarsangi" />
         <meta name="robots" content=" index , follow " />
-        <link rel="icon" type="image/png" sizes="16x16" href={icon} />
+        {/* <link rel="icon" type="image/png" sizes="16x16" href={icon} /> */}
+        <meta property="og:image" content="https://sitedesign.no/me.jpg" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:type" content="image/jpg" />
         <link rel="canonical" href="https://sitedesign.no" />
 
         <meta
@@ -31,11 +35,12 @@ export default function Homepage({ language }) {
           property="og:description"
           content="Webutvikler webutvikling webdesign & web utvikler i oslo"
         />
-        <meta property="og:image" content={img} />
+        {/* <meta property="og:image" content={img} /> */}
         <link rel="icon" type="image/x-icon" href={icon} />
 
         <meta property="og:url" content="https://sitedesign.no" />
-        <meta property="og:site_name" content="sitedeisgn" />
+        <meta property="og:site_name" content="webutvikler" />
+        <meta property="og:locale" content="nb_NO" />
         <meta property="og:type" content="website" />
 
         <meta
