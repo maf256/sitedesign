@@ -18,7 +18,10 @@ export default function Home({ language, theme }) {
         </Card>
         <div>
           <H2>{Data.home[language ? 'en' : 'nr'].name}</H2>
-          <h3>{Data.home[language ? 'en' : 'nr'].subject}</h3>
+          <h3>
+            {Data.home[language ? 'en' : 'nr'].subject}{' '}
+            <b>{Data.about[language ? 'en' : 'nr'].h2}</b>.
+          </h3>
           <h3>{Data.home[language ? 'en' : 'nr'].text2}</h3>
           <SosialConteiner>
             <a
@@ -61,7 +64,11 @@ export default function Home({ language, theme }) {
           <p>{Data.about[language ? 'en' : 'nr'].txt2}</p>
           <p>{Data.about[language ? 'en' : 'nr'].txt3}</p>
           <p>{Data.about[language ? 'en' : 'nr'].txt4}</p>
-          <p>{Data.about[language ? 'en' : 'nr'].txt5}</p>
+          <p>
+            {Data.about[language ? 'en' : 'nr'].txt5}
+            <strong>webutvikler</strong>
+            {Data.about[language ? 'en' : 'nr'].txt6}
+          </p>
         </DetailContainer>
       </Main>
     </>
