@@ -2,8 +2,7 @@ import Home from '../components/home/Home'
 import Head from 'next/head'
 // import icon from '../public/'
 // import img from '../components/common/image/me.jpg'
-const icon = '/favicon.ico'
-const img = '/me.jpg'
+
 export default function Homepage({ language }) {
   return (
     <>
@@ -39,7 +38,7 @@ export default function Homepage({ language }) {
           content="Webutvikler webutvikling webdesign & web utvikler i oslo"
         />
         {/* <meta property="og:image" content={img} /> */}
-        <link rel="icon" type="image/x-icon" href={icon} />
+        <link rel="icon" type="image/x-icon" href={'../public/favicon.ico'} />
 
         <meta property="og:url" content="https://sitedesign.no" />
         <meta property="og:site_name" content="webutvikler" />
