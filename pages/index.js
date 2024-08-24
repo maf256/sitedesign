@@ -14,7 +14,7 @@ export default function Homepage({ language }) {
     author: {
       '@type': 'Person',
       name: 'Majid Askarifarsangi',
-      jobTitle: 'Software Engineer',
+      jobTitle: 'Webutvikler',
       image: 'https://sitedesign.no/me.jpg',
       url: 'https://www.sitedesign.no',
       sameAs: [
