@@ -4,23 +4,96 @@ import Head from 'next/head'
 // import img from '../components/common/image/me.jpg'
 
 export default function Homepage({ language }) {
-  const jsonLd = {
+  const websiteJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Webutvikler - oslo webdesign - webutvikling',
-    datePublished: '2024-08-24',
+    '@type': 'WebSite',
+    url: 'https://sitedesign.no',
+    name: 'Sitedesign',
+    description:
+      'Sitedesign offers professional webutvikler (web development) and webdesign (web design) services tailored to your business needs.',
     author: {
       '@type': 'Person',
       name: 'Majid Askarifarsangi',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Sitedesign.no',
+      name: 'Sitedesign',
       logo: {
         '@type': 'ImageObject',
         url: 'https://sitedesign.no/me.jpg',
       },
     },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://sitedesign.no/?s={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://sitedesign.no',
+    },
+  }
+
+  const localBusinessJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Sitedesign',
+    url: 'https://sitedesign.no',
+    description:
+      'Sitedesign specializes in webutvikler (web development) and webdesign (web design) services in Norway.',
+    logo: 'https://sitedesign.no/android-chrome-192x192.png',
+    image: 'https://sitedesign.no/me.jpg',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Hamangskogen 71',
+      addressLocality: 'Sandvika',
+      postalCode: '1338',
+      addressCountry: 'NO',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+47-401-89-111',
+      contactType: 'Customer Service',
+      areaServed: 'NO',
+      availableLanguage: ['Norwegian', 'English'],
+    },
+    sameAs: [
+      'https://www.facebook.com/majid.farsangi',
+      'https://www.linkedin.com/in/farsangi',
+      'https://x.com/askarifarsangi',
+    ],
+    priceRange: '$$',
+    keywords: 'webutvikler, webdesign, web development, web design, Norway',
+  }
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://sitedesign.no/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'About',
+        item: 'https://sitedesign.no/about',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Contact',
+        item: 'https://sitedesign.no/contact',
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: 'Booking',
+        item: 'https://sitedesign.no/booking',
+      },
+    ],
   }
   return (
     <>
@@ -28,7 +101,17 @@ export default function Homepage({ language }) {
         <title>Webutvikler - oslo webdesign - webutvikling</title>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
         />
         <meta
           name="description"
