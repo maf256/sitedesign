@@ -4,10 +4,32 @@ import Head from 'next/head'
 // import img from '../components/common/image/me.jpg'
 
 export default function Homepage({ language }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'Webutvikler - oslo webdesign - webutvikling',
+    datePublished: '2024-08-24',
+    author: {
+      '@type': 'Person',
+      name: 'Majid Askarifarsangi',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Sitedesign.no',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://sitedesign.no/me.jpg',
+      },
+    },
+  }
   return (
     <>
       <Head>
         <title>Webutvikler - oslo webdesign - webutvikling</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <meta
           name="description"
           content="Jeg er software ingeniør og har jobbet som webutvikler, frontend utvikler, full stack utvikler, og med webdesign."
