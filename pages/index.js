@@ -14,6 +14,14 @@ export default function Homepage({ language }) {
     author: {
       '@type': 'Person',
       name: 'Majid Askarifarsangi',
+      jobTitle: 'Software Engineer',
+      image: 'https://sitedesign.no/me.jpg',
+      url: 'https://www.sitedesign.no',
+      sameAs: [
+        'https://www.facebook.com/majid.farsangi',
+        'https://www.linkedin.com/in/farsangi',
+        'https://x.com/askarifarsangi',
+      ],
     },
     publisher: {
       '@type': 'Organization',
@@ -98,7 +106,10 @@ export default function Homepage({ language }) {
   return (
     <>
       <Head>
-        <title>Webutvikler - oslo webdesign - webutvikling</title>
+        <title>
+          Webutvikler - oslo webdesign - webutvikling - webdesign - oslo
+          webutvikler
+        </title>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
@@ -115,7 +126,7 @@ export default function Homepage({ language }) {
         />
         <meta
           name="description"
-          content="Jeg er software ingeniør og har jobbet som webutvikler, frontend utvikler, full stack utvikler, og med webdesign."
+          content="Erfaren softwareingeniør og webutvikler med spisskompetanse innen frontend- og full stack utvikling, samt moderne webdesign. Leverer skreddersydde digitale løsninger som kombinerer funksjonalitet med estetikk."
           key="desc"
         />
         <meta
