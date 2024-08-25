@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { checkout } from '../checkout/checkout'
-import Img from '../common/image/me.png'
+import Img from '../common/image/webutvikler.png'
 import Gravatar from '../gravatar/Gravatar'
 
 export default function Hire({ language }) {
