@@ -15,7 +15,7 @@ export default function Homepage({ language }) {
       '@type': 'Person',
       name: 'Majid Askarifarsangi',
       jobTitle: 'Webutvikler',
-      image: 'https://sitedesign.no/me.jpg',
+      image: 'https://sitedesign.no/webutvikler.jpg',
       url: 'https://www.sitedesign.no',
       sameAs: [
         'https://www.facebook.com/majid.farsangi',
@@ -28,7 +28,7 @@ export default function Homepage({ language }) {
       name: 'Sitedesign',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://sitedesign.no/me.jpg',
+        url: 'https://sitedesign.no/webutvikler.jpg',
       },
     },
     potentialAction: {
@@ -50,7 +50,7 @@ export default function Homepage({ language }) {
     description:
       'Sitedesign specializes in webutvikler (web development) and webdesign (web design) services in Norway.',
     logo: 'https://sitedesign.no/android-chrome-192x192.png',
-    image: 'https://sitedesign.no/me.jpg',
+    image: 'https://sitedesign.no/webutvikler.jpg',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Hamangskogen 71',

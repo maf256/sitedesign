@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Image from 'next/image'
-import Img from '../common/image/me.png'
-import { Phone, Email, Linkedin, Github, Whatsapp } from '../common/Svg'
+import Img from '../common/image/webutvikler.png'
+import * as Svg from '../common/Svg'
 import { Data } from '../common/Data'
 
 export default function Home({ language, theme }) {
@@ -29,32 +29,32 @@ export default function Home({ language, theme }) {
               rel="noreferrer"
               href="https://www.linkedin.com/in/farsangi"
             >
-              <Linkedin fontSize="35px" />
+              <Svg.Linkedin fontSize="35px" />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/maf256"
             >
-              <Github fontSize="35px" />
+              <Svg.Github fontSize="35px" />
             </a>
             <a target="_blank" rel="noreferrer" href="tel:+4740189111">
               {' '}
-              <Phone fontSize="35px" />
+              <Svg.Phone fontSize="35px" />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://wa.me/+4740189111"
             >
-              <Whatsapp fontSize="35px" />
+              <Svg.Whatsapp fontSize="35px" />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="mailto:majid@sitedesign.no"
             >
-              <Email fontSize="45px" />
+              <Svg.Email fontSize="45px" />
             </a>
           </SosialConteiner>
         </div>
