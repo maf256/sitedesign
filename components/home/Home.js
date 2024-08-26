@@ -29,32 +29,37 @@ export default function Home({ language, theme }) {
               rel="noreferrer"
               href="https://www.linkedin.com/in/farsangi"
             >
-              <Svg.Linkedin fontSize="35px" />
+              webutvikler
+              <Svg.Linkedin fontSize="35px">webutvikler</Svg.Linkedin>
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://github.com/maf256"
             >
-              <Svg.Github fontSize="35px" />
+              webutvikler
+              <Svg.Github fontSize="35px">webutvikler</Svg.Github>
             </a>
             <a target="_blank" rel="noreferrer" href="tel:+4740189111">
               {' '}
-              <Svg.Phone fontSize="35px" />
+              webutvikler
+              <Svg.Phone fontSize="35px">webutvikler</Svg.Phone>
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://wa.me/+4740189111"
             >
-              <Svg.Whatsapp fontSize="35px" />
+              webutvikler
+              <Svg.Whatsapp fontSize="35px">webutvikler</Svg.Whatsapp>
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="mailto:majid@sitedesign.no"
             >
-              <Svg.Email fontSize="45px" />
+              webutvikler
+              <Svg.Email fontSize="45px">webutvikler</Svg.Email>
             </a>
           </SosialConteiner>
         </div>
@@ -116,6 +121,10 @@ const SosialConteiner = styled.span`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  a {
+    color: transparent;
+    font-size: 0px;
+  }
 `
 const Card = styled.div`
   img {
