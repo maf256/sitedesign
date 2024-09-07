@@ -44,7 +44,7 @@ export default function About({ language }) {
         </Ul>
       </InfoContainer>
       <ButtonCV
-        href="https://drive.google.com/file/d/1LH8DtEQhVBq8GLEC6nQfbg8ed0gfE1a6/view"
+        href="https://drive.usercontent.google.com/uc?id=1I0il499PFD---80tiWG4vDpd0qnXW2xh&export=download"
         target="_blank"
         rel="noreferrer"
       >

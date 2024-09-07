@@ -61,7 +61,7 @@ export const Data = {
       { name: 'Booking', href: '/booking' },
       {
         name: 'Resume',
-        href: 'https://drive.google.com/file/d/1LH8DtEQhVBq8GLEC6nQfbg8ed0gfE1a6/view',
+        href: 'https://drive.google.com/file/d/1I0il499PFD---80tiWG4vDpd0qnXW2xh/view',
       },
       {
         name: 'Education',
@@ -75,7 +75,7 @@ export const Data = {
       { name: 'Bestilling', href: '/booking' },
       {
         name: 'CV-en',
-        href: 'https://drive.google.com/file/d/1LH8DtEQhVBq8GLEC6nQfbg8ed0gfE1a6/view',
+        href: 'https://drive.google.com/file/d/1I0il499PFD---80tiWG4vDpd0qnXW2xh/view',
       },
       {
         name: 'Utdanning',
