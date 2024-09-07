@@ -135,19 +135,15 @@ export default function Homepage({ language }) {
         />
         <meta name="author" content="Majid Askarifarsangi" />
         <meta name="robots" content=" index , follow " />
-        {/* <link rel="icon" type="image/png" sizes="16x16" href={icon} /> */}
-        <meta
-          property="og:image"
-          content="https://sitedesign.no/android-chrome-192x192.png"
-        />
+        <meta property="og:image" content="https://sitedesign.no/me.jpg" />
         <meta
           property="og:image:secure_url"
-          content="https://sitedesign.no/android-chrome-192x192.png"
+          content="https://sitedesign.no/me.jpg"
         />
-        <meta property="og:image:width" content="192" />
-        <meta property="og:image:height" content="192" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
         <meta property="og:image:alt" content="webutvikler" />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/jpeg" />
         <link rel="canonical" href="https://sitedesign.no" />
 
         <meta
