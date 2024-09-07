@@ -140,8 +140,13 @@ export default function Homepage({ language }) {
           property="og:image"
           content="https://sitedesign.no/android-chrome-192x192.png"
         />
+        <meta
+          property="og:image:secure_url"
+          content="https://sitedesign.no/android-chrome-192x192.png"
+        />
         <meta property="og:image:width" content="192" />
         <meta property="og:image:height" content="192" />
+        <meta property="og:image:alt" content="webutvikler" />
         <meta property="og:image:type" content="image/png" />
         <link rel="canonical" href="https://sitedesign.no" />
 
