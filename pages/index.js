@@ -167,6 +167,11 @@ export default function Homepage({ language }) {
           content="https://www.linkedin.com/in/farsangi/"
         />
         <meta name="rating" content="general" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8083953411324346"
+          crossorigin="anonymous"
+        ></script>
       </Head>
       <Home language={language} />
     </>
