@@ -167,6 +167,10 @@ export default function Homepage({ language }) {
           content="https://www.linkedin.com/in/farsangi/"
         />
         <meta name="rating" content="general" />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-8083953411324346"
+        ></meta>
       </Head>
       <Home language={language} />
     </>
