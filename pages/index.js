@@ -135,11 +135,11 @@ export default function Homepage({ language }) {
         />
         <meta name="author" content="Majid Askarifarsangi" />
         <meta name="robots" content=" index , follow " />
-        {/* <meta property="og:image" content="https://sitedesign.no/me.jpg" />
+        <meta property="og:image" content="https://sitedesign.no/me.jpg" />
         <meta
           property="og:image:secure_url"
           content="https://sitedesign.no/me.jpg"
-        /> */}
+        />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta property="og:image:alt" content="webutvikler" />

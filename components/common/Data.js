@@ -75,7 +75,7 @@ export const Data = {
       { name: 'Bestilling', href: '/booking' },
       {
         name: 'CV-en',
-        href: 'https://drive.google.com/file/d/1I0il499PFD---80tiWG4vDpd0qnXW2xh/view',
+        href: 'https://drive.google.com/file/d/1h0eSMhjm6AekCenuRik1HIVpLHi2yRVu/view',
       },
       {
         name: 'Utdanning',
