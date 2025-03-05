@@ -86,6 +86,7 @@ const Main = styled.main`
   @media (max-width: 899px) {
     width: 100%;
     padding: 20px;
+    padding-top: 60px;
   }
 `
 
@@ -103,12 +104,12 @@ const Div = styled.div`
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: ${({ theme }) => theme.Text_Logo};
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: ${({ theme }) => theme.Text_Logo};
   }
 
@@ -116,13 +117,28 @@ const Div = styled.div`
   h4,
   h5 {
     color: ${({ theme }) => theme.Text_Paragraph};
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
-
   p {
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 20px;
+  }
+  @media (max-width: 899px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+    h3,
+    h4,
+    h5 {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 `
 
@@ -164,106 +180,3 @@ const Card = styled.div`
     }
   }
 `
-
-const DetailContainer = styled.div`
-  border-top: 1px solid ${({ theme }) => theme.Border_Color};
-  border-bottom: 1px solid ${({ theme }) => theme.Border_Color};
-  padding: 20px 0;
-
-  p {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  @media (max-width: 500px) {
-    padding: 15px 0;
-  }
-`
-
-// const Main = styled.main`
-//   background-color: ${({ theme }) => theme.BC_Home};
-//   min-height: 100vh;
-//   display: flex;
-//   width: 100%;
-//   justify-content: center;
-//   flex-direction: column;
-//   align-items: center;
-//   @media (min-width: 900px) {
-//     margin-left: 25%;
-//     width: 75%;
-//   }
-//   @media (max-width: 899px) {
-//     width: 100%;
-//     flex-direction: column;
-//     padding: 30px;
-//   }
-// `
-// const Div = styled.div`
-//   h1 {
-//     margin: 20px 0px;
-//     font-size: 35px;
-//     color: ${({ theme }) => theme.Text_Logo};
-//   }
-//   h2 {
-//     margin: 20px 0px;
-//     font-size: 25px;
-//     color: ${({ theme }) => theme.Text_Logo};
-//   }
-//   h3 {
-//     margin: 10px 0px;
-//     color: ${({ theme }) => theme.Text_Paragraph};
-//     font-size: 18px;
-//   }
-//   h4,
-//   h5 {
-//     margin: 10px 0px;
-//     color: ${({ theme }) => theme.Text_Paragraph};
-//     font-size: 15px;
-//   }
-// `
-
-// const SosialConteiner = styled.span`
-//   margin: 20px;
-//   width: 300px;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   a {
-//     color: transparent;
-//     font-size: 0px;
-//   }
-// `
-// const Card = styled.div`
-//   padding: 20px;
-//   img {
-//     width: 450px;
-//     height: auto;
-//     @media (max-width: 1300px) {
-//       width: 350px;
-//       height: auto;
-//     }
-//     @media (max-width: 899px) {
-//       width: 500px;
-//       height: auto;
-//     }
-//     @media (max-width: 500px) {
-//       width: 400px;
-//       height: auto;
-//     }
-//   }
-// `
-
-// export const DetailContainer = styled.div`
-//   border-top: solid 1px ${({ theme }) => theme.Text_Paragraph};
-//   border-bottom: solid 1px ${({ theme }) => theme.Text_Paragraph};
-//   margin: 0px 10px;
-//   @media (max-width: 500px) {
-//     margin: 0px 0px;
-//   }
-//   p {
-//     margin: 20px 0px;
-//     color: ${({ theme }) => theme.Text_Paragraph};
-//     line-height: 1.6;
-//     font-size: 18px;
-//   }
-// `
