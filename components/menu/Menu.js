@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Data } from "../common/Data";
-import Link from "next/link";
+import React from 'react'
+import styled from 'styled-components'
+import { Data } from '../common/Data'
+import Link from 'next/link'
 import { Darksvg, Lightsvg } from '../common/Svg'
 
 const Menu = ({
@@ -10,13 +10,13 @@ const Menu = ({
   open,
   setOpen,
   language,
-  changeLangeuge
+  changeLangeuge,
 }) => {
   return (
     <Navbar open={open}>
-      {/* <div><h2>{Data.about[language ? 'en' : 'nr'].h2}</h2></div> */}
-      <h1><Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link></h1>
-
+      <h2>
+        <Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link>
+      </h2>
       <Ul>
         {Data.menu[language ? 'en' : 'nr'].map((item, inx) => (
           <li key={inx}>
@@ -29,9 +29,9 @@ const Menu = ({
       <Copyright>
         <h5>© 2023 Webutvikler</h5>
         <h5>
-          Created by{" "}
+          Created by{' '}
           <a
-            href="https://www.linkedin.com/in/farsangi/" 
+            href="https://www.linkedin.com/in/farsangi/"
             target="_blank"
             rel="noreferrer"
           >
@@ -40,17 +40,24 @@ const Menu = ({
         </h5>
       </Copyright>
       <TaggleDiv>
-        { isDark ? <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode}/> : <Darksvg fontSize="40px" changeDarkMode={changeDarkMode}/> }
-        { language ? <TaggleSpan onClick={changeLangeuge}>Nr</TaggleSpan> : <TaggleSpan onClick={changeLangeuge}>En</TaggleSpan>}
+        {isDark ? (
+          <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode} />
+        ) : (
+          <Darksvg fontSize="40px" changeDarkMode={changeDarkMode} />
+        )}
+        {language ? (
+          <TaggleSpan onClick={changeLangeuge}>Nr</TaggleSpan>
+        ) : (
+          <TaggleSpan onClick={changeLangeuge}>En</TaggleSpan>
+        )}
       </TaggleDiv>
     </Navbar>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu
 
 const Navbar = styled.div`
-
   h2 {
     color: ${({ theme }) => theme.Text_Logo};
     margin: 20px 0px;
@@ -86,7 +93,7 @@ const Navbar = styled.div`
   }
 
   @media (max-width: 899px) {
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     position: fixed;
     top: 0;
     right: 0;
@@ -94,8 +101,24 @@ const Navbar = styled.div`
     width: 300px;
     transition: transform 0.3s ease-in-out;
   }
-`;
+`
 
+// const Navbar = styled.div`
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   height: 100vh;
+//   width: 300px;
+//   background-color: ${({ theme }) => theme.BC_Menu};
+//   box-shadow: -3px 0 8px rgba(0, 0, 0, 0.2);
+//   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+//   transition: transform 0.3s ease-in-out;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 100;
+// `
 const TaggleDiv = styled.div`
   width: 70%;
   display: flex;
@@ -103,21 +126,48 @@ const TaggleDiv = styled.div`
 `
 
 const Ul = styled.ul`
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+
+    a {
+      color: ${({ theme }) => theme.Text_Menu};
+      &:hover,
+      &:focus {
+        color: ${({ theme }) => theme.Text_Menu_Hover};
+      }
+    }
+  }
 `
+
 const Copyright = styled.div`
-  margin: 20px 0px;
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: ${({ theme }) => theme.Text_Paragraph};
+
+  a {
+    color: ${({ theme }) => theme.Text_Logo};
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 export const TaggleSpan = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 17px;
-  color: ${({theme}) => theme.Icon_Color };
-  margin: ${({margin}) => margin };
+  color: ${({ theme }) => theme.Icon_Color};
+  margin: ${({ margin }) => margin};
   margin-right: 15px;
   width: 40px;
   height: 40px;
-  background-color: ${({theme}) => theme.Icon_bkColor };
+  background-color: ${({ theme }) => theme.Icon_bkColor};
   padding: 6px;
   border-radius: 7px;
   cursor: pointer;

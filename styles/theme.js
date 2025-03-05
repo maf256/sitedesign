@@ -25,6 +25,7 @@ export default function theme(isDark) {
     Icon_bkColor: isDark ? '#606680' : '#F0F1F4',
     BC_Home: isDark ? '#494B50' : '#F8F8F8',
     BC_Home2: isDark ? '#606680' : '#FFFFFF',
+    BC_Menu: isDark ? '#494b50' : 'white',
     Text_Title: isDark ? '#CCCCCC' : '#595959',
     Text_Logo: isDark ? '#FFFFFF' : '#000000',
     Text_Menu: isDark ? '#E0E0E0' : '#606060',
