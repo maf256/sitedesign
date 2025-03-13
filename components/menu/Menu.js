@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Data } from '../common/Data'
 import Link from 'next/link'
 import { Navbar, TaggleDiv, Ul, Copyright, TaggleSpan } from './Menus.styled.js'
@@ -28,7 +27,7 @@ const Menu = ({
         ))}
       </Ul>
       <Copyright>
-        <h5>© 2023 Webutvikler</h5>
+        <h5>© {new Date().getFullYear()} Webutvikler</h5>
         <h5>
           Created by{' '}
           <a
@@ -41,21 +40,19 @@ const Menu = ({
         </h5>
       </Copyright>
       <TaggleDiv>
-        <span>
-          <ThemeToggle
-            role="button"
-            aria-label="Toggle language"
-            isDark={isDark}
-            toggleTheme={changeDarkMode}
-          />
-          <TaggleSpan
-            role="button"
-            aria-label="Toggle language"
-            onClick={changeLanguage}
-          >
-            {language ? 'Nr' : 'En'}
-          </TaggleSpan>
-        </span>
+        <ThemeToggle
+          role="button"
+          aria-label="Toggle language"
+          isDark={isDark}
+          toggleTheme={changeDarkMode}
+        />
+        <TaggleSpan
+          role="button"
+          aria-label="Toggle language"
+          onClick={changeLanguage}
+        >
+          {language ? 'Nr' : 'En'}
+        </TaggleSpan>
       </TaggleDiv>
     </Navbar>
   )
