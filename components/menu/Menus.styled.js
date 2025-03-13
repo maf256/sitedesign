@@ -28,8 +28,6 @@ const Navbar = styled.div`
     }
   }
 
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-
   @media (min-width: 900px) {
     position: fixed;
     top: 0;

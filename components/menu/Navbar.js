@@ -7,12 +7,7 @@ import { Nav, Iconbar } from './Navbar.styled.js'
 import { Darksvg, Lightsvg } from '../common/Svg'
 import { TaggleSpan } from './Menus.styled.js'
 
-export default function Navbar({
-  isDark,
-  changeDarkMode,
-  language,
-  changeLangeuge,
-}) {
+function Navbar({ isDark, changeDarkMode, language, changeLangeuge }) {
   return (
     <Nav role="navigation" aria-label="Main menu">
       <Iconbar>
@@ -41,3 +36,5 @@ export default function Navbar({
     </Nav>
   )
 }
+
+export default React.memo(Navbar)
