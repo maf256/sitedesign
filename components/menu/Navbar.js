@@ -14,7 +14,7 @@ export default function Navbar({
   changeLangeuge,
 }) {
   return (
-    <Nav>
+    <Nav role="navigation" aria-label="Main menu">
       <Iconbar>
         <h2>
           <Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link>
@@ -79,21 +79,6 @@ const Nav = styled.nav`
   }
 `
 
-// const Nav = styled.nav `
-//   a {
-//     color: black;
-//   }
-//   @media (max-width: 899px) {
-//     width: 100%;
-//     height: 70px;
-//     display: flex;
-//     align-items: center;
-//     position: fixed;
-//     background-color: ${({theme}) => theme.BC_Menu};
-//     margin-right: 100px;
-
-//   }
-// `
 const Iconbar = styled.div`
   display: none;
   @media (max-width: 899px) {
