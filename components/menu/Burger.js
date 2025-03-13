@@ -7,14 +7,14 @@ export default function Burger({
   isDark,
   changeDarkMode,
   language,
-  changeLangeuge,
+  changeLanguage: changeLanguage,
 }) {
   const [open, setOpen] = useState(false)
-  const navbarRef = useRef(null)
+  const menuRef = useRef(null)
 
   useEffect(() => {
     const handleOutsideClick = e => {
-      if (navbarRef.current && !navbarRef.current.contains(e.target)) {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
         setOpen(false)
       }
     }
@@ -27,7 +27,7 @@ export default function Burger({
   }, [open])
 
   return (
-    <div ref={navbarRef}>
+    <div ref={menuRef}>
       <StyledBurger
         aria-label="Toggle menu"
         aria-expanded={open}
@@ -44,7 +44,7 @@ export default function Burger({
         open={open}
         setOpen={setOpen}
         language={language}
-        changeLangeuge={changeLangeuge}
+        changeLanguage={changeLanguage}
       />
     </div>
   )

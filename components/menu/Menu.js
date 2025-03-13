@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { Data } from '../common/Data'
 import Link from 'next/link'
-import { Darksvg, Lightsvg } from '../common/Svg'
 import { Navbar, TaggleDiv, Ul, Copyright, TaggleSpan } from './Menus.styled.js'
+import ThemeToggle from './ThemeToggle.js'
 
 const Menu = ({
   isDark,
@@ -11,7 +11,7 @@ const Menu = ({
   open,
   setOpen,
   language,
-  changeLangeuge,
+  changeLanguage,
 }) => {
   return (
     <Navbar open={open}>
@@ -41,16 +41,21 @@ const Menu = ({
         </h5>
       </Copyright>
       <TaggleDiv>
-        {isDark ? (
-          <Lightsvg fontSize="40px" changeDarkMode={changeDarkMode} />
-        ) : (
-          <Darksvg fontSize="40px" changeDarkMode={changeDarkMode} />
-        )}
-        {language ? (
-          <TaggleSpan onClick={changeLangeuge}>Nr</TaggleSpan>
-        ) : (
-          <TaggleSpan onClick={changeLangeuge}>En</TaggleSpan>
-        )}
+        <span>
+          <ThemeToggle
+            role="button"
+            aria-label="Toggle language"
+            isDark={isDark}
+            toggleTheme={changeDarkMode}
+          />
+          <TaggleSpan
+            role="button"
+            aria-label="Toggle language"
+            onClick={changeLanguage}
+          >
+            {language ? 'Nr' : 'En'}
+          </TaggleSpan>
+        </span>
       </TaggleDiv>
     </Navbar>
   )

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ToggleButton = styled.button`
+export const ToggleButton1 = styled.button`
   border: none;
   background-color: ${({ checked, theme }) =>
     checked ? theme.Icon_bkColor : theme.BC_Home2};

@@ -7,7 +7,7 @@ import { Nav, Iconbar } from './Navbar.styled.js'
 import { TaggleSpan } from './Menus.styled.js'
 import ThemeToggle from './ThemeToggle.js'
 
-function Navbar({ isDark, changeDarkMode, language, changeLangeuge }) {
+function Navbar({ isDark, changeDarkMode, language, changeLanguage }) {
   return (
     <Nav role="navigation" aria-label="Main menu">
       <Iconbar>
@@ -15,8 +15,17 @@ function Navbar({ isDark, changeDarkMode, language, changeLangeuge }) {
           <Link href="/">{Data.about[language ? 'en' : 'nr'].h2}</Link>
         </h2>
         <span>
-          <ThemeToggle isDark={isDark} toggleTheme={changeDarkMode} />
-          <TaggleSpan onClick={changeLangeuge}>
+          <ThemeToggle
+            role="button"
+            aria-label="Toggle language"
+            isDark={isDark}
+            toggleTheme={changeDarkMode}
+          />
+          <TaggleSpan
+            role="button"
+            aria-label="Toggle language"
+            onClick={changeLanguage}
+          >
             {language ? 'Nr' : 'En'}
           </TaggleSpan>
         </span>
@@ -25,7 +34,7 @@ function Navbar({ isDark, changeDarkMode, language, changeLangeuge }) {
         isDark={isDark}
         changeDarkMode={changeDarkMode}
         language={language}
-        changeLangeuge={changeLangeuge}
+        changeLanguage={changeLanguage}
       />
     </Nav>
   )

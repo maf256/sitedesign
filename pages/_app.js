@@ -4,25 +4,26 @@ import { ThemeProvider } from 'styled-components'
 import { useState } from 'react'
 import theme from '../styles/theme'
 
-
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
   const [language, setLanguage] = useState(false)
-  
 
-  const changeLangeuge = () => {
+  const changeLanguage = () => {
     setLanguage(!language)
-  } 
-  
+  }
 
   const changeDarkMode = () => {
     setIsDark(!isDark)
-  } 
+  }
 
-
-  return ( 
+  return (
     <ThemeProvider theme={theme(isDark)}>
-      <Navbar isDark={isDark} changeDarkMode={changeDarkMode} language={language} changeLangeuge={changeLangeuge} />
+      <Navbar
+        isDark={isDark}
+        changeDarkMode={changeDarkMode}
+        language={language}
+        changeLanguage={changeLanguage}
+      />
       <Component isDark={isDark} language={language} {...pageProps} />
     </ThemeProvider>
   )
