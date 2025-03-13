@@ -10,6 +10,8 @@ const Iframe = styled.iframe`
 const ContactContainer = styled.div`
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   min-height: 100vh;
+  padding: 30px 10px;
+
   background-color: ${({ theme }) => theme.BC_Home};
   h1,
   h2 {
@@ -19,14 +21,12 @@ const ContactContainer = styled.div`
   @media (min-width: 900px) {
     margin-left: 25%;
     width: 75%;
-    padding: 100px 10%;
     p {
       font-size: 20px;
     }
   }
   @media (max-width: 899px) {
     width: 100%;
-    padding: 100px 10px;
   }
 `
 
