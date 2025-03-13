@@ -4,6 +4,7 @@ import Img from '../common/image/webutvikler.png'
 import { Data } from '../common/Data'
 import * as Svg from '../common/Svg'
 import { Main, Div, SocialContainer, Card } from './Home.styled.js'
+import { motion } from 'framer-motion'
 
 export default function Home({ language, theme }) {
   const langData = Data.home[language ? 'en' : 'nr']
@@ -11,7 +12,7 @@ export default function Home({ language, theme }) {
   return (
     <>
       <Main>
-        <Card>
+        <Card as={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <Image
             src={Img}
             alt="Webutvikler - Majid Askarifarsangi"
@@ -69,7 +70,7 @@ export default function Home({ language, theme }) {
               target="_blank"
               rel="noreferrer"
               href="mailto:majid@sitedesign.no"
-              aria-label="Email"
+              aria-label="Send Email to Majid"
             >
               webutvikler
               <Svg.Email fontSize="45px">webutvikler</Svg.Email>
