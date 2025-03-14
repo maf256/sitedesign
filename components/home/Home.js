@@ -34,6 +34,7 @@ export default function Home({ language, theme }) {
               rel="noreferrer"
               href="https://www.linkedin.com/in/farsangi"
               aria-label="LinkedIn"
+              title="LinkedIn"
             >
               webutvikler
               <Svg.Linkedin fontSize="35px">webutvikler</Svg.Linkedin>
@@ -43,6 +44,7 @@ export default function Home({ language, theme }) {
               rel="noreferrer"
               href="https://github.com/maf256"
               aria-label="GitHub"
+              title="GitHub"
             >
               webutvikler
               <Svg.Github fontSize="35px">webutvikler</Svg.Github>
@@ -52,6 +54,7 @@ export default function Home({ language, theme }) {
               rel="noreferrer"
               href="tel:+4740189111"
               aria-label="Phone"
+              title="Phone"
             >
               {' '}
               webutvikler
@@ -62,6 +65,7 @@ export default function Home({ language, theme }) {
               rel="noreferrer"
               href="https://wa.me/+4740189111"
               aria-label="WhatsApp"
+              title="WhatsApp"
             >
               webutvikler
               <Svg.Whatsapp fontSize="35px">webutvikler</Svg.Whatsapp>
@@ -71,6 +75,7 @@ export default function Home({ language, theme }) {
               rel="noreferrer"
               href="mailto:majid@sitedesign.no"
               aria-label="Send Email to Majid"
+              title="Send Email to Majid"
             >
               webutvikler
               <Svg.Email fontSize="45px">webutvikler</Svg.Email>

@@ -27,15 +27,15 @@ const Menu = ({
         ))}
       </Ul>
       <Copyright>
-        <h5>© {new Date().getFullYear()} Webutvikler</h5>
         <h5>
-          Created by{' '}
+          © {new Date().getFullYear()} Webutvikler | Webdesign by{' '}
           <a
             href="https://www.linkedin.com/in/farsangi/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            title="Majid Farsangifarsangi - Webdesign & Development"
           >
-            Majid
+            Webdesign & Webutvikler
           </a>
         </h5>
       </Copyright>
