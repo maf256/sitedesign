@@ -11,11 +11,11 @@ export default function Home({ language, theme }) {
 
   return (
     <>
-      <Main>
+      <Main aria-label="Introduction">
         <Card as={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <Image
             src={Img}
-            alt="Webutvikler - Majid Askarifarsangi"
+            alt="Webutvikler & Webdesign - Majid Askarifarsangi"
             placeholder="blur"
             priority={true}
           />
@@ -41,10 +41,10 @@ export default function Home({ language, theme }) {
             </a>
             <a
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://github.com/maf256"
               aria-label="GitHub"
-              title="GitHub"
+              title="GitHub profile"
             >
               webutvikler
               <Svg.Github fontSize="35px">webutvikler</Svg.Github>

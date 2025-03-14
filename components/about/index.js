@@ -18,24 +18,40 @@ import Img from '../common/image/about.jpg'
 import { Play } from '../common/Svg'
 
 export default function About({ language }) {
+  const langData = Data.about[language ? 'en' : 'nr']
+  const ListSection = ({ title, items }) => (
+    <Education>
+      <h2>{title}</h2>
+      <UlEducation>
+        {items.map((item, idx) => (
+          <li key={idx}>
+            <h5>{item.date}</h5>
+            <div>
+              <h3>{item.name}</h3>
+              <h4>{item.uni}</h4>
+            </div>
+          </li>
+        ))}
+      </UlEducation>
+    </Education>
+  )
   return (
     <AboutPage className="DefuiltHomepage">
-      <Span>{Data.about[language ? 'en' : 'nr'].subject}</Span>
-      <h2>{Data.about[language ? 'en' : 'nr'].subject}</h2>
+      <Span>{langData.subject}</Span>
+      <h2>{langData.subject}</h2>
       <Image
         src={Img}
-        alt="Majid Askarifarsangi"
+        alt="Webutvikler & Webdesign - Majid Askarifarsangi"
         placeholder="blur"
-        priority={false}
-        // loading = 'lazy'
+        priority={true}
       />
       <NameContainer>
-        <h2>{Data.home[language ? 'en' : 'nr'].name}</h2>
-        <h3>{Data.about[language ? 'en' : 'nr'].h2}</h3>
+        <h2>{langData.name}</h2>
+        <h3>{langData.h2}</h3>
       </NameContainer>
       <InfoContainer>
         <Ul>
-          {Data.about[language ? 'en' : 'nr'].info.map((item, inx) => (
+          {langData.info.map((item, inx) => (
             <li key={inx}>
               <h5>{item.name}: </h5>
               <p>{item.data}</p>
@@ -46,78 +62,44 @@ export default function About({ language }) {
       <ButtonCV
         href="https://drive.usercontent.google.com/uc?id=1I0il499PFD---80tiWG4vDpd0qnXW2xh&export=download"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
+        aria-label="Download CV webutvikler & webdesign - Majid Askarifarsangi"
+        title="Download CV webutvikler & webdesign - Majid Askarifarsangi"
       >
-        {Data.about[language ? 'en' : 'nr'].buttonName}
+        {langData.buttonName}
       </ButtonCV>
       {/* <Skills>
 
         </Skills> */}
 
       <EducationContainer>
-        <Education>
-          <h2>{Data.about[language ? 'en' : 'nr'].educationTitlle}</h2>
-          <UlEducation>
-            {Data.about[language ? 'en' : 'nr'].education.map(
-              ({ date, name, uni }, inx) => (
-                <li key={inx}>
-                  <span></span>
-                  <h5>{date}</h5>
-                  <div>
-                    <h3>{name}</h3>
-                    <h4>{uni}</h4>
-                  </div>
-                </li>
-              ),
-            )}
-          </UlEducation>
-        </Education>
-        <Education>
-          <h2>{Data.about[language ? 'en' : 'nr'].experienceTitlle}</h2>
-          <UlEducation>
-            {Data.about[language ? 'en' : 'nr'].experience.map(
-              ({ date, name, uni }, inx) => (
-                <li key={inx}>
-                  <span></span>
-                  <h5>{date}</h5>
-                  <div>
-                    <h3>{name}</h3>
-                    <h4>{uni}</h4>
-                  </div>
-                </li>
-              ),
-            )}
-          </UlEducation>
-        </Education>
+        <ListSection title="Education" items={langData.education} />
+        <ListSection title="Experience" items={langData.experience} />
       </EducationContainer>
       <UlKnowledgeDiv>
-        <h2>{Data.about[language ? 'en' : 'nr'].knowledge.knowledge}</h2>
+        <h2>{langData.knowledge.knowledge}</h2>
         <Knowledge>
           <UlKnowledge>
             <h4>Frontend</h4>
-            {Data.about[language ? 'en' : 'nr'].knowledge.frontend.map(
-              (item, inx) => (
-                <li key={inx}>
-                  <span>
-                    <Play fontSize="15px" />
-                  </span>
-                  <h5>{item}</h5>
-                </li>
-              ),
-            )}
+            {langData.knowledge.frontend.map((item, inx) => (
+              <li key={inx}>
+                <span>
+                  <Play fontSize="15px" />
+                </span>
+                <h5>{item}</h5>
+              </li>
+            ))}
           </UlKnowledge>
           <UlKnowledge>
             <h4>Backend</h4>
-            {Data.about[language ? 'en' : 'nr'].knowledge.backend.map(
-              (item, inx) => (
-                <li key={inx}>
-                  <span>
-                    <Play fontSize="15px" />
-                  </span>
-                  <h5>{item}</h5>
-                </li>
-              ),
-            )}
+            {langData.knowledge.backend.map((item, inx) => (
+              <li key={inx}>
+                <span>
+                  <Play fontSize="15px" />
+                </span>
+                <h5>{item}</h5>
+              </li>
+            ))}
           </UlKnowledge>
         </Knowledge>
       </UlKnowledgeDiv>
