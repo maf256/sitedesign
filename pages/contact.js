@@ -1,9 +1,10 @@
 import Contact from '../components/contact'
+import { SEO } from '../styles/SEO'
 
 import Head from 'next/head'
 
 export default function about({ language }) {
-  const seoData = SEO.content
+  const seoData = SEO.contact
 
   return (
     <>
