@@ -3,6 +3,7 @@ import Navbar from '../components/menu/Navbar'
 import { ThemeProvider } from 'styled-components'
 import { useState } from 'react'
 import theme from '../styles/theme'
+import { GoogleAnalytics } from 'nextjs-google-analytics'
 
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider theme={theme(isDark)}>
+      <GoogleAnalytics trackPageViews gaMeasurementId="G-8LEH26ZRLP" />
       <Navbar
         isDark={isDark}
         changeDarkMode={changeDarkMode}
