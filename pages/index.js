@@ -1,177 +1,86 @@
 import Home from '../components/home/Home'
 import Head from 'next/head'
-// import icon from '../public/'
-// import img from '../components/common/image/me.jpg'
+import { SEO } from '../styles/SEO'
 
 export default function Homepage({ language }) {
-  const websiteJsonLd = {
+  const seoData = SEO.homepage
+
+  const websiteStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     url: 'https://sitedesign.no',
     name: 'Sitedesign',
-    description:
-      'Sitedesign offers professional webutvikler (web development) and webdesign (web design) services tailored to your business needs.',
+    description: seoData.description,
     author: {
       '@type': 'Person',
       name: 'Majid Askarifarsangi',
       jobTitle: 'Webutvikler',
-      image: 'https://sitedesign.no/webutvikler.jpg',
-      url: 'https://www.sitedesign.no',
-      sameAs: [
-        'https://www.facebook.com/majid.farsangi',
-        'https://www.linkedin.com/in/farsangi',
-        'https://x.com/askarifarsangi',
-      ],
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Sitedesign',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://sitedesign.no/webutvikler.jpg',
-      },
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://sitedesign.no/?s={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://sitedesign.no',
+      image: seoData.structuredData.image,
+      url: 'https://sitedesign.no',
+      sameAs: seoData.structuredData.sameAs,
     },
   }
 
-  const localBusinessJsonLd = {
+  const personStructuredData = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'Sitedesign',
+    '@type': 'Person',
+    name: 'Majid Askarifarsangi',
     url: 'https://sitedesign.no',
-    description:
-      'Sitedesign specializes in webutvikler (web development) and webdesign (web design) services in Norway.',
-    logo: 'https://sitedesign.no/android-chrome-192x192.png',
-    image: 'https://sitedesign.no/webutvikler.jpg',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Hamangskogen 71',
-      addressLocality: 'Sandvika',
-      postalCode: '1338',
-      addressCountry: 'NO',
-    },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+47-401-89-111',
-      contactType: 'Customer Service',
-      areaServed: 'NO',
-      availableLanguage: ['Norwegian', 'English'],
-    },
-    sameAs: [
-      'https://www.facebook.com/majid.farsangi',
-      'https://www.linkedin.com/in/farsangi',
-      'https://x.com/askarifarsangi',
-    ],
-    priceRange: '$$',
-    keywords: 'webutvikler, webdesign, web development, web design, Norway',
+    image: seoData.structuredData.image,
+    jobTitle: 'Webutvikler',
+    address: seoData.structuredData.address,
+    sameAs: seoData.structuredData.sameAs,
   }
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://sitedesign.no/',
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'About',
-        item: 'https://sitedesign.no/about',
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: 'Contact',
-        item: 'https://sitedesign.no/contact',
-      },
-      {
-        '@type': 'ListItem',
-        position: 4,
-        name: 'Booking',
-        item: 'https://sitedesign.no/booking',
-      },
-    ],
-  }
+
   return (
     <>
       <Head>
-        <title>
-          Webutvikler - oslo webdesign - webutvikling - webdesign - oslo
-          webutvikler
-        </title>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <meta name="author" content="Majid Askarifarsangi" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph SEO tags */}
+        <meta property="og:title" content={seoData.title} />
+        <meta property="og:description" content={seoData.description} />
+        <meta property="og:image" content={seoData.structuredData.image} />
+        <meta property="og:url" content="https://sitedesign.no" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content={language ? 'en_US' : 'nb_NO'} />
+        <meta property="og:site_name" content="Sitedesign" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://sitedesign.no" />
+
+        {/* Structured Data (LocalBusiness) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessJsonLd),
+            __html: JSON.stringify(seoData.structuredData),
           }}
         />
+
+        {/* Structured Data (WebSite) */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteStructuredData),
+          }}
         />
-        <meta
-          name="description"
-          content="Erfaren softwareingeniør og webutvikler med spisskompetanse innen frontend- og full stack utvikling, samt moderne webdesign. Leverer skreddersydde digitale løsninger som kombinerer funksjonalitet med estetikk."
-          key="desc"
-        />
-        <meta
-          name="keywords"
-          content="Webutvikler,Webutvikling,CSS,JavaScript,react,web development, responsive design, front-end development, back-end development"
-        />
-        <meta name="author" content="Majid Askarifarsangi" />
-        <meta name="robots" content=" index , follow " />
-        <meta property="og:image" content="https://sitedesign.no/me.jpg" />
-        <meta
-          property="og:image:secure_url"
-          content="https://sitedesign.no/me.jpg"
-        />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content="webutvikler" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <link rel="canonical" href="https://sitedesign.no" />
 
-        <meta
-          property="og:title"
-          content="Webutvikler webutvikling webdesign & web utvikler i oslo"
+        {/* Structured Data (Person) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personStructuredData),
+          }}
         />
-        <meta
-          property="og:description"
-          content="Webutvikler webutvikling webdesign & web utvikler i oslo"
-        />
-        {/* <meta property="og:image" content={img} /> */}
+
+        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-
-        <meta property="og:url" content="https://sitedesign.no" />
-        <meta property="og:site_name" content="webutvikler" />
-        <meta property="og:locale" content="nb_NO" />
-        <meta property="og:type" content="website" />
-
-        <meta
-          property="og:see_also"
-          content="https://www.linkedin.com/in/farsangi/"
-        />
-        <meta name="rating" content="general" />
-        <meta
-          name="google-adsense-account"
-          content="ca-pub-8083953411324346"
-        ></meta>
       </Head>
+
       <Home language={language} />
     </>
   )

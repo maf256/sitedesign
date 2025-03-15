@@ -1,23 +1,37 @@
-import About from "../components/about";
+import About from '../components/about'
 
-import Head from 'next/head';
+import Head from 'next/head'
+import { SEO } from '../styles/SEO'
 
-export default function about ({language}){
+export default function about({ language }) {
+  const seoData = SEO.about
 
-    return <>
-        <Head>
-        <   title>Webutvikler og webutvikling og webdesign & web utvikler i oslo</title>
-            <meta
-                name="description"
-                content="Jeg er software ingeniør og jeg har jobbet som webutvikler og frontend utvikler og full stack utvikler."
-                key="desc"
-            />
-            <meta 
-                name="keywords" content="Webutvikler,Webutvikling,CSS,JavaScript,react,web development, responsive design, front-end development, back-end development"
-                />
-            <meta name="author" content="Majid Askarifarsangi"/>
-            <meta  name="robots" content=" index , follow "/>
-        </Head>
-        <About language={language}/>
+  return (
+    <>
+      <Head>
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
+        <link rel="canonical" href="https://sitedesign.no/about" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content={seoData.title} />
+        <meta property="og:description" content={seoData.description} />
+        <meta property="og:image" content={seoData.structuredData.image} />
+        <meta property="og:url" content="https://sitedesign.no/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content={language ? 'en_US' : 'nb_NO'} />
+
+        {/* Structured Data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(seoData.structuredData),
+          }}
+        />
+      </Head>
+
+      <About language={language} />
     </>
+  )
 }
