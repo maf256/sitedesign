@@ -14,7 +14,7 @@ export const SEO = {
       name: 'Sitedesign',
       url: 'https://sitedesign.no',
       logo: 'https://sitedesign.no/logo.png',
-      image: 'https://sitedesign.no/majid-askarifarsangi-webutvikler-oslo.webp',
+      image: 'https://sitedesign.no/webutvikler.webp',
       description:
         'Profesjonell webdesign og utviklingstjenester i Oslo, Norge.',
       address: {
