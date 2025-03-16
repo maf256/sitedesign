@@ -47,7 +47,7 @@ export default function Homepage({ language }) {
         <meta property="og:image" content={seoData.structuredData.image} />
         <meta property="og:url" content="https://sitedesign.no" />
         <meta property="og:type" content="website" />
-        <meta property="og:locale" content={language ? 'en_US' : 'nb_NO'} />
+        <meta property="og:locale" content={language ? 'en_US' : 'nb'} />
         <meta property="og:site_name" content="Sitedesign" />
 
         {/* Canonical URL */}
@@ -79,6 +79,23 @@ export default function Homepage({ language }) {
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
       </Head>
 
       <Home language={language} />

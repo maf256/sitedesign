@@ -20,7 +20,7 @@ export default function about({ language }) {
         <meta property="og:image" content={seoData.structuredData.image} />
         <meta property="og:url" content={seoData.structuredData.url} />
         <meta property="og:type" content="website" />
-        <meta property="og:locale" content={language ? 'en_US' : 'nb_NO'} />
+        <meta property="og:locale" content={language ? 'en_US' : 'nb'} />
 
         {/* Structured Data (JSON-LD) */}
         <script
