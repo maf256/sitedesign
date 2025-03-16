@@ -4,7 +4,7 @@ export const SEO = {
   homepage: {
     title: 'Webdesign og Webutvikling i Oslo - Majid Askarifarsangi',
     description:
-      'Majid Askarifarsangi tilbyr profesjonelle webdesign, frontend- og backend-utvikling, samt SEO-tjenester i Oslo. Moderne, responsive nettsider.',
+      'Majid Askarifarsangi tilbyr profesjonelle webdesign, erfarne webutvikler-tjenester (frontend- og backend-utvikling), samt SEO-tjenester i Oslo. Moderne, responsive nettsider.',
     keywords: 'webutvikler, webdesign, SEO, Oslo, frontend utvikler, Norway',
     imgAlt: 'Majid Askarifarsangi - Webdesigner og utvikler i Oslo',
     structuredData: {

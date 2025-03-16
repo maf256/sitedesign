@@ -5,6 +5,8 @@ import { Data } from '../common/Data'
 import * as Svg from '../common/Svg'
 import { Main, Div, SocialContainer, Card } from './Home.styled.js'
 import { motion } from 'framer-motion'
+import SocialShare from '../SocialShareButtons.js'
+import SocialMediaLinks from '../SocialMediaLinks.js'
 
 export default function Home({ language, theme }) {
   const langData = Data.home[language ? 'en' : 'nr']
@@ -28,59 +30,12 @@ export default function Home({ language, theme }) {
           <h5>{langData.h5}</h5>
           <p>{langData.p}</p>
           <p>{langData.p1}</p>
-          <SocialContainer>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/farsangi"
-              aria-label="LinkedIn"
-              title="LinkedIn"
-            >
-              webutvikler
-              <Svg.Linkedin fontSize="35px">webutvikler</Svg.Linkedin>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/maf256"
-              aria-label="GitHub"
-              title="GitHub profile"
-            >
-              webutvikler
-              <Svg.Github fontSize="35px">webutvikler</Svg.Github>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="tel:+4740189111"
-              aria-label="Phone"
-              title="Phone"
-            >
-              {' '}
-              webutvikler
-              <Svg.Phone fontSize="35px">webutvikler</Svg.Phone>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://wa.me/+4740189111"
-              aria-label="WhatsApp"
-              title="WhatsApp"
-            >
-              webutvikler
-              <Svg.Whatsapp fontSize="35px">webutvikler</Svg.Whatsapp>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="mailto:majid@sitedesign.no"
-              aria-label="Send Email to Majid"
-              title="Send Email to Majid"
-            >
-              webutvikler
-              <Svg.Email fontSize="45px">webutvikler</Svg.Email>
-            </a>
-          </SocialContainer>
+          <SocialMediaLinks />
+          <SocialShare
+            url="https://sitedesign.no"
+            title="Webdesign og Webutvikling i Oslo - Majid Askarifarsangi"
+            description="Profesjonell webutvikling og webdesign av Majid Askarifarsangi i Oslo"
+          />
         </Div>
       </Main>
     </>
