@@ -5,7 +5,8 @@ export const SEO = {
     title: 'Webdesign og Webutvikling i Oslo - Majid Askarifarsangi',
     description:
       'Majid Askarifarsangi tilbyr profesjonelle webdesign, erfarne webutvikler-tjenester (frontend- og backend-utvikling), samt SEO-tjenester i Oslo. Moderne, responsive nettsider.',
-    keywords: 'webutvikler, webdesign, SEO, Oslo, frontend utvikler, Norway',
+    keywords:
+      'webutvikler, webdesign, SEO, Oslo, frontend utvikler, Norway, webdesigner, webutvikling, fullstack utvikler',
     imgAlt: 'Majid Askarifarsangi - Webdesigner og utvikler i Oslo',
     structuredData: {
       '@context': 'https://schema.org',
@@ -13,7 +14,7 @@ export const SEO = {
       name: 'Sitedesign',
       url: 'https://sitedesign.no',
       logo: 'https://sitedesign.no/logo.png',
-      image: 'https://sitedesign.no/webutvikler.jpg',
+      image: 'https://sitedesign.no/majid-askarifarsangi-webutvikler-oslo.webp',
       description:
         'Profesjonell webdesign og utviklingstjenester i Oslo, Norge.',
       address: {

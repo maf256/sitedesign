@@ -1,9 +1,8 @@
 import Image from 'next/image'
 
-import Img from '../common/image/webutvikler.png'
+import Img from '../common/image/webutvikler.webp'
 import { Data } from '../common/Data'
-import * as Svg from '../common/Svg'
-import { Main, Div, SocialContainer, Card } from './Home.styled.js'
+import { Main, Div, Card } from './Home.styled.js'
 import { motion } from 'framer-motion'
 import SocialShare from '../SocialShareButtons.js'
 import SocialMediaLinks from '../SocialMediaLinks.js'

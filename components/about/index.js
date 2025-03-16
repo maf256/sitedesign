@@ -14,7 +14,7 @@ import {
 } from './pageStyled'
 import { Data } from '../common/Data'
 import Image from 'next/image'
-import Img from '../common/image/about.jpg'
+import Img from '../common/image/webutvikler-about.webp'
 import { Play } from '../common/Svg'
 
 export default function About({ language }) {

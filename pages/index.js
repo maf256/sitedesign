@@ -40,19 +40,19 @@ export default function Homepage({ language }) {
         <meta name="keywords" content={seoData.keywords} />
         <meta name="author" content="Majid Askarifarsangi" />
         <meta name="robots" content="index, follow" />
-
         {/* Open Graph SEO tags */}
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:image" content={seoData.structuredData.image} />
+        <meta property="og:image:alt" content={seoData.imageAlt} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />{' '}
         <meta property="og:url" content="https://sitedesign.no" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content={language ? 'en_US' : 'nb'} />
         <meta property="og:site_name" content="Sitedesign" />
-
         {/* Canonical URL */}
         <link rel="canonical" href="https://sitedesign.no" />
-
         {/* Structured Data (LocalBusiness) */}
         <script
           type="application/ld+json"
@@ -60,7 +60,6 @@ export default function Homepage({ language }) {
             __html: JSON.stringify(seoData.structuredData),
           }}
         />
-
         {/* Structured Data (WebSite) */}
         <script
           type="application/ld+json"
@@ -68,7 +67,6 @@ export default function Homepage({ language }) {
             __html: JSON.stringify(websiteStructuredData),
           }}
         />
-
         {/* Structured Data (Person) */}
         <script
           type="application/ld+json"
@@ -76,7 +74,6 @@ export default function Homepage({ language }) {
             __html: JSON.stringify(personStructuredData),
           }}
         />
-
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         <link
