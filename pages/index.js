@@ -93,6 +93,14 @@ export default function Homepage({ language }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        {/* Twitter-specific tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seoData.title} />
+        <meta name="twitter:description" content={seoData.description} />
+        <meta
+          name="twitter:image"
+          content="https://sitedesign.no/majid-askarifarsangi-webutvikler-oslo.webp"
+        />
       </Head>
 
       <Home language={language} />
