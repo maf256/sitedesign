@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Img from '../common/image/webutvikler.webp'
+import Img from '../../public/webutvikler.webp'
 import { Data } from '../common/Data'
 import { Main, Div, Card } from './Home.styled.js'
 import { motion } from 'framer-motion'
@@ -20,7 +20,6 @@ export default function Home({ language, theme }) {
             placeholder="blur"
             height={452}
             width={452}
-            priority={true}
             loading="lazy"
           />
         </Card>

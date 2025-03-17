@@ -14,7 +14,7 @@ import {
 } from './pageStyled'
 import { Data } from '../common/Data'
 import Image from 'next/image'
-import Img from '../common/image/webutvikler-about.webp'
+import Img from '../../public/webutvikler-about.webp'
 import { Play } from '../common/Svg'
 
 export default function About({ language }) {
@@ -68,10 +68,6 @@ export default function About({ language }) {
       >
         {langData.buttonName}
       </ButtonCV>
-      {/* <Skills>
-
-        </Skills> */}
-
       <EducationContainer>
         <ListSection title="Education" items={langData.education} />
         <ListSection title="Experience" items={langData.experience} />

@@ -101,6 +101,11 @@ export default function Homepage({ language }) {
           name="twitter:image"
           content="https://sitedesign.no/majid-askarifarsangi-webutvikler-oslo.webp"
         />
+        <link
+          rel="preload"
+          as="image"
+          href="../common/image/webutvikler.webp"
+        />
       </Head>
 
       <Home language={language} />
