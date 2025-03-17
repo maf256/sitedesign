@@ -17,11 +17,7 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           // {language ? "en" : 'no'}
-          <html
-            lang={
-              this.props.__NEXT_DATA__.props.pageProps.language ? 'en' : 'no'
-            }
-          >
+          <html lang="no">
             {initialProps.styles}
             {sheet.getStyleElement()}
           </html>
