@@ -19,7 +19,7 @@ export default function Home({ language, theme }) {
             placeholder="blur"
             height={452}
             width={452}
-            priority={true}
+            loading="lazy"
           />
         </Card>
         <Div>
