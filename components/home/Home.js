@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Img from '../../public/webutvikler.webp'
 import { Data } from '../common/Data'
 import { Main, Div, Card } from './Home.styled.js'
-import { motion } from 'framer-motion'
 import SocialShare from '../SocialShareButtons.js'
 import SocialMediaLinks from '../SocialMediaLinks.js'
 
@@ -12,11 +11,11 @@ export default function Home({ language, theme }) {
 
   return (
     <>
-      <Main aria-label="Introduction">
-        <Card as={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <Main role="main" aria-label={language ? 'Introduction' : 'Introduksjon'}>
+        <Card>
           <Image
             src={Img}
-            alt="Webutvikler & Webdesign - Majid Askarifarsangi"
+            alt={langData.alt}
             placeholder="blur"
             height={452}
             width={452}

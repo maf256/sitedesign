@@ -18,26 +18,31 @@ export default function SocialMediaLinks() {
       href: 'https://www.linkedin.com/in/farsangi',
       icon: <FaLinkedin />,
       name: 'LinkedIn',
+      ariaLabel: "LinkedIn Majid Askarifarsangi's profile",
     },
     {
       href: 'https://github.com/maf256',
       icon: <FaGithub />,
       name: 'GitHub',
+      ariaLabel: "GitHub Majid Askarifarsangi's profile",
     },
     {
       href: 'tel:+4740189111',
       icon: <FaPhone />,
       name: 'Phone',
+      ariaLabel: 'Call Majid Askarifarsangi',
     },
     {
       href: 'https://wa.me/+4740189111',
       icon: <FaWhatsapp />,
       name: 'WhatsApp',
+      ariaLabel: 'WhatsApp Majid Askarifarsangi',
     },
     {
       href: 'mailto:majid@sitedesign.no',
       icon: <FaEnvelope />,
       name: 'Email',
+      ariaLabel: 'Email Majid Askarifarsangi',
     },
   ]
 
@@ -51,7 +56,7 @@ export default function SocialMediaLinks() {
           target="_blank"
           rel="noopener noreferrer"
           title={social.name}
-          aria-label={social.name}
+          aria-label={social.ariaLabel}
         >
           {social.icon}
         </SocialLink>

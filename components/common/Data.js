@@ -93,6 +93,7 @@ export const Data = {
       h5: 'Jeg bygger ting for nettet.',
       p: `Jeg lager responsive, brukervennlige nettsider med fokus på moderne webdesign og effektiv webutvikling, slik at din virksomhet kan nå nye høyder på nett.`,
       p1: `Jeg er en erfaren webutvikler som brenner for innovativt og brukervennlig webdesign. Med kompetanse innen frontend- og backendutvikling lager jeg moderne, responsive nettsteder som engasjerer besøkende og styrker din virksomhets digitale profil. Fra elegante bedriftsider til komplekse nettbutikker leverer jeg komplette webutviklingsløsninger tilpasset akkurat dine behov.`,
+      alt: 'Portrait of Majid Askarifarsangi, web developer and web designer',
     },
     en: {
       name: 'Majid Askarifarsangi',
@@ -103,6 +104,7 @@ export const Data = {
       h5: 'I build things for the web.',
       p: `I create responsive, user-friendly websites, focusing on modern web design and effective web development, helping your business succeed online.`,
       p1: `I'm an experienced web developer passionate about innovative and user-friendly web design. With expertise in frontend and backend development, I create modern, responsive websites that engage visitors and enhance your business’s digital presence. From elegant business pages to complex online stores, I deliver complete web development solutions tailored specifically to your needs.`,
+      alt: 'Portrett av Majid Askarifarsangi, webutvikler og webdesigner',
     },
   },
   about: {
