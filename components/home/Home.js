@@ -18,7 +18,10 @@ export default function Home({ language, theme }) {
             src={Img}
             alt="Webutvikler & Webdesign - Majid Askarifarsangi"
             placeholder="blur"
+            height={452}
+            width={452}
             priority={true}
+            loading="lazy"
           />
         </Card>
         <Div>
