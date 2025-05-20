@@ -44,7 +44,7 @@ export default function Homepage({ language }) {
         <meta property="og:title" content={seoData.title} />
         <meta property="og:description" content={seoData.description} />
         <meta property="og:image" content={seoData.structuredData.image} />
-        <meta property="og:image:alt" content={seoData.imageAlt} />
+        <meta property="og:image:alt" content={seoData.imgAlt} />
         <meta property="og:image:width" content="452" />
         <meta property="og:image:height" content="452" />{' '}
         <meta property="og:url" content="https://sitedesign.no" />
