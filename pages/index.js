@@ -105,6 +105,7 @@ export default function Homepage({ language }) {
       </Head>
 
       <Home language={language} />
+      
     </>
   )
 }
